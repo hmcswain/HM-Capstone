@@ -73,6 +73,9 @@ struct PublicDataView: View {
             Text("Add Hospital")
           }
         }
+ /*       Section(header: Text "Medical School")) {
+
+        } */
       }
       .navigationTitle("Public Data")
     }

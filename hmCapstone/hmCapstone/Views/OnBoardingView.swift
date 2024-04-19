@@ -5,11 +5,13 @@
 import SwiftUI
 
 struct OnBoardingView: View {
+  @State private var showNPILookup = false
   let title: String
   let image: String
   let description: String
   
   var body: some View {
+
     VStack {
       Image(systemName: image)
         .resizable()

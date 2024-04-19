@@ -25,6 +25,7 @@ struct ContentView: View {
     } else if !UserDefaults.standard.welcomeScreenShown && !showNPILookup {
       WelcomeScreenView()
     } else {
+
       VStack {
         TabView {
           OnBoardingView(title: "Welcome to MediBlock App", image: "doc.on.doc", description: "Are you tired of dealing with paperwork?\n \n Swipe left or press Get Started")

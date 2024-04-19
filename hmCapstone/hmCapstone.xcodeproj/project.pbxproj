@@ -17,6 +17,7 @@
 		2856FD7B2BD05F5000D4799B /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD7A2BD05F5000D4799B /* WelcomeScreenView.swift */; };
 		2856FD7D2BD05F6E00D4799B /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD7C2BD05F6E00D4799B /* OnBoardingView.swift */; };
 		2856FD7F2BD05FB600D4799B /* HomeNPILookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD7E2BD05FB600D4799B /* HomeNPILookupView.swift */; };
+		2861158D2BD3033D008AFB24 /* NPIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2861158C2BD3033D008AFB24 /* NPIDetailView.swift */; };
 		289946152BD2471E0017E03C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946142BD2471E0017E03C /* MainTabView.swift */; };
 		289946172BD248320017E03C /* ProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946162BD248320017E03C /* ProviderViewModel.swift */; };
 		289946192BD248890017E03C /* NppesApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946182BD248890017E03C /* NppesApiModel.swift */; };
@@ -58,6 +59,7 @@
 		2856FD7A2BD05F5000D4799B /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 		2856FD7C2BD05F6E00D4799B /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		2856FD7E2BD05FB600D4799B /* HomeNPILookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNPILookupView.swift; sourceTree = "<group>"; };
+		2861158C2BD3033D008AFB24 /* NPIDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPIDetailView.swift; sourceTree = "<group>"; };
 		289946142BD2471E0017E03C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		289946162BD248320017E03C /* ProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewModel.swift; sourceTree = "<group>"; };
 		289946182BD248890017E03C /* NppesApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NppesApiModel.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				2899461A2BD248DE0017E03C /* AddHospitalView.swift */,
 				2899461C2BD249420017E03C /* PublicDataView.swift */,
 				2899461E2BD2499A0017E03C /* PrivateDataView.swift */,
+				2861158C2BD3033D008AFB24 /* NPIDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				2856FD512BD04B6200D4799B /* ContentView.swift in Sources */,
 				289946172BD248320017E03C /* ProviderViewModel.swift in Sources */,
 				2856FD7F2BD05FB600D4799B /* HomeNPILookupView.swift in Sources */,
+				2861158D2BD3033D008AFB24 /* NPIDetailView.swift in Sources */,
 				289946232BD24A270017E03C /* HospitalViewModel.swift in Sources */,
 				2899461D2BD249420017E03C /* PublicDataView.swift in Sources */,
 				2856FD4F2BD04B6200D4799B /* hmCapstoneApp.swift in Sources */,
