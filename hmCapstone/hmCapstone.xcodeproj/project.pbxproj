@@ -17,6 +17,14 @@
 		2856FD7B2BD05F5000D4799B /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD7A2BD05F5000D4799B /* WelcomeScreenView.swift */; };
 		2856FD7D2BD05F6E00D4799B /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD7C2BD05F6E00D4799B /* OnBoardingView.swift */; };
 		2856FD7F2BD05FB600D4799B /* HomeNPILookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD7E2BD05FB600D4799B /* HomeNPILookupView.swift */; };
+		289946152BD2471E0017E03C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946142BD2471E0017E03C /* MainTabView.swift */; };
+		289946172BD248320017E03C /* ProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946162BD248320017E03C /* ProviderViewModel.swift */; };
+		289946192BD248890017E03C /* NppesApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946182BD248890017E03C /* NppesApiModel.swift */; };
+		2899461B2BD248DE0017E03C /* AddHospitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899461A2BD248DE0017E03C /* AddHospitalView.swift */; };
+		2899461D2BD249420017E03C /* PublicDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899461C2BD249420017E03C /* PublicDataView.swift */; };
+		2899461F2BD2499A0017E03C /* PrivateDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899461E2BD2499A0017E03C /* PrivateDataView.swift */; };
+		289946212BD249D80017E03C /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946202BD249D80017E03C /* HospitalModel.swift */; };
+		289946232BD24A270017E03C /* HospitalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946222BD24A270017E03C /* HospitalViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,14 @@
 		2856FD7A2BD05F5000D4799B /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 		2856FD7C2BD05F6E00D4799B /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		2856FD7E2BD05FB600D4799B /* HomeNPILookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNPILookupView.swift; sourceTree = "<group>"; };
+		289946142BD2471E0017E03C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		289946162BD248320017E03C /* ProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewModel.swift; sourceTree = "<group>"; };
+		289946182BD248890017E03C /* NppesApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NppesApiModel.swift; sourceTree = "<group>"; };
+		2899461A2BD248DE0017E03C /* AddHospitalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHospitalView.swift; sourceTree = "<group>"; };
+		2899461C2BD249420017E03C /* PublicDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicDataView.swift; sourceTree = "<group>"; };
+		2899461E2BD2499A0017E03C /* PrivateDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDataView.swift; sourceTree = "<group>"; };
+		289946202BD249D80017E03C /* HospitalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalModel.swift; sourceTree = "<group>"; };
+		289946222BD24A270017E03C /* HospitalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +157,10 @@
 				2856FD7A2BD05F5000D4799B /* WelcomeScreenView.swift */,
 				2856FD7C2BD05F6E00D4799B /* OnBoardingView.swift */,
 				2856FD7E2BD05FB600D4799B /* HomeNPILookupView.swift */,
+				289946142BD2471E0017E03C /* MainTabView.swift */,
+				2899461A2BD248DE0017E03C /* AddHospitalView.swift */,
+				2899461C2BD249420017E03C /* PublicDataView.swift */,
+				2899461E2BD2499A0017E03C /* PrivateDataView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +168,10 @@
 		2856FD792BD05C6700D4799B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				289946162BD248320017E03C /* ProviderViewModel.swift */,
+				289946182BD248890017E03C /* NppesApiModel.swift */,
+				289946202BD249D80017E03C /* HospitalModel.swift */,
+				289946222BD24A270017E03C /* HospitalViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -285,8 +309,16 @@
 				2856FD7B2BD05F5000D4799B /* WelcomeScreenView.swift in Sources */,
 				2856FD7D2BD05F6E00D4799B /* OnBoardingView.swift in Sources */,
 				2856FD512BD04B6200D4799B /* ContentView.swift in Sources */,
+				289946172BD248320017E03C /* ProviderViewModel.swift in Sources */,
 				2856FD7F2BD05FB600D4799B /* HomeNPILookupView.swift in Sources */,
+				289946232BD24A270017E03C /* HospitalViewModel.swift in Sources */,
+				2899461D2BD249420017E03C /* PublicDataView.swift in Sources */,
 				2856FD4F2BD04B6200D4799B /* hmCapstoneApp.swift in Sources */,
+				2899461F2BD2499A0017E03C /* PrivateDataView.swift in Sources */,
+				289946152BD2471E0017E03C /* MainTabView.swift in Sources */,
+				289946192BD248890017E03C /* NppesApiModel.swift in Sources */,
+				2899461B2BD248DE0017E03C /* AddHospitalView.swift in Sources */,
+				289946212BD249D80017E03C /* HospitalModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

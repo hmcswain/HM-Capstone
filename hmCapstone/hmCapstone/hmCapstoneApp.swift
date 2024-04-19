@@ -1,9 +1,7 @@
 //
 //  hmCapstoneApp.swift
 //  hmCapstone
-//
-//  Created by Jj on 4/17/24.
-//
+
 
 import SwiftUI
 
