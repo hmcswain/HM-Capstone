@@ -93,6 +93,8 @@ extension ProviderViewModel {
   static func mock() -> ProviderViewModel {
     let model = ProviderViewModel()
     // Create mock providers data
+
+    
     model.providers = [
       Provider(
         number: "1063456715",

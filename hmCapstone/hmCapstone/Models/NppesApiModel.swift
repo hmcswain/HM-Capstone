@@ -28,22 +28,22 @@ struct Basic: Codable {
 //  let soleProprietor: String
 //  let gender: String?
 //  let enumerationDate: String
-  //let lastUpdated: String
-  //let status: String?
-  //let namePrefix: String?
-  //let nameSuffix: String?
+//  let lastUpdated: String?
+ // let status: String?
+ // let namePrefix: String?
+ // let nameSuffix: String?
 
   enum CodingKeys: String, CodingKey {
     case firstName = "first_name"
     case lastName = "last_name"
-    case credential /*
-    case soleProprietor = "sole_proprietor"
-    case gender
-    case enumerationDate = "enumeration_date"
-    case lastUpdated = "last_updated"
-    case status
-    case namePrefix = "name_prefix"
-    case nameSuffix = "name_suffix" */
+    case credential
+ //   case soleProprietor = "sole_proprietor"
+//    case gender
+ //   case enumerationDate = "enumeration_date"
+ //   case lastUpdated = "last_updated"
+  //  case status
+  //  case namePrefix = "name_prefix"
+  //  case nameSuffix = "name_suffix"
   }
 }
 
