@@ -97,6 +97,7 @@ extension ProviderViewModel {
     
     model.providers = [
       Provider(
+        enumerationType: "Type 1",
         number: "1063456715",
         basic: Basic(
           firstName: "John",

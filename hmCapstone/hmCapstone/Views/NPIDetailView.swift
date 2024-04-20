@@ -17,8 +17,10 @@ struct NPIDetailView: View {
         NavigationLink(destination: Text("Here is navigation page")) {
           // VStack(alignment: .leading) {
           Text("NPI: \(provider.number)")
+          Text("NPI Type: \(provider.enumerationType)")
           Text("Name: \(provider.basic.firstName) \(provider.basic.lastName)")
           Text("NPI number: \(provider.number)")
+          
           //        Text("Assigned to \(provider.basic.namePrefix)  \(provider.basic.firstName) \(provider.basic.lastName). ")
         }
       }

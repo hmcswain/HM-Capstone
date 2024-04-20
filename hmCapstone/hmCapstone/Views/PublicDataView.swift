@@ -58,9 +58,22 @@ struct PublicDataView: View {
       List {
         ForEach(viewModel.providers, id: \.number) { provider in
           NavigationLink(destination: Text("Here is navigation page")) {
-            // VStack(alignment: .leading) {
-            Text("NPI: \(provider.number)")
-            Text("Name: \(provider.basic.firstName) \(provider.basic.lastName)")
+            VStack(alignment: .leading) {
+              Text("NPI: \(provider.number)")
+              Text("NPI Type: \(provider.enumerationType)")
+              Text("Name: \(provider.basic.firstName) \(provider.basic.lastName)")
+              ForEach(provider.addresses, id: \.postalCode) { address in
+                Text("Address: \(address.city), \(address.state)")
+              }
+              ForEach(provider.taxonomies, id: \.desc) { taxonomy in
+                Text("Description: \(taxonomy.desc ?? "No Description")")
+                Text("State: \(taxonomy.state ?? "No State")")
+                Text("Primary: \(taxonomy.primary ?? false ? "Yes" : "No")")
+              }
+            }
+
+
+
             //                Text("Taxonomy : \(provider.taxonomies.desc)")
           }
         }
