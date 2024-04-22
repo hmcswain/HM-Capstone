@@ -102,7 +102,14 @@ extension ProviderViewModel {
         basic: Basic(
           firstName: "John",
           lastName: "Doe",
-          credential: "MD"
+          credential: "MD",
+          soleProprietor: "NO",
+          gender: "Male",
+          enumerationDate: "2006-06-15",
+          lastUpdated: "2023-03-07",
+          status: "Active"
+    //      namePrefix: "Dr.",
+    //      nameSuffix: "--"
         ),
         addresses: [
           Address(

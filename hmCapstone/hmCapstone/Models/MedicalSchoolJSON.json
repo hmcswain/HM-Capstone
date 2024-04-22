@@ -1,0 +1,1417 @@
+{
+  "Medical Schools": [
+    {
+      "id": 1,
+      "Medical School Name": "Albany Medical College",
+      "Short Name": "Albany",
+      "Medical School City": "Albany",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 2,
+      "Medical School Name": "Albert Einstein College of Medicine",
+      "Short Name": "Einstein",
+      "Medical School City": "Bronx",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 3,
+      "Medical School Name": "Anne Burnett Marion School of Medicine at TCU",
+      "Short Name": "TCU-Burnett",
+      "Medical School City": "Fort Worth",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 4,
+      "Medical School Name": "Baylor College of Medicine",
+      "Short Name": "Baylor",
+      "Medical School City": "Houston",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 5,
+      "Medical School Name": "Boston University Aram V. Chobanian & Edward Avedisian School of Medicine",
+      "Short Name": "BU-Chobanian Avedisian",
+      "Medical School City": "Boston",
+      "Medical School State": "Massachusetts",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 6,
+      "Medical School Name": "Brody School of Medicine at East Carolina University",
+      "Short Name": "East Carolina-Brody",
+      "Medical School City": "Greenville",
+      "Medical School State": "North Carolina",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 7,
+      "Medical School Name": "California Northstate University College of Medicine",
+      "Short Name": "California Northstate",
+      "Medical School City": "Elk Grove",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 8,
+      "Medical School Name": "California University of Science and Medicine-School of Medicine",
+      "Short Name": "California",
+      "Medical School City": "Colton",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 9,
+      "Medical School Name": "Carle Illinois College of Medicine",
+      "Short Name": "Carle Illinois",
+      "Medical School City": "Urbana",
+      "Medical School State": "Illinois",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 10,
+      "Medical School Name": "Case Western Reserve University School of Medicine",
+      "Short Name": "Case Western Reserve",
+      "Medical School City": "Cleveland",
+      "Medical School State": "Ohio",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 11,
+      "Medical School Name": "Central Michigan University College of Medicine",
+      "Short Name": "Central Michigan",
+      "Medical School City": "Mt Pleasant",
+      "Medical School State": "Michigan",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 12,
+      "Medical School Name": "Charles E. Schmidt College of Medicine at Florida Atlantic University",
+      "Short Name": "Florida Atlantic-Schmidt",
+      "Medical School City": "Boca Raton",
+      "Medical School State": "Florida",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 13,
+      "Medical School Name": "Charles R. Drew University of Medicine and Science College of Medicine",
+      "Short Name": "Drew",
+      "Medical School City": "Los Angeles",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 14,
+      "Medical School Name": "Chicago Medical School at Rosalind Franklin University of Medicine & Science",
+      "Short Name": "Chicago Med Franklin",
+      "Medical School City": "North Chicago",
+      "Medical School State": "Illinois",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 15,
+      "Medical School Name": "Columbia University Vagelos College of Physicians and Surgeons",
+      "Short Name": "Columbia-Vagelos",
+      "Medical School City": "New York",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 16,
+      "Medical School Name": "Cooper Medical School of Rowan University",
+      "Short Name": "Cooper Rowan",
+      "Medical School City": "Camden",
+      "Medical School State": "New Jersey",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 17,
+      "Medical School Name": "Creighton University School of Medicine",
+      "Short Name": "Creighton",
+      "Medical School City": "Omaha",
+      "Medical School State": "Nebraska",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 18,
+      "Medical School Name": "CUNY School of Medicine",
+      "Short Name": "CUNY",
+      "Medical School City": "New York",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 19,
+      "Medical School Name": "Donald and Barbara Zucker School of Medicine at Hofstra/Northwell",
+      "Short Name": "Zucker Hofstra Northwell",
+      "Medical School City": "Hempstead",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 20,
+      "Medical School Name": "Drexel University College of Medicine",
+      "Short Name": "Drexel",
+      "Medical School City": "Philadelphia",
+      "Medical School State": "Pennsylvania",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 21,
+      "Medical School Name": "Duke University School of Medicine",
+      "Short Name": "Duke",
+      "Medical School City": "Durham",
+      "Medical School State": "North Carolina",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 22,
+      "Medical School Name": "East Tennessee State University James H. Quillen College of Medicine",
+      "Short Name": "East Tennessee-Quillen",
+      "Medical School City": "Johnson City",
+      "Medical School State": "Tennessee",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 23,
+      "Medical School Name": "Eastern Virginia Medical School",
+      "Short Name": "Eastern Virginia",
+      "Medical School City": "Norfolk",
+      "Medical School State": "Virginia",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 24,
+      "Medical School Name": "Emory University School of Medicine",
+      "Short Name": "Emory",
+      "Medical School City": "Atlanta",
+      "Medical School State": "Georgia",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 25,
+      "Medical School Name": "Florida International University Herbert Wertheim College of Medicine",
+      "Short Name": "FIU-Wertheim",
+      "Medical School City": "Miami",
+      "Medical School State": "Florida",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 26,
+      "Medical School Name": "Florida State University College of Medicine",
+      "Short Name": "Florida State",
+      "Medical School City": "Tallahassee",
+      "Medical School State": "Florida",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 27,
+      "Medical School Name": "Frank H. Netter MD School of Medicine at Quinnipiac University",
+      "Short Name": "Quinnipiac-Netter",
+      "Medical School City": "Hamden",
+      "Medical School State": "Connecticut",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 28,
+      "Medical School Name": "Frederick P. Whiddon College of Medicine at the University of South Alabama",
+      "Short Name": "South Alabama-Whiddon",
+      "Medical School City": "Mobile",
+      "Medical School State": "Alabama",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 29,
+      "Medical School Name": "Geisel School of Medicine at Dartmouth",
+      "Short Name": "Dartmouth-Geisel",
+      "Medical School City": "Hanover",
+      "Medical School State": "New Hampshire",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 30,
+      "Medical School Name": "Geisinger Commonwealth School of Medicine",
+      "Short Name": "Geisinger Commonwealth",
+      "Medical School City": "Scranton",
+      "Medical School State": "Pennsylvania",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 31,
+      "Medical School Name": "George Washington University School of Medicine and Health Sciences",
+      "Short Name": "George Washington",
+      "Medical School City": "Washington",
+      "Medical School State": "District of Columbia",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 32,
+      "Medical School Name": "Georgetown University School of Medicine",
+      "Short Name": "Georgetown",
+      "Medical School City": "Washington",
+      "Medical School State": "District of Columbia",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 33,
+      "Medical School Name": "Hackensack Meridian School of Medicine",
+      "Short Name": "Hackensack Meridian",
+      "Medical School City": "Nutley",
+      "Medical School State": "New Jersey",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 34,
+      "Medical School Name": "Harvard Medical School",
+      "Short Name": "Harvard",
+      "Medical School City": "Boston",
+      "Medical School State": "Massachusetts",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 35,
+      "Medical School Name": "Howard University College of Medicine",
+      "Short Name": "Howard",
+      "Medical School City": "Washington",
+      "Medical School State": "District of Columbia",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 36,
+      "Medical School Name": "Icahn School of Medicine at Mount Sinai",
+      "Short Name": "Mount Sinai-Icahn",
+      "Medical School City": "New York",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 37,
+      "Medical School Name": "Indiana University School of Medicine",
+      "Short Name": "Indiana",
+      "Medical School City": "Indianapolis",
+      "Medical School State": "Indiana",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 38,
+      "Medical School Name": "Jacobs School of Medicine and Biomedical Sciences at the University at Buffalo",
+      "Short Name": "Buffalo-Jacobs",
+      "Medical School City": "Buffalo",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 39,
+      "Medical School Name": "Johns Hopkins University School of Medicine",
+      "Short Name": "Johns Hopkins",
+      "Medical School City": "Baltimore",
+      "Medical School State": "Maryland",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 40,
+      "Medical School Name": "Kaiser Permanente Bernard J. Tyson School of Medicine",
+      "Short Name": "Kaiser Permanente-Tyson",
+      "Medical School City": "Pasadena",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 41,
+      "Medical School Name": "Keck School of Medicine of the University of Southern California",
+      "Short Name": "Southern Cal-Keck",
+      "Medical School City": "Los Angeles",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 42,
+      "Medical School Name": "Kirk Kerkorian School of Medicine at UNLV",
+      "Short Name": "UNLV-Kerkorian",
+      "Medical School City": "Las Vegas",
+      "Medical School State": "Nevada",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 43,
+      "Medical School Name": "Lewis Katz School of Medicine at Temple University",
+      "Short Name": "Temple-Katz",
+      "Medical School City": "Philadelphia",
+      "Medical School State": "Pennsylvania",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 44,
+      "Medical School Name": "Loma Linda University School of Medicine",
+      "Short Name": "Loma Linda",
+      "Medical School City": "Loma Linda",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 45,
+      "Medical School Name": "Louisiana State University School of Medicine in New Orleans",
+      "Short Name": "LSU New Orleans",
+      "Medical School City": "New Orleans",
+      "Medical School State": "Louisiana",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 46,
+      "Medical School Name": "Louisiana State University School of Medicine in Shreveport",
+      "Short Name": "LSU Shreveport",
+      "Medical School City": "Shreveport",
+      "Medical School State": "Louisiana",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 47,
+      "Medical School Name": "Loyola University Chicago Stritch School of Medicine",
+      "Short Name": "Loyola-Stritch",
+      "Medical School City": "Maywood",
+      "Medical School State": "Illinois",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 48,
+      "Medical School Name": "Marshall University Joan C. Edwards School of Medicine",
+      "Short Name": "Marshall-Edwards",
+      "Medical School City": "Huntington",
+      "Medical School State": "West Virginia",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 49,
+      "Medical School Name": "Mayo Clinic Alix School of Medicine",
+      "Short Name": "Mayo-Alix",
+      "Medical School City": "Rochester",
+      "Medical School State": "Minnesota",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 50,
+      "Medical School Name": "McGovern Medical School at the University of Texas Health Science Center at Houston",
+      "Short Name": "UT Houston-McGovern",
+      "Medical School City": "Houston",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 51,
+      "Medical School Name": "Medical College of Georgia at Augusta University",
+      "Short Name": "MC Georgia Augusta",
+      "Medical School City": "Augusta",
+      "Medical School State": "Georgia",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 52,
+      "Medical School Name": "Medical College of Wisconsin",
+      "Short Name": "MC Wisconsin",
+      "Medical School City": "Milwaukee",
+      "Medical School State": "Wisconsin",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 53,
+      "Medical School Name": "Medical University of South Carolina College of Medicine",
+      "Short Name": "MU South Carolina",
+      "Medical School City": "Charleston",
+      "Medical School State": "South Carolina",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 54,
+      "Medical School Name": "Meharry Medical College",
+      "Short Name": "Meharry",
+      "Medical School City": "Nashville",
+      "Medical School State": "Tennessee",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 55,
+      "Medical School Name": "Mercer University School of Medicine",
+      "Short Name": "Mercer",
+      "Medical School City": "Macon",
+      "Medical School State": "Georgia",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 56,
+      "Medical School Name": "Michigan State University College of Human Medicine",
+      "Short Name": "Michigan State",
+      "Medical School City": "Grand Rapids",
+      "Medical School State": "Michigan",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 57,
+      "Medical School Name": "Morehouse School of Medicine",
+      "Short Name": "Morehouse",
+      "Medical School City": "Atlanta",
+      "Medical School State": "Georgia",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 58,
+      "Medical School Name": "New York Medical College",
+      "Short Name": "New York Medical",
+      "Medical School City": "Valhalla",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 59,
+      "Medical School Name": "Northeast Ohio Medical University",
+      "Short Name": "Northeast Ohio",
+      "Medical School City": "Rootstown",
+      "Medical School State": "Ohio",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 60,
+      "Medical School Name": "Northwestern University The Feinberg School of Medicine",
+      "Short Name": "Northwestern-Feinberg",
+      "Medical School City": "Chicago",
+      "Medical School State": "Illinois",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 61,
+      "Medical School Name": "Nova Southeastern University Dr. Kiran C. Patel College of Allopathic Medicine",
+      "Short Name": "Nova Southeastern-Patel",
+      "Medical School City": "Davie",
+      "Medical School State": "Florida",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 62,
+      "Medical School Name": "NYU Grossman School of Medicine",
+      "Short Name": "NYU-Grossman",
+      "Medical School City": "New York",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 63,
+      "Medical School Name": "NYU Long Island School of Medicine",
+      "Short Name": "NYU Long Island",
+      "Medical School City": "Mineola",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 64,
+      "Medical School Name": "Oakland University William Beaumont School of Medicine",
+      "Short Name": "Oakland Beaumont",
+      "Medical School City": "Rochester",
+      "Medical School State": "Michigan",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 65,
+      "Medical School Name": "Ohio State University College of Medicine",
+      "Short Name": "Ohio State",
+      "Medical School City": "Columbus",
+      "Medical School State": "Ohio",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 66,
+      "Medical School Name": "Oregon Health & Science University School of Medicine",
+      "Short Name": "Oregon",
+      "Medical School City": "Portland",
+      "Medical School State": "Oregon",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 67,
+      "Medical School Name": "Pennsylvania State University College of Medicine",
+      "Short Name": "Penn State",
+      "Medical School City": "Hershey",
+      "Medical School State": "Pennsylvania",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 68,
+      "Medical School Name": "Perelman School of Medicine at the University of Pennsylvania",
+      "Short Name": "Pennsylvania-Perelman",
+      "Medical School City": "Philadelphia",
+      "Medical School State": "Pennsylvania",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 69,
+      "Medical School Name": "Ponce Health Sciences University School of Medicine",
+      "Short Name": "Ponce",
+      "Medical School City": "Ponce",
+      "Medical School State": "Puerto Rico",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 70,
+      "Medical School Name": "Renaissance School of Medicine at Stony Brook University",
+      "Short Name": "Renaissance Stony Brook",
+      "Medical School City": "Stony Brook",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 71,
+      "Medical School Name": "Robert Larner, M.D., College of Medicine at the University of Vermont",
+      "Short Name": "Vermont-Larner",
+      "Medical School City": "Burlington",
+      "Medical School State": "Vermont",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 72,
+      "Medical School Name": "Rush Medical College of Rush University Medical Center",
+      "Short Name": "Rush",
+      "Medical School City": "Chicago",
+      "Medical School State": "Illinois",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 73,
+      "Medical School Name": "Rutgers New Jersey Medical School",
+      "Short Name": "Rutgers New Jersey",
+      "Medical School City": "Newark",
+      "Medical School State": "New Jersey",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 74,
+      "Medical School Name": "Rutgers, Robert Wood Johnson Medical School",
+      "Short Name": "Rutgers-RW Johnson",
+      "Medical School City": "Piscataway",
+      "Medical School State": "New Jersey",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 75,
+      "Medical School Name": "Saint Louis University School of Medicine",
+      "Short Name": "Saint Louis",
+      "Medical School City": "Saint Louis",
+      "Medical School State": "Missouri",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 76,
+      "Medical School Name": "San Juan Bautista School of Medicine",
+      "Short Name": "San Juan Bautista",
+      "Medical School City": "Caguas",
+      "Medical School State": "Puerto Rico",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 77,
+      "Medical School Name": "Sidney Kimmel Medical College at Thomas Jefferson University",
+      "Short Name": "Jefferson-Kimmel",
+      "Medical School City": "Philadelphia",
+      "Medical School State": "Pennsylvania",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 78,
+      "Medical School Name": "Southern Illinois University School of Medicine",
+      "Short Name": "Southern Illinois",
+      "Medical School City": "Springfield",
+      "Medical School State": "Illinois",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 79,
+      "Medical School Name": "Spencer Fox Eccles School of Medicine at the University of Utah",
+      "Short Name": "Utah-Eccles",
+      "Medical School City": "Salt Lake City",
+      "Medical School State": "Utah",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 80,
+      "Medical School Name": "Stanford University School of Medicine",
+      "Short Name": "Stanford",
+      "Medical School City": "Stanford",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 81,
+      "Medical School Name": "State University of New York Upstate Medical University Alan and Marlene Norton College of Medicine",
+      "Short Name": "SUNY Upstate-Norton",
+      "Medical School City": "Syracuse",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 82,
+      "Medical School Name": "SUNY Downstate Health Sciences University College of Medicine",
+      "Short Name": "SUNY Downstate",
+      "Medical School City": "Brooklyn",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 83,
+      "Medical School Name": "Texas A&M University School of Medicine",
+      "Short Name": "Texas A&M",
+      "Medical School City": "Bryan",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 84,
+      "Medical School Name": "Texas Tech University Health Sciences Center Paul L. Foster School of Medicine",
+      "Short Name": "Texas Tech-Foster",
+      "Medical School City": "El Paso",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 85,
+      "Medical School Name": "Texas Tech University Health Sciences Center School of Medicine",
+      "Short Name": "Texas Tech",
+      "Medical School City": "Lubbock",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 86,
+      "Medical School Name": "The University of Texas at Tyler School of Medicine",
+      "Short Name": "UT Tyler",
+      "Medical School City": "Tyler",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 87,
+      "Medical School Name": "The University of Texas Health Science Center at San Antonio Joe R. and Teresa Lozano Long School of Medicine",
+      "Short Name": "UT San Antonio-Long",
+      "Medical School City": "San Antonio",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 88,
+      "Medical School Name": "The University of Toledo College of Medicine and Life Sciences",
+      "Short Name": "Toledo",
+      "Medical School City": "Toledo",
+      "Medical School State": "Ohio",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 89,
+      "Medical School Name": "The Warren Alpert Medical School of Brown University",
+      "Short Name": "Brown-Alpert",
+      "Medical School City": "Providence",
+      "Medical School State": "Rhode Island",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 90,
+      "Medical School Name": "Tufts University School of Medicine",
+      "Short Name": "Tufts",
+      "Medical School City": "Boston",
+      "Medical School State": "Massachusetts",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 91,
+      "Medical School Name": "Tulane University School of Medicine",
+      "Short Name": "Tulane",
+      "Medical School City": "New Orleans",
+      "Medical School State": "Louisiana",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 92,
+      "Medical School Name": "Uniformed Services University of the Health Sciences F. Edward Hebert School of Medicine",
+      "Short Name": "Uniformed Services-Hebert",
+      "Medical School City": "Bethesda",
+      "Medical School State": "Maryland",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 93,
+      "Medical School Name": "Universidad Central del Caribe School of Medicine",
+      "Short Name": "Caribe",
+      "Medical School City": "Bayamon",
+      "Medical School State": "Puerto Rico",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 94,
+      "Medical School Name": "University of Alabama at Birmingham Marnix E. Heersink School of Medicine",
+      "Short Name": "Alabama-Heersink",
+      "Medical School City": "Birmingham",
+      "Medical School State": "Alabama",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 95,
+      "Medical School Name": "University of Arizona College of Medicine",
+      "Short Name": "Arizona",
+      "Medical School City": "Tucson",
+      "Medical School State": "Arizona",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 96,
+      "Medical School Name": "University of Arizona College of Medicine - Phoenix",
+      "Short Name": "Arizona Phoenix",
+      "Medical School City": "Phoenix",
+      "Medical School State": "Arizona",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 97,
+      "Medical School Name": "University of Arkansas for Medical Sciences College of Medicine",
+      "Short Name": "Arkansas",
+      "Medical School City": "Little Rock",
+      "Medical School State": "Arkansas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 98,
+      "Medical School Name": "University of California, Davis, School of Medicine",
+      "Short Name": "UC Davis",
+      "Medical School City": "Sacramento",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 99,
+      "Medical School Name": "University of California, Irvine, School of Medicine",
+      "Short Name": "UC Irvine",
+      "Medical School City": "Irvine",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 100,
+      "Medical School Name": "University of California, Los Angeles David Geffen School of Medicine",
+      "Short Name": "UCLA-Geffen",
+      "Medical School City": "Los Angeles",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 101,
+      "Medical School Name": "University of California, Riverside School of Medicine",
+      "Short Name": "UC Riverside",
+      "Medical School City": "Riverside",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 102,
+      "Medical School Name": "University of California, San Diego School of Medicine",
+      "Short Name": "UC San Diego",
+      "Medical School City": "La Jolla",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 103,
+      "Medical School Name": "University of California, San Francisco, School of Medicine",
+      "Short Name": "UC San Francisco",
+      "Medical School City": "San Francisco",
+      "Medical School State": "California",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 104,
+      "Medical School Name": "University of Central Florida College of Medicine",
+      "Short Name": "UCF",
+      "Medical School City": "Orlando",
+      "Medical School State": "Florida",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 105,
+      "Medical School Name": "University of Chicago Division of the Biological Sciences The Pritzker School of Medicine",
+      "Short Name": "Chicago-Pritzker",
+      "Medical School City": "Chicago",
+      "Medical School State": "Illinois",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 106,
+      "Medical School Name": "University of Cincinnati College of Medicine",
+      "Short Name": "Cincinnati",
+      "Medical School City": "Cincinnati",
+      "Medical School State": "Ohio",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 107,
+      "Medical School Name": "University of Colorado School of Medicine",
+      "Short Name": "Colorado",
+      "Medical School City": "Aurora",
+      "Medical School State": "Colorado",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 108,
+      "Medical School Name": "University of Connecticut School of Medicine",
+      "Short Name": "Connecticut",
+      "Medical School City": "Farmington",
+      "Medical School State": "Connecticut",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 109,
+      "Medical School Name": "University of Florida College of Medicine",
+      "Short Name": "Florida",
+      "Medical School City": "Gainesville",
+      "Medical School State": "Florida",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 110,
+      "Medical School Name": "University of Hawaii, John A. Burns School of Medicine",
+      "Short Name": "Hawaii-Burns",
+      "Medical School City": "Honolulu",
+      "Medical School State": "Hawaii",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 111,
+      "Medical School Name": "University of Houston Tilman J. Fertitta Family College of Medicine",
+      "Short Name": "Houston-Fertitta",
+      "Medical School City": "Houston",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 112,
+      "Medical School Name": "University of Illinois College of Medicine",
+      "Short Name": "Illinois",
+      "Medical School City": "Chicago",
+      "Medical School State": "Illinois",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 113,
+      "Medical School Name": "University of Iowa Roy J. and Lucille A. Carver College of Medicine",
+      "Short Name": "Iowa-Carver",
+      "Medical School City": "Iowa City",
+      "Medical School State": "Iowa",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 114,
+      "Medical School Name": "University of Kansas School of Medicine",
+      "Short Name": "Kansas",
+      "Medical School City": "Kansas City",
+      "Medical School State": "Kansas",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 115,
+      "Medical School Name": "University of Kentucky College of Medicine",
+      "Short Name": "Kentucky",
+      "Medical School City": "Lexington",
+      "Medical School State": "Kentucky",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 116,
+      "Medical School Name": "University of Louisville School of Medicine",
+      "Short Name": "Louisville",
+      "Medical School City": "Louisville",
+      "Medical School State": "Kentucky",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 117,
+      "Medical School Name": "University of Maryland School of Medicine",
+      "Short Name": "Maryland",
+      "Medical School City": "Baltimore",
+      "Medical School State": "Maryland",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 118,
+      "Medical School Name": "University of Massachusetts T.H. Chan School of Medicine",
+      "Short Name": "Massachusetts-Chan",
+      "Medical School City": "Worcester",
+      "Medical School State": "Massachusetts",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 119,
+      "Medical School Name": "University of Miami Leonard M. Miller School of Medicine",
+      "Short Name": "Miami-Miller",
+      "Medical School City": "Miami",
+      "Medical School State": "Florida",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 120,
+      "Medical School Name": "University of Michigan Medical School",
+      "Short Name": "Michigan",
+      "Medical School City": "Ann Arbor",
+      "Medical School State": "Michigan",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 121,
+      "Medical School Name": "University of Minnesota Medical School",
+      "Short Name": "Minnesota",
+      "Medical School City": "Minneapolis",
+      "Medical School State": "Minnesota",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 122,
+      "Medical School Name": "University of Mississippi School of Medicine",
+      "Short Name": "Mississippi",
+      "Medical School City": "Jackson",
+      "Medical School State": "Mississippi",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 123,
+      "Medical School Name": "University of Missouri-Columbia School of Medicine",
+      "Short Name": "Missouri Columbia",
+      "Medical School City": "Columbia",
+      "Medical School State": "Missouri",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 124,
+      "Medical School Name": "University of Missouri-Kansas City School of Medicine",
+      "Short Name": "Missouri Kansas City",
+      "Medical School City": "Kansas City",
+      "Medical School State": "Missouri",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 125,
+      "Medical School Name": "University of Nebraska College of Medicine",
+      "Short Name": "Nebraska",
+      "Medical School City": "Omaha",
+      "Medical School State": "Nebraska",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 126,
+      "Medical School Name": "University of Nevada, Reno School of Medicine",
+      "Short Name": "Nevada Reno",
+      "Medical School City": "Reno",
+      "Medical School State": "Nevada",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 127,
+      "Medical School Name": "University of New Mexico School of Medicine",
+      "Short Name": "New Mexico",
+      "Medical School City": "Albuquerque",
+      "Medical School State": "New Mexico",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 128,
+      "Medical School Name": "University of North Carolina at Chapel Hill School of Medicine",
+      "Short Name": "North Carolina",
+      "Medical School City": "Chapel Hill",
+      "Medical School State": "North Carolina",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 129,
+      "Medical School Name": "University of North Dakota School of Medicine and Health Sciences",
+      "Short Name": "North Dakota",
+      "Medical School City": "Grand Forks",
+      "Medical School State": "North Dakota",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 130,
+      "Medical School Name": "University of Oklahoma College of Medicine",
+      "Short Name": "Oklahoma",
+      "Medical School City": "Oklahoma City",
+      "Medical School State": "Oklahoma",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 131,
+      "Medical School Name": "University of Pittsburgh School of Medicine",
+      "Short Name": "Pittsburgh",
+      "Medical School City": "Pittsburgh",
+      "Medical School State": "Pennsylvania",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 132,
+      "Medical School Name": "University of Puerto Rico School of Medicine",
+      "Short Name": "Puerto Rico",
+      "Medical School City": "San Juan",
+      "Medical School State": "Puerto Rico",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 133,
+      "Medical School Name": "University of Rochester School of Medicine and Dentistry",
+      "Short Name": "Rochester",
+      "Medical School City": "Rochester",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 134,
+      "Medical School Name": "University of South Carolina School of Medicine Columbia",
+      "Short Name": "South Carolina Columbia",
+      "Medical School City": "Columbia",
+      "Medical School State": "South Carolina",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 135,
+      "Medical School Name": "University of South Carolina School of Medicine Greenville",
+      "Short Name": "South Carolina Greenville",
+      "Medical School City": "Greenville",
+      "Medical School State": "South Carolina",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 136,
+      "Medical School Name": "University of South Dakota, Sanford School of Medicine",
+      "Short Name": "South Dakota-Sanford",
+      "Medical School City": "Sioux Falls",
+      "Medical School State": "South Dakota",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 137,
+      "Medical School Name": "University of Tennessee Health Science Center College of Medicine",
+      "Short Name": "Tennessee",
+      "Medical School City": "Memphis",
+      "Medical School State": "Tennessee",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 138,
+      "Medical School Name": "University of Texas at Austin Dell Medical School",
+      "Short Name": "UT Austin-Dell",
+      "Medical School City": "Austin",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 139,
+      "Medical School Name": "University of Texas Medical Branch John Sealy School of Medicine",
+      "Short Name": "UT Medical Branch-Sealy",
+      "Medical School City": "Galveston",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 140,
+      "Medical School Name": "University of Texas Rio Grande Valley School of Medicine",
+      "Short Name": "UT Rio Grande Valley",
+      "Medical School City": "Edinburg",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 141,
+      "Medical School Name": "University of Texas Southwestern Medical School",
+      "Short Name": "UT Southwestern",
+      "Medical School City": "Dallas",
+      "Medical School State": "Texas",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 142,
+      "Medical School Name": "University of Virginia School of Medicine",
+      "Short Name": "Virginia",
+      "Medical School City": "Charlottesville",
+      "Medical School State": "Virginia",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 143,
+      "Medical School Name": "University of Washington School of Medicine",
+      "Short Name": "U Washington",
+      "Medical School City": "Seattle",
+      "Medical School State": "Washington",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 144,
+      "Medical School Name": "University of Wisconsin School of Medicine and Public Health",
+      "Short Name": "Wisconsin",
+      "Medical School City": "Madison",
+      "Medical School State": "Wisconsin",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 145,
+      "Medical School Name": "USF Health Morsani College of Medicine",
+      "Short Name": "USF-Morsani",
+      "Medical School City": "Tampa",
+      "Medical School State": "Florida",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 146,
+      "Medical School Name": "Vanderbilt University School of Medicine",
+      "Short Name": "Vanderbilt",
+      "Medical School City": "Nashville",
+      "Medical School State": "Tennessee",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 147,
+      "Medical School Name": "Virginia Commonwealth University School of Medicine",
+      "Short Name": "Virginia Commonwealth",
+      "Medical School City": "Richmond",
+      "Medical School State": "Virginia",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 148,
+      "Medical School Name": "Virginia Tech Carilion School of Medicine",
+      "Short Name": "Virginia Tech Carilion",
+      "Medical School City": "Roanoke",
+      "Medical School State": "Virginia",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 149,
+      "Medical School Name": "Wake Forest University School of Medicine",
+      "Short Name": "Wake Forest",
+      "Medical School City": "Winston Salem",
+      "Medical School State": "North Carolina",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 150,
+      "Medical School Name": "Washington State University Elson S. Floyd College of Medicine",
+      "Short Name": "Washington State-Floyd",
+      "Medical School City": "Spokane",
+      "Medical School State": "Washington",
+      "Medical School Region": "Western",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 151,
+      "Medical School Name": "Washington University in St. Louis School of Medicine",
+      "Short Name": "Washington U St Louis",
+      "Medical School City": "Saint Louis",
+      "Medical School State": "Missouri",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 152,
+      "Medical School Name": "Wayne State University School of Medicine",
+      "Short Name": "Wayne State",
+      "Medical School City": "Detroit",
+      "Medical School State": "Michigan",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 153,
+      "Medical School Name": "Weill Cornell Medicine",
+      "Short Name": "Cornell-Weill",
+      "Medical School City": "New York",
+      "Medical School State": "New York",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 154,
+      "Medical School Name": "West Virginia University School of Medicine",
+      "Short Name": "West Virginia",
+      "Medical School City": "Morgantown",
+      "Medical School State": "West Virginia",
+      "Medical School Region": "Southern",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 155,
+      "Medical School Name": "Western Michigan University Homer Stryker M.D. School of Medicine",
+      "Short Name": "Western Michigan-Stryker",
+      "Medical School City": "Kalamazoo",
+      "Medical School State": "Michigan",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Private"
+    },
+    {
+      "id": 156,
+      "Medical School Name": "Wright State University Boonshoft School of Medicine",
+      "Short Name": "Wright State-Boonshoft",
+      "Medical School City": "Dayton",
+      "Medical School State": "Ohio",
+      "Medical School Region": "Central",
+      "Ownership/Control": "Public"
+    },
+    {
+      "id": 157,
+      "Medical School Name": "Yale School of Medicine",
+      "Short Name": "Yale",
+      "Medical School City": "New Haven",
+      "Medical School State": "Connecticut",
+      "Medical School Region": "Northeast",
+      "Ownership/Control": "Private"
+    }
+  ]
+}
