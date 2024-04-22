@@ -32,6 +32,7 @@
 		286115CB2BD6C422008AFB24 /* StateMedicalLicensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115CA2BD6C422008AFB24 /* StateMedicalLicensesView.swift */; };
 		286115CD2BD6C466008AFB24 /* HospitalAffiliationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115CC2BD6C466008AFB24 /* HospitalAffiliationsView.swift */; };
 		286115CF2BD6C4A3008AFB24 /* EmployersDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115CE2BD6C4A3008AFB24 /* EmployersDetailView.swift */; };
+		286115D12BD6C876008AFB24 /* BoardCertificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115D02BD6C876008AFB24 /* BoardCertificationView.swift */; };
 		289946152BD2471E0017E03C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946142BD2471E0017E03C /* MainTabView.swift */; };
 		289946172BD248320017E03C /* ProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946162BD248320017E03C /* ProviderViewModel.swift */; };
 		289946192BD248890017E03C /* NppesApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946182BD248890017E03C /* NppesApiModel.swift */; };
@@ -88,6 +89,7 @@
 		286115CA2BD6C422008AFB24 /* StateMedicalLicensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMedicalLicensesView.swift; sourceTree = "<group>"; };
 		286115CC2BD6C466008AFB24 /* HospitalAffiliationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalAffiliationsView.swift; sourceTree = "<group>"; };
 		286115CE2BD6C4A3008AFB24 /* EmployersDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployersDetailView.swift; sourceTree = "<group>"; };
+		286115D02BD6C876008AFB24 /* BoardCertificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCertificationView.swift; sourceTree = "<group>"; };
 		289946142BD2471E0017E03C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		289946162BD248320017E03C /* ProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewModel.swift; sourceTree = "<group>"; };
 		289946182BD248890017E03C /* NppesApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NppesApiModel.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				286115CA2BD6C422008AFB24 /* StateMedicalLicensesView.swift */,
 				286115CC2BD6C466008AFB24 /* HospitalAffiliationsView.swift */,
 				286115CE2BD6C4A3008AFB24 /* EmployersDetailView.swift */,
+				286115D02BD6C876008AFB24 /* BoardCertificationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 				2856FD7D2BD05F6E00D4799B /* OnBoardingView.swift in Sources */,
 				2856FD512BD04B6200D4799B /* ContentView.swift in Sources */,
 				286115C32BD66DF9008AFB24 /* MedicalSchoolSearchView.swift in Sources */,
+				286115D12BD6C876008AFB24 /* BoardCertificationView.swift in Sources */,
 				289946172BD248320017E03C /* ProviderViewModel.swift in Sources */,
 				286115BD2BD63EDF008AFB24 /* MedicalSchoolsViewModel.swift in Sources */,
 				2856FD7F2BD05FB600D4799B /* HomeNPILookupView.swift in Sources */,

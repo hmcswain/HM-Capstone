@@ -285,6 +285,11 @@ struct PublicDataView: View {
                 Text("Fellowship Details")
             }
         }
+        Section(header: Text("Board Certification")) {
+            NavigationLink(destination: BoardCertificationView()) {
+                Text("Board Certification Details")
+            }
+        }
 
         Section(header: Text("State Medical Licenses")) {
             NavigationLink(destination: StateMedicalLicensesView()) {
