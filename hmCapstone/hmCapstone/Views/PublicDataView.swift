@@ -270,6 +270,39 @@ struct PublicDataView: View {
             } */
           }
         }
+        Section(header: Text("Internship")) {
+          NavigationLink(destination: InternshipDetailView()) {
+                              Text("Internship Details")
+          }
+        }
+        Section(header: Text("Residency")) {
+            NavigationLink(destination: ResidencyDetailView()) {
+                Text("Residency Details")
+            }
+        }
+        Section(header: Text("Fellowship")) {
+            NavigationLink(destination: FellowshipDetailView()) {
+                Text("Fellowship Details")
+            }
+        }
+
+        Section(header: Text("State Medical Licenses")) {
+            NavigationLink(destination: StateMedicalLicensesView()) {
+                Text("License Details")
+            }
+        }
+
+        Section(header: Text("Hospital Affiliations")) {
+            NavigationLink(destination: HospitalAffiliationsView()) {
+                Text("Affiliation Details")
+            }
+        }
+
+        Section(header: Text("Employers")) {
+            NavigationLink(destination: EmployersDetailView()) {
+                Text("Employer Details")
+            }
+        }
       }
       .navigationTitle("Public Data")
       

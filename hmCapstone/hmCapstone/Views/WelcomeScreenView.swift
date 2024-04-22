@@ -46,11 +46,11 @@ struct WelcomeScreenView: View {
   
   func fadeOutEffect() {
     Task {
-      try await Task.sleep(nanoseconds: 1_000_000_000) // Wait for 1 seconds
+      try await Task.sleep(nanoseconds: 2_000_000_000) // Wait for 1 seconds
       withAnimation(.easeInOut(duration: 2)) {
         self.opacity = 0
       }
-      try await Task.sleep(nanoseconds: 1_000_000_000) // Wait for an additional 1 seconds
+      try await Task.sleep(nanoseconds: 1_500_000_000) // Wait for an additional 1 seconds
       isActive = true
       
     }
