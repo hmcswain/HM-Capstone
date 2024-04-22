@@ -259,12 +259,15 @@ struct PublicDataView: View {
             }
           }
         }
-        
+        Section(header: Text("Medical School Information")) {
+                            NavigationLink(destination: MedicalSchoolSearchView()) {
+                                Text(" View or Search Medical School")
+        /*
         Section(header: Text("Medical School")) {
           ForEach(medicalSchoolViewModel.medicalSchools, id: \.id) { school in
-            NavigationLink(destination: MedicalSchoolDetailView(school: school)) {
+            NavigationLink(destination: MedicalSchoolSearchView(school: school)) {
               Text(school.medicalSchoolName)
-            }
+            } */
           }
         }
       }

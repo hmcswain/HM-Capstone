@@ -1,4 +1,5 @@
 import SwiftUI
+/*
 
 struct MedicalSchoolDetailView: View {
   //   var school: MedicalSchool
@@ -104,5 +105,59 @@ struct MedicalSchoolDetailView_Previews: PreviewProvider {
 }
 
 
+*/
+
+import SwiftUI
+/*
+struct MedicalSchoolDetailView: View {
+    @StateObject private var viewModel = MedicalSchoolsViewModel()
+    @State private var searchText = ""
+    @State private var selectedSchool: MedicalSchool?
+
+    var body: some View {
+        NavigationView {
+            VStack {
+                TextField("Start typing school name...", text: $searchText)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
+
+                List(viewModel.medicalSchools.filter { searchText.isEmpty || $0.medicalSchoolName.localizedCaseInsensitiveContains(searchText) }, id: \.id) { school in
+                    Text(school.medicalSchoolName).onTapGesture {
+                        self.selectedSchool = school
+                    }
+                }
+            }
+            .navigationTitle("Medical Schools")
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Clear") {
+                        searchText = ""
+                        selectedSchool = nil
+                    }
+                }
+            }
+
+            if let school = selectedSchool {
+                MedicalSchoolInfoView(school: school)
+            } else {
+                Text("Select a medical school to see details")
+                    .foregroundColor(.secondary)
+            }
+        }
+        .onAppear {
+            viewModel.loadMedicalSchools()
+        }
+    }
+}
 
 
+
+struct MedicalSchoolDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        MedicalSchoolDetailView()
+    }
+}
+
+*/

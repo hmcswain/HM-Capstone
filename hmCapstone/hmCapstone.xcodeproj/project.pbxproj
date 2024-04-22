@@ -24,6 +24,8 @@
 		286115BB2BD63E22008AFB24 /* MedicalSchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115BA2BD63E22008AFB24 /* MedicalSchoolModel.swift */; };
 		286115BD2BD63EDF008AFB24 /* MedicalSchoolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115BC2BD63EDF008AFB24 /* MedicalSchoolsViewModel.swift */; };
 		286115BF2BD644B1008AFB24 /* MedicalSchoolsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115BE2BD644B1008AFB24 /* MedicalSchoolsListView.swift */; };
+		286115C12BD6694D008AFB24 /* MedicalSchoolInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115C02BD6694D008AFB24 /* MedicalSchoolInfoView.swift */; };
+		286115C32BD66DF9008AFB24 /* MedicalSchoolSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115C22BD66DF9008AFB24 /* MedicalSchoolSearchView.swift */; };
 		289946152BD2471E0017E03C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946142BD2471E0017E03C /* MainTabView.swift */; };
 		289946172BD248320017E03C /* ProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946162BD248320017E03C /* ProviderViewModel.swift */; };
 		289946192BD248890017E03C /* NppesApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946182BD248890017E03C /* NppesApiModel.swift */; };
@@ -72,6 +74,8 @@
 		286115BA2BD63E22008AFB24 /* MedicalSchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolModel.swift; sourceTree = "<group>"; };
 		286115BC2BD63EDF008AFB24 /* MedicalSchoolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolsViewModel.swift; sourceTree = "<group>"; };
 		286115BE2BD644B1008AFB24 /* MedicalSchoolsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolsListView.swift; sourceTree = "<group>"; };
+		286115C02BD6694D008AFB24 /* MedicalSchoolInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolInfoView.swift; sourceTree = "<group>"; };
+		286115C22BD66DF9008AFB24 /* MedicalSchoolSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolSearchView.swift; sourceTree = "<group>"; };
 		289946142BD2471E0017E03C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		289946162BD248320017E03C /* ProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewModel.swift; sourceTree = "<group>"; };
 		289946182BD248890017E03C /* NppesApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NppesApiModel.swift; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				286115B42BD62FD3008AFB24 /* MedicalSchoolDetailView.swift */,
 				286115B62BD6304D008AFB24 /* ProviderBasicInfoView.swift */,
 				286115BE2BD644B1008AFB24 /* MedicalSchoolsListView.swift */,
+				286115C02BD6694D008AFB24 /* MedicalSchoolInfoView.swift */,
+				286115C22BD66DF9008AFB24 /* MedicalSchoolSearchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 				2856FD7B2BD05F5000D4799B /* WelcomeScreenView.swift in Sources */,
 				2856FD7D2BD05F6E00D4799B /* OnBoardingView.swift in Sources */,
 				2856FD512BD04B6200D4799B /* ContentView.swift in Sources */,
+				286115C32BD66DF9008AFB24 /* MedicalSchoolSearchView.swift in Sources */,
 				289946172BD248320017E03C /* ProviderViewModel.swift in Sources */,
 				286115BD2BD63EDF008AFB24 /* MedicalSchoolsViewModel.swift in Sources */,
 				2856FD7F2BD05FB600D4799B /* HomeNPILookupView.swift in Sources */,
@@ -340,6 +347,7 @@
 				286115B52BD62FD3008AFB24 /* MedicalSchoolDetailView.swift in Sources */,
 				286115BB2BD63E22008AFB24 /* MedicalSchoolModel.swift in Sources */,
 				2856FD4F2BD04B6200D4799B /* hmCapstoneApp.swift in Sources */,
+				286115C12BD6694D008AFB24 /* MedicalSchoolInfoView.swift in Sources */,
 				286115B72BD6304D008AFB24 /* ProviderBasicInfoView.swift in Sources */,
 				2899461F2BD2499A0017E03C /* PrivateDataView.swift in Sources */,
 				289946152BD2471E0017E03C /* MainTabView.swift in Sources */,
