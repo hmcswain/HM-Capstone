@@ -14,6 +14,7 @@ class MedicalSchoolDetailsViewModel: ObservableObject {
     @Published var state: String = UserDefaults.standard.string(forKey: "medicalSchoolState") ?? ""
     @Published var zipCode: String = UserDefaults.standard.string(forKey: "medicalSchoolZipCode") ?? ""
     @Published var showAlert: Bool = false
+    @Published var showClearAlert: Bool = false
 
     func saveData() {
         UserDefaults.standard.set(medicalSchoolName, forKey: "medicalSchoolName")
@@ -41,6 +42,7 @@ class MedicalSchoolDetailsViewModel: ObservableObject {
         city = ""
         state = ""
         zipCode = ""
+        showClearAlert = true
     }
 }
 

@@ -243,6 +243,8 @@ struct PublicDataView: View {
   @ObservedObject var fellowshipDetailsViewModel = FellowshipDetailsViewModel()
   @ObservedObject var residencyDetailsViewModel = ResidencyDetailsViewModel()
   @ObservedObject var internshipDetailsViewModel = InternshipDetailsViewModel()
+  @ObservedObject var stateMedicalLicenseDetailsViewModel = StateMedicalLicenseDetailsViewModel()
+  @ObservedObject var employersDetailsViewModel = EmployersDetailsViewModel()
 
   var body: some View {
     NavigationStack {
@@ -272,12 +274,12 @@ struct PublicDataView: View {
 
         Section(header: Text("Provider Basic Information")) {
           ForEach(providerViewModel.providers, id: \.number) { provider in
-            NavigationLink(destination: ProviderBasicInfoView(provider: provider)) {
+            NavigationLink(destination: ProviderDetailView(provider: provider)) {
               VStack(alignment: .leading, spacing: 4) {
                 HStack {
                   Image(systemName: "person.text.rectangle")
                     .foregroundColor(.blue) // Set the color to blue
-                  Text("Basic Information")
+                  Text("Provider Details")
                     .fontWeight(.semibold)
                 }
 
@@ -291,7 +293,7 @@ struct PublicDataView: View {
           }
         }
 
-        Section(header: Text("Medical School Information")) {
+        Section(header: Text("Medical School")) {
           NavigationLink(destination: MedicalSchoolDetailView()) {
             VStack(alignment: .leading, spacing: 4) {
               HStack {
@@ -421,10 +423,30 @@ struct PublicDataView: View {
             //           Text("Board Certification Details")
           }
         }
-
         Section(header: Text("State Medical License")) {
-          NavigationLink(destination: StateMedicalLicensesView()) {
-            Label("License Details", systemImage: "doc.text")
+          NavigationLink(destination: StateMedicalLicenseDetailView()) {
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Image(systemName: "doc.text")
+                        .foregroundColor(.blue)
+                    Text("Medical License Details")
+                        .fontWeight(.semibold)
+                }
+
+                if stateMedicalLicenseDetailsViewModel.medicalBoardName.isEmpty {
+                    Text("No medical board details entered. Please enter.")
+                        .foregroundColor(.secondary)
+                        .italic()
+                        .font(.subheadline)
+                } else {
+                    Text(stateMedicalLicenseDetailsViewModel.medicalBoardName)
+                        .font(.subheadline)
+                }
+            }
+
+  //      Section(header: Text("State Medical License")) {
+  //        NavigationLink(destination: StateMedicalLicenseDetailView()) {
+   //         Label("License Details", systemImage: "doc.text")
             //           Text("License Details")
           }
         }
@@ -456,7 +478,26 @@ struct PublicDataView: View {
 
         Section(header: Text("Employers")) {
           NavigationLink(destination: EmployersDetailView()) {
-            Label("Employer Details", systemImage: "building")
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Image(systemName: "building")
+                        .foregroundColor(.blue)
+                    Text("Employer Details")
+                        .fontWeight(.semibold)
+                }
+
+                if employersDetailsViewModel.employerName.isEmpty {
+                    Text("No employer entered. Please enter.")
+                        .foregroundColor(.secondary)
+                        .italic()
+                        .font(.subheadline)
+                } else {
+                    Text(employersDetailsViewModel.employerName)
+                        .font(.subheadline)
+                }
+            }
+
+       //     Label("Employer Details", systemImage: "building")
             //     Text("Employer Details")
           }
         }

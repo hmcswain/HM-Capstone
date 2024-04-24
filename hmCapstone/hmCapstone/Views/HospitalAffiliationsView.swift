@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HospitalAffiliationsView: View {
     var body: some View {
-      Text("Details about the Provider's Hospital Affiliations")
+      Text("Check this before I delete it\n\nALERT")
     }
 }
 

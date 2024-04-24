@@ -8,7 +8,7 @@ import SwiftUI
 /*
  struct ResidencyDetailView: View {
  @StateObject private var viewModel = ResidencyDetailsViewModel()
-
+ 
  var body: some View {
  NavigationView {
  Form {
@@ -39,7 +39,7 @@ import SwiftUI
  }
  }
  }
-
+ 
  struct ResidencyDetailView_Previews: PreviewProvider {
  static var previews: some View {
  ResidencyDetailView()
@@ -51,7 +51,7 @@ import SwiftUI
 
 struct ResidencyDetailView: View {
   @StateObject private var viewModel = ResidencyDetailsViewModel()
-
+  
   var body: some View {
     NavigationView {
       Form {
@@ -74,9 +74,16 @@ struct ResidencyDetailView: View {
           Button("Save Details") {
             viewModel.saveData()
           }
+          .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
+            Button("OK", role: .cancel) { }
+          }
           .buttonStyle(.borderedProminent)
+          
           Button("Clear Details") {
             viewModel.clearData()
+          }
+          .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
+            Button("OK", role: .cancel) { }
           }
           .buttonStyle(.bordered)
           .foregroundColor(.red)
