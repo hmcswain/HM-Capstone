@@ -28,6 +28,9 @@ struct HomeNPILookupView: View {
         .buttonStyle(.borderedProminent)
         .disabled(npiNumber.isEmpty)
         .padding()
+        Text("\nPlease enter your 10-digit NPI number.\nIf you don't know it, you can find it\nby searching your name at\n\n https://npiregistry.cms.hhs.gov/search\n\nPlease copy and paste the URL\ninto your browser.")
+          .multilineTextAlignment(.center)
+
         Spacer()
 
           .navigationDestination(isPresented: $shouldNavigate) {
@@ -35,6 +38,7 @@ struct HomeNPILookupView: View {
             Text("")
               .hidden()
           }
+   //     Text("Please enter your 10 digit NPI number.  If you don't know if you can go to ")
 
   /*      NavigationLink(destination: MainTabView(npi: npiNumber), isActive: $shouldNavigate) {
           EmptyView()

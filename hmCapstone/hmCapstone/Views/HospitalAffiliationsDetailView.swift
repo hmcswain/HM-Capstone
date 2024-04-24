@@ -43,7 +43,7 @@ struct HospitalAffiliationsDetailView: View {
                     .foregroundColor(.red)
                 }
             }
-            .navigationTitle("Hospital Affiliations")
+            .navigationTitle("Hospital Affiliation")
             .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
                 Button("OK", role: .cancel) { }
             }

@@ -237,80 +237,136 @@ import SwiftUI
 struct PublicDataView: View {
   @ObservedObject var providerViewModel: ProviderViewModel
   @ObservedObject var medicalSchoolViewModel: MedicalSchoolsViewModel
-  
+  @ObservedObject var medicalSchoolDetailsViewModel = MedicalSchoolDetailsViewModel()
+
   var body: some View {
     NavigationStack {
       List {
         Section(header: Text("National Provider Identifier Record")) {
           ForEach(providerViewModel.providers, id: \.number) { provider in
             NavigationLink(destination: NPIDetailView(viewModel: providerViewModel, npi: provider.number)) {
-              Text("NPI: \(provider.number)")
+              VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                  Image(systemName: "number")
+                    .foregroundColor(.blue) // Set the color to blue
+                  Text("NPI Details")
+                    .fontWeight(.semibold)
+                }
+
+                Text("NPI: \(provider.number)")
+                  .font(.subheadline)
+              }
+              //Label("NPI: \(provider.number)", systemImage: "number")
+              //Text("NPI: \(provider.number)")
             }
           }
         }
-        
+
         //    Text("Type: \(provider.enumerationType)")
-        
-        
+
+
         Section(header: Text("Provider Basic Information")) {
           ForEach(providerViewModel.providers, id: \.number) { provider in
             NavigationLink(destination: ProviderBasicInfoView(provider: provider)) {
-              Text("View Basic Information")
+              VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                  Image(systemName: "person.text.rectangle")
+                    .foregroundColor(.blue) // Set the color to blue
+                  Text("Basic Information")
+                    .fontWeight(.semibold)
+                }
+
+                Text("\(provider.basic.firstName) \(provider.basic.lastName), \(provider.basic.credential ?? "")")
+                  .font(.subheadline)
+              }
             }
+            //           Label("Basic Information", systemImage: "person.text.rectangle")
+
+            //          Text("Basic Information")
           }
         }
+
         Section(header: Text("Medical School Information")) {
-                            NavigationLink(destination: MedicalSchoolSearchView()) {
-                                Text("Medical School Details")
-        /*
-        Section(header: Text("Medical School")) {
-          ForEach(medicalSchoolViewModel.medicalSchools, id: \.id) { school in
-            NavigationLink(destination: MedicalSchoolSearchView(school: school)) {
-              Text(school.medicalSchoolName)
-            } */
+          NavigationLink(destination: MedicalSchoolDetailView()) {
+            VStack(alignment: .leading, spacing: 4) {
+              HStack {
+                Image(systemName: "building.columns")
+                  .foregroundColor(.blue) // Keep the color consistent
+                Text("Medical School Details")
+                  .fontWeight(.semibold)
+              }
+
+              // Checking if the medical school name is empty and providing a fallback message
+              if medicalSchoolDetailsViewModel.medicalSchoolName.isEmpty {
+                Text("No medical school entered. Please enter.")
+                  .foregroundColor(.secondary) // You can choose a less prominent color to indicate incomplete data
+                  .italic() // Optionally make it italic to emphasize the placeholder nature
+              } else {
+                Text(medicalSchoolDetailsViewModel.medicalSchoolName)
+              }
+            }
+            //  Label("Medical School Details", systemImage: "building.columns")
+
           }
         }
+
+        //    Label("Medical School Details", systemImage: "building.columns")
+        //  Text("Medical School Details")
+        /*
+         Section(header: Text("Medical School")) {
+         ForEach(medicalSchoolViewModel.medicalSchools, id: \.id) { school in
+         NavigationLink(destination: MedicalSchoolSearchView(school: school)) {
+         Text(school.medicalSchoolName)
+         } */
+
         Section(header: Text("Internship")) {
           NavigationLink(destination: InternshipDetailView()) {
-                              Text("Internship Details")
+            Label("Internship Details", systemImage: "briefcase")
+            //                 Text("Internship Details")
           }
         }
         Section(header: Text("Residency")) {
-            NavigationLink(destination: ResidencyDetailView()) {
-                Text("Residency Details")
-            }
+          NavigationLink(destination: ResidencyDetailView()) {
+            Label("Residency Details", systemImage: "stethoscope")
+            //      Text("Residency Details")
+          }
         }
         Section(header: Text("Fellowship")) {
-            NavigationLink(destination: FellowshipDetailView()) {
-                Text("Fellowship Details")
-            }
+          NavigationLink(destination: FellowshipDetailView()) {
+            Label("Fellowship Details", systemImage: "cross.case")
+            //     Text("Fellowship Details")
+          }
         }
         Section(header: Text("Board Certification")) {
-            NavigationLink(destination: BoardCertificationDetailView()) {
-                Text("Board Certification Details")
-            }
+          NavigationLink(destination: BoardCertificationDetailView()) {
+            Label("Board Certification Details", systemImage: "checkmark.seal")
+            //           Text("Board Certification Details")
+          }
         }
 
-        Section(header: Text("State Medical Licenses")) {
-            NavigationLink(destination: StateMedicalLicensesView()) {
-                Text("License Details")
-            }
+        Section(header: Text("State Medical License")) {
+          NavigationLink(destination: StateMedicalLicensesView()) {
+            Label("License Details", systemImage: "doc.text")
+            //           Text("License Details")
+          }
         }
 
-        Section(header: Text("Hospital Affiliations")) {
-            NavigationLink(destination: HospitalAffiliationsDetailView()) {
-                Text("Affiliation Details")
-            }
+        Section(header: Text("Hospital Affiliation")) {
+          NavigationLink(destination: HospitalAffiliationsDetailView()) {
+            Label("Affiliation Details", systemImage: "cross.circle")
+            //     Text("Affiliation Details")
+          }
         }
 
         Section(header: Text("Employers")) {
-            NavigationLink(destination: EmployersDetailView()) {
-                Text("Employer Details")
-            }
+          NavigationLink(destination: EmployersDetailView()) {
+            Label("Employer Details", systemImage: "building")
+            //     Text("Employer Details")
+          }
         }
       }
       .navigationTitle("Public Data")
-      
+
     }
   }
 }
