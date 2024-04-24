@@ -238,6 +238,11 @@ struct PublicDataView: View {
   @ObservedObject var providerViewModel: ProviderViewModel
   @ObservedObject var medicalSchoolViewModel: MedicalSchoolsViewModel
   @ObservedObject var medicalSchoolDetailsViewModel = MedicalSchoolDetailsViewModel()
+  @ObservedObject var hospitalAffiliationsDetailsViewModel = HospitalAffiliationsDetailsViewModel()
+  @ObservedObject var boardCertificationDetailsViewModel = BoardCertificationDetailsViewModel()
+  @ObservedObject var fellowshipDetailsViewModel = FellowshipDetailsViewModel()
+  @ObservedObject var residencyDetailsViewModel = ResidencyDetailsViewModel()
+  @ObservedObject var internshipDetailsViewModel = InternshipDetailsViewModel()
 
   var body: some View {
     NavigationStack {
@@ -303,6 +308,7 @@ struct PublicDataView: View {
                   .italic() // Optionally make it italic to emphasize the placeholder nature
               } else {
                 Text(medicalSchoolDetailsViewModel.medicalSchoolName)
+                  .font(.subheadline)
               }
             }
             //  Label("Medical School Details", systemImage: "building.columns")
@@ -321,25 +327,97 @@ struct PublicDataView: View {
 
         Section(header: Text("Internship")) {
           NavigationLink(destination: InternshipDetailView()) {
-            Label("Internship Details", systemImage: "briefcase")
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Image(systemName: "briefcase.fill")
+                        .foregroundColor(.blue)
+                    Text("Internship Details")
+                        .fontWeight(.semibold)
+                }
+
+                if internshipDetailsViewModel.internshipProgramName.isEmpty {
+                    Text("No internship program entered. Please enter.")
+                        .foregroundColor(.secondary)
+                        .italic()
+                        .font(.subheadline)
+                } else {
+                    Text(internshipDetailsViewModel.internshipProgramName)
+                    .font(.subheadline)
+                }
+            }
+           // Label("Internship Details", systemImage: "briefcase")
             //                 Text("Internship Details")
           }
         }
         Section(header: Text("Residency")) {
           NavigationLink(destination: ResidencyDetailView()) {
-            Label("Residency Details", systemImage: "stethoscope")
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Image(systemName: "stethoscope")
+                        .foregroundColor(.blue)
+                    Text("Residency Details")
+                        .fontWeight(.semibold)
+                }
+
+                if residencyDetailsViewModel.residencyProgramName.isEmpty {
+                    Text("No residency program entered. Please enter.")
+                        .foregroundColor(.secondary)
+                        .italic()
+                        .font(.subheadline)
+                } else {
+                    Text(residencyDetailsViewModel.residencyProgramName)
+                        .font(.subheadline)
+                }
+            }
+          //  Label("Residency Details", systemImage: "stethoscope")
             //      Text("Residency Details")
           }
         }
         Section(header: Text("Fellowship")) {
           NavigationLink(destination: FellowshipDetailView()) {
-            Label("Fellowship Details", systemImage: "cross.case")
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Image(systemName: "cross.case")
+                        .foregroundColor(.blue)
+                    Text("Fellowship Details")
+                        .fontWeight(.semibold)
+                }
+
+                if fellowshipDetailsViewModel.fellowshipProgramName.isEmpty {
+                    Text("No fellowship program entered. Please enter.")
+                        .foregroundColor(.secondary)
+                        .italic()
+                        .font(.subheadline)
+                } else {
+                    Text(fellowshipDetailsViewModel.fellowshipProgramName)
+                        .font(.subheadline)
+                }
+            }
+        //    Label("Fellowship Details", systemImage: "cross.case")
             //     Text("Fellowship Details")
           }
         }
         Section(header: Text("Board Certification")) {
           NavigationLink(destination: BoardCertificationDetailView()) {
-            Label("Board Certification Details", systemImage: "checkmark.seal")
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Image(systemName: "checkmark.seal.fill")
+                        .foregroundColor(.blue)
+                    Text("Board Certification Details")
+                        .fontWeight(.semibold)
+                }
+
+                if boardCertificationDetailsViewModel.specialtyName.isEmpty {
+                    Text("No board certification details entered. Please enter.")
+                        .foregroundColor(.secondary)
+                        .italic()
+                        .font(.subheadline)
+                } else {
+                    Text(boardCertificationDetailsViewModel.specialtyName)
+                        .font(.subheadline)
+                }
+            }
+     //       Label("Board Certification Details", systemImage: "checkmark.seal")
             //           Text("Board Certification Details")
           }
         }
@@ -353,7 +431,25 @@ struct PublicDataView: View {
 
         Section(header: Text("Hospital Affiliation")) {
           NavigationLink(destination: HospitalAffiliationsDetailView()) {
-            Label("Affiliation Details", systemImage: "cross.circle")
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Image(systemName: "cross.circle")
+                        .foregroundColor(.blue)
+                    Text("Hospital Affiliations Details")
+                        .fontWeight(.semibold)
+                }
+
+                if hospitalAffiliationsDetailsViewModel.hospitalName.isEmpty {
+                    Text("No hospital entered. Please enter.")
+                        .foregroundColor(.secondary)
+                        .italic()
+                        .font(.subheadline)
+                } else {
+                    Text(hospitalAffiliationsDetailsViewModel.hospitalName)
+                        .font(.subheadline)
+                }
+            }
+     //       Label("Affiliation Details", systemImage: "cross.circle")
             //     Text("Affiliation Details")
           }
         }
