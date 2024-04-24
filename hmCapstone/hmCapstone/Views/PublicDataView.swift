@@ -261,7 +261,7 @@ struct PublicDataView: View {
         }
         Section(header: Text("Medical School Information")) {
                             NavigationLink(destination: MedicalSchoolSearchView()) {
-                                Text(" View or Search Medical School")
+                                Text("Medical School Details")
         /*
         Section(header: Text("Medical School")) {
           ForEach(medicalSchoolViewModel.medicalSchools, id: \.id) { school in
@@ -286,7 +286,7 @@ struct PublicDataView: View {
             }
         }
         Section(header: Text("Board Certification")) {
-            NavigationLink(destination: BoardCertificationView()) {
+            NavigationLink(destination: BoardCertificationDetailView()) {
                 Text("Board Certification Details")
             }
         }
@@ -298,7 +298,7 @@ struct PublicDataView: View {
         }
 
         Section(header: Text("Hospital Affiliations")) {
-            NavigationLink(destination: HospitalAffiliationsView()) {
+            NavigationLink(destination: HospitalAffiliationsDetailView()) {
                 Text("Affiliation Details")
             }
         }

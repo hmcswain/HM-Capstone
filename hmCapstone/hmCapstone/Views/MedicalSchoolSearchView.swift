@@ -48,7 +48,9 @@ struct MedicalSchoolSearchView: View {
             }
         }
         .onAppear {
-            viewModel.loadMedicalSchools()
+          Task {
+            await viewModel.loadMedicalSchools()
+          }
         }
     }
 }

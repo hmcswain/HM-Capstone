@@ -80,7 +80,7 @@ struct MedicalSchoolInfoView: View {
 
 struct MedicalSchoolInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        MedicalSchoolInfoView(school: MedicalSchool(id: "1", medicalSchoolName: "Harvard Medical School", shortName: "Harvard", medicalSchoolCity: "Boston", medicalSchoolState: "Massachusetts", medicalSchoolRegion: "Northeast", ownershipControl: "Private"))
+        MedicalSchoolInfoView(school: MedicalSchool(id: 1, medicalSchoolName: "Harvard Medical School", shortName: "Harvard", medicalSchoolCity: "Boston", medicalSchoolState: "Massachusetts", medicalSchoolRegion: "Northeast", ownershipControl: "Private"))
     }
 }
 

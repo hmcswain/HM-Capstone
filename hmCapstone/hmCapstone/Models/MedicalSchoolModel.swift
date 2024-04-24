@@ -2,13 +2,22 @@
 //  MedicalSchoolModel.swift
 //  hmCapstone
 //
-//  Created by Jj on 4/21/24.
-//
+
 
 import Foundation
 
+
+struct MedicalSchoolsList: Codable {
+    var medicalSchools: [MedicalSchool]
+
+   enum CodingKeys: String, CodingKey {
+    case medicalSchools = "Medical Schools"
+   }
+}
+
+
 struct MedicalSchool: Codable, Identifiable {
-    var id: String
+    var id: Int
     var medicalSchoolName: String
     var shortName: String
     var medicalSchoolCity: String
@@ -16,7 +25,7 @@ struct MedicalSchool: Codable, Identifiable {
     var medicalSchoolRegion: String
     var ownershipControl: String
 
-    // Define CodingKeys to map JSON keys to property names if they are different
+    // Define CodingKeys to map JSON keys to property names
     enum CodingKeys: String, CodingKey {
         case id
         case medicalSchoolName = "Medical School Name"
@@ -28,12 +37,4 @@ struct MedicalSchool: Codable, Identifiable {
     }
 }
 
-// Assuming you have a root struct to match your JSON structure
-struct MedicalSchoolsList: Codable {
-    var medicalSchools: [MedicalSchool]
-
-    enum CodingKeys: String, CodingKey {
-        case medicalSchools = "Medical Schools"
-    }
-}
 

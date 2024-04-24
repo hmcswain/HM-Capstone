@@ -57,7 +57,9 @@ struct MedicalSchoolsListView: View {
         }
         .searchable(text: $searchText)
         .onAppear {
-            viewModel.loadMedicalSchools()
+          Task {
+            await viewModel.loadMedicalSchools()
+          }
         }
     }
 }
