@@ -44,6 +44,8 @@
 		286115E92BD968ED008AFB24 /* StateMedicalLicenseDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115E82BD968ED008AFB24 /* StateMedicalLicenseDetailsViewModel.swift */; };
 		286115EB2BD97537008AFB24 /* EmployersDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115EA2BD97537008AFB24 /* EmployersDetailsViewModel.swift */; };
 		286115ED2BD9A858008AFB24 /* ProviderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115EC2BD9A858008AFB24 /* ProviderDetailView.swift */; };
+		286115EF2BD9B120008AFB24 /* PrivateDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115EE2BD9B120008AFB24 /* PrivateDataViewModel.swift */; };
+		286115F22BD9CBB0008AFB24 /* SharedEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115F12BD9CBB0008AFB24 /* SharedEnums.swift */; };
 		289946152BD2471E0017E03C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946142BD2471E0017E03C /* MainTabView.swift */; };
 		289946172BD248320017E03C /* ProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946162BD248320017E03C /* ProviderViewModel.swift */; };
 		289946192BD248890017E03C /* NppesApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946182BD248890017E03C /* NppesApiModel.swift */; };
@@ -112,6 +114,8 @@
 		286115E82BD968ED008AFB24 /* StateMedicalLicenseDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMedicalLicenseDetailsViewModel.swift; sourceTree = "<group>"; };
 		286115EA2BD97537008AFB24 /* EmployersDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployersDetailsViewModel.swift; sourceTree = "<group>"; };
 		286115EC2BD9A858008AFB24 /* ProviderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDetailView.swift; sourceTree = "<group>"; };
+		286115EE2BD9B120008AFB24 /* PrivateDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDataViewModel.swift; sourceTree = "<group>"; };
+		286115F12BD9CBB0008AFB24 /* SharedEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedEnums.swift; sourceTree = "<group>"; };
 		289946142BD2471E0017E03C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		289946162BD248320017E03C /* ProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewModel.swift; sourceTree = "<group>"; };
 		289946182BD248890017E03C /* NppesApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NppesApiModel.swift; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 		2856FD4D2BD04B6200D4799B /* hmCapstone */ = {
 			isa = PBXGroup;
 			children = (
+				286115F02BD9CB8C008AFB24 /* Enums */,
 				2856FD792BD05C6700D4799B /* Models */,
 				2856FD4E2BD04B6200D4799B /* hmCapstoneApp.swift */,
 				2856FD782BD05C4D00D4799B /* Views */,
@@ -253,8 +258,17 @@
 				286115E42BD8D7D6008AFB24 /* MedicalSchoolDetailsViewModel.swift */,
 				286115E82BD968ED008AFB24 /* StateMedicalLicenseDetailsViewModel.swift */,
 				286115EA2BD97537008AFB24 /* EmployersDetailsViewModel.swift */,
+				286115EE2BD9B120008AFB24 /* PrivateDataViewModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		286115F02BD9CB8C008AFB24 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				286115F12BD9CBB0008AFB24 /* SharedEnums.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,9 +421,11 @@
 				2899461D2BD249420017E03C /* PublicDataView.swift in Sources */,
 				286115E72BD968B4008AFB24 /* StateMedicalLicenseDetailView.swift in Sources */,
 				286115B52BD62FD3008AFB24 /* MedicalSchoolDetailView.swift in Sources */,
+				286115F22BD9CBB0008AFB24 /* SharedEnums.swift in Sources */,
 				286115D92BD8C6DC008AFB24 /* FellowshipDetailsViewModel.swift in Sources */,
 				286115BB2BD63E22008AFB24 /* MedicalSchoolModel.swift in Sources */,
 				286115CD2BD6C466008AFB24 /* HospitalAffiliationsView.swift in Sources */,
+				286115EF2BD9B120008AFB24 /* PrivateDataViewModel.swift in Sources */,
 				2856FD4F2BD04B6200D4799B /* hmCapstoneApp.swift in Sources */,
 				286115DF2BD8CF18008AFB24 /* BoardCertificationDetailView.swift in Sources */,
 				286115C12BD6694D008AFB24 /* MedicalSchoolInfoView.swift in Sources */,
