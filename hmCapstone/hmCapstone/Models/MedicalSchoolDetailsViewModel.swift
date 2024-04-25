@@ -46,4 +46,3 @@ class MedicalSchoolDetailsViewModel: ObservableObject {
     showClearAlert = true
   }
 }
-

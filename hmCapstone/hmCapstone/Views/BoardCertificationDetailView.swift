@@ -65,4 +65,3 @@ struct BoardCertificationDetailView_Previews: PreviewProvider {
     BoardCertificationDetailView()
   }
 }
-

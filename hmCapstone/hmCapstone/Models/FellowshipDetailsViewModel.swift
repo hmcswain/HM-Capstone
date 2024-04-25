@@ -38,4 +38,3 @@ class FellowshipDetailsViewModel: ObservableObject {
     showClearAlert = true
   }
 }
-

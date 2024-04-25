@@ -47,4 +47,3 @@ class EmployersDetailsViewModel: ObservableObject {
     showClearAlert = true
   }
 }
-

@@ -60,4 +60,3 @@ struct InternshipDetailView_Previews: PreviewProvider {
     InternshipDetailView()
   }
 }
-

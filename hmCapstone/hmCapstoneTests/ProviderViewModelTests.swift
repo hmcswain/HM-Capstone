@@ -1,6 +1,6 @@
 //
 //  ProviderViewModelTests.swift
-//  hmCapstoneTests
+//  HmCapstoneTests
 //
 //  Created by Jj on 4/24/24.
 //

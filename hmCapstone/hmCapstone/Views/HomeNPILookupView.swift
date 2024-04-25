@@ -44,8 +44,8 @@ struct HomeNPILookupView: View {
         set: { _ in viewModel.errorMessage = nil }
       )) {
         Alert(title: Text("Error"),
-              message: Text(viewModel.errorMessage ?? "An unexpected error occurred"),
-              dismissButton: .default(Text("OK")))
+          message: Text(viewModel.errorMessage ?? "An unexpected error occurred"),
+          dismissButton: .default(Text("OK")))
       }
     }
   }
@@ -54,4 +54,3 @@ struct HomeNPILookupView: View {
 #Preview {
   HomeNPILookupView()
 }
-

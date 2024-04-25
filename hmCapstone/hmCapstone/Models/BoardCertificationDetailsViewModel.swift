@@ -1,7 +1,5 @@
 //
 //  BoardCertificationDetailsViewModel.swift
-//  hmCapstone
-//
 
 
 import Foundation
@@ -34,4 +32,3 @@ class BoardCertificationDetailsViewModel: ObservableObject {
     activeAlert = .clearAlert
   }
 }
-

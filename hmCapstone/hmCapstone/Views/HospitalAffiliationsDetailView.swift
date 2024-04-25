@@ -7,7 +7,6 @@ import SwiftUI
 
 struct HospitalAffiliationsDetailView: View {
   @StateObject private var viewModel = HospitalAffiliationsDetailsViewModel()
-  
   var body: some View {
     NavigationView {
       Form {

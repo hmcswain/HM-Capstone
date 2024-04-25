@@ -60,4 +60,3 @@ struct FellowshipDetailView_Previews: PreviewProvider {
     FellowshipDetailView()
   }
 }
-

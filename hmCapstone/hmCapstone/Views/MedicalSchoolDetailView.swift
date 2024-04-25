@@ -1,10 +1,9 @@
-
+// MedicalSchoolDetailView.swift
 
 import SwiftUI
 
 struct MedicalSchoolDetailView: View {
   @StateObject private var viewModel = MedicalSchoolDetailsViewModel()
-  
   var body: some View {
     NavigationView {
       Form {
@@ -39,7 +38,6 @@ struct MedicalSchoolDetailView: View {
             Button("OK", role: .cancel) { }
           }
           .buttonStyle(.borderedProminent)
-          
           Button("Clear Details") {
             Task {
               await viewModel.clearData()

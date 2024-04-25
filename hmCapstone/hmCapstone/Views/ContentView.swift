@@ -1,4 +1,4 @@
-//  hmCapstone
+
 //  ContentView.swift
 
 
@@ -11,7 +11,6 @@ extension UserDefaults {
     }
     set {
       UserDefaults.standard.setValue(newValue, forKey: "welcomeScreenShown")
-
     }
   }
 }
@@ -25,7 +24,6 @@ struct ContentView: View {
     } else if !UserDefaults.standard.welcomeScreenShown && !showNPILookup {
       WelcomeScreenView()
     } else {
-
       VStack {
         TabView {
           OnBoardingView(title: "Welcome to MediBlock App", image: "doc.on.doc", description: "Are you tired of dealing with paperwork?\n \n Swipe left or press Get Started")
@@ -40,7 +38,6 @@ struct ContentView: View {
 
         Button("Get Started") {
           showNPILookup.toggle()
-
         }
         .padding()
         .font(.title3)
@@ -48,7 +45,6 @@ struct ContentView: View {
         .foregroundColor(.white)
         .cornerRadius(10)
         .padding(.bottom)
-
       }
     }
   }

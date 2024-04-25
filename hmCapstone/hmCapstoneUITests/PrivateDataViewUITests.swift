@@ -1,6 +1,6 @@
 //
 //  PrivateDataViewUITests.swift
-//  hmCapstoneUITests
+//  HmCapstoneUITests
 //
 //  Created by Jj on 4/25/24.
 //

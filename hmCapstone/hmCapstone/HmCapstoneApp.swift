@@ -1,12 +1,12 @@
 //
-//  hmCapstoneApp.swift
-//  hmCapstone
+//  HmCapstoneApp.swift
+//  HmCapstone
 
 
 import SwiftUI
 
 @main
-struct hmCapstoneApp: App {
+struct HmCapstoneApp: App {
   var body: some Scene {
     WindowGroup {
       ContentView()

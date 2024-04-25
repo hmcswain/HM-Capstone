@@ -39,4 +39,3 @@ class InternshipDetailsViewModel: ObservableObject {
     showClearAlert = true
   }
 }
-

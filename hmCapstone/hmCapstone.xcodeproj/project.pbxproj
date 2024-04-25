@@ -3,17 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2856FD4F2BD04B6200D4799B /* hmCapstoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD4E2BD04B6200D4799B /* hmCapstoneApp.swift */; };
+		2856FD4F2BD04B6200D4799B /* HmCapstoneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD4E2BD04B6200D4799B /* HmCapstoneApp.swift */; };
 		2856FD512BD04B6200D4799B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD502BD04B6200D4799B /* ContentView.swift */; };
 		2856FD532BD04B6500D4799B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2856FD522BD04B6500D4799B /* Assets.xcassets */; };
 		2856FD562BD04B6500D4799B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2856FD552BD04B6500D4799B /* Preview Assets.xcassets */; };
-		2856FD602BD04B6500D4799B /* hmCapstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD5F2BD04B6500D4799B /* hmCapstoneTests.swift */; };
-		2856FD6A2BD04B6500D4799B /* hmCapstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD692BD04B6500D4799B /* hmCapstoneUITests.swift */; };
-		2856FD6C2BD04B6500D4799B /* hmCapstoneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD6B2BD04B6500D4799B /* hmCapstoneUITestsLaunchTests.swift */; };
+		2856FD602BD04B6500D4799B /* HmCapstoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD5F2BD04B6500D4799B /* HmCapstoneTests.swift */; };
+		2856FD6A2BD04B6500D4799B /* HmCapstoneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD692BD04B6500D4799B /* HmCapstoneUITests.swift */; };
+		2856FD6C2BD04B6500D4799B /* HmCapstoneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD6B2BD04B6500D4799B /* HmCapstoneUITestsLaunchTests.swift */; };
 		2856FD7B2BD05F5000D4799B /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD7A2BD05F5000D4799B /* WelcomeScreenView.swift */; };
 		2856FD7D2BD05F6E00D4799B /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD7C2BD05F6E00D4799B /* OnBoardingView.swift */; };
 		2856FD7F2BD05FB600D4799B /* HomeNPILookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD7E2BD05FB600D4799B /* HomeNPILookupView.swift */; };
@@ -67,15 +67,15 @@
 
 /* Begin PBXFileReference section */
 		2856FD4B2BD04B6200D4799B /* hmCapstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hmCapstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2856FD4E2BD04B6200D4799B /* hmCapstoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hmCapstoneApp.swift; sourceTree = "<group>"; };
+		2856FD4E2BD04B6200D4799B /* HmCapstoneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmCapstoneApp.swift; sourceTree = "<group>"; };
 		2856FD502BD04B6200D4799B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2856FD522BD04B6500D4799B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2856FD552BD04B6500D4799B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2856FD5B2BD04B6500D4799B /* hmCapstoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hmCapstoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2856FD5F2BD04B6500D4799B /* hmCapstoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hmCapstoneTests.swift; sourceTree = "<group>"; };
+		2856FD5F2BD04B6500D4799B /* HmCapstoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmCapstoneTests.swift; sourceTree = "<group>"; };
 		2856FD652BD04B6500D4799B /* hmCapstoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hmCapstoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2856FD692BD04B6500D4799B /* hmCapstoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hmCapstoneUITests.swift; sourceTree = "<group>"; };
-		2856FD6B2BD04B6500D4799B /* hmCapstoneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hmCapstoneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2856FD692BD04B6500D4799B /* HmCapstoneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmCapstoneUITests.swift; sourceTree = "<group>"; };
+		2856FD6B2BD04B6500D4799B /* HmCapstoneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HmCapstoneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2856FD7A2BD05F5000D4799B /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 		2856FD7C2BD05F6E00D4799B /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		2856FD7E2BD05FB600D4799B /* HomeNPILookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNPILookupView.swift; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 			children = (
 				286115F02BD9CB8C008AFB24 /* Enums */,
 				2856FD792BD05C6700D4799B /* Models */,
-				2856FD4E2BD04B6200D4799B /* hmCapstoneApp.swift */,
+				2856FD4E2BD04B6200D4799B /* HmCapstoneApp.swift */,
 				2856FD782BD05C4D00D4799B /* Views */,
 				2856FD522BD04B6500D4799B /* Assets.xcassets */,
 				2856FD542BD04B6500D4799B /* Preview Content */,
@@ -179,7 +179,7 @@
 		2856FD5E2BD04B6500D4799B /* hmCapstoneTests */ = {
 			isa = PBXGroup;
 			children = (
-				2856FD5F2BD04B6500D4799B /* hmCapstoneTests.swift */,
+				2856FD5F2BD04B6500D4799B /* HmCapstoneTests.swift */,
 				2892A1232BDA2EC700F1F3BE /* ProviderViewModelTests.swift */,
 				2892A1252BDA3A4E00F1F3BE /* NPPESAPIModelTests.swift */,
 			);
@@ -189,8 +189,8 @@
 		2856FD682BD04B6500D4799B /* hmCapstoneUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2856FD692BD04B6500D4799B /* hmCapstoneUITests.swift */,
-				2856FD6B2BD04B6500D4799B /* hmCapstoneUITestsLaunchTests.swift */,
+				2856FD692BD04B6500D4799B /* HmCapstoneUITests.swift */,
+				2856FD6B2BD04B6500D4799B /* HmCapstoneUITestsLaunchTests.swift */,
 				2892A1272BDA3C8700F1F3BE /* PrivateDataViewUITests.swift */,
 				2892A1292BDAD12700F1F3BE /* MainTabViewUITests.swift */,
 			);
@@ -254,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2856FD6F2BD04B6500D4799B /* Build configuration list for PBXNativeTarget "hmCapstone" */;
 			buildPhases = (
+				2892A12B2BDAE90800F1F3BE /* Run Script */,
 				2856FD472BD04B6200D4799B /* Sources */,
 				2856FD482BD04B6200D4799B /* Frameworks */,
 				2856FD492BD04B6200D4799B /* Resources */,
@@ -327,7 +328,7 @@
 				};
 			};
 			buildConfigurationList = 2856FD462BD04B6200D4799B /* Build configuration list for PBXProject "hmCapstone" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -372,6 +373,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2892A12B2BDAE90800F1F3BE /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#PATH=/opt/homebrew/bin:$PATH\n#PATH=/usr/local/bin:$PATH\nif [ -f ~/com.raywenderlich.swiftlint.yml ]; then\n  if which swiftlint > /dev/null; then\n    swiftlint --no-cache --config ~/com.raywenderlich.swiftlint.yml\n  fi\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2856FD472BD04B6200D4799B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -396,7 +418,7 @@
 				286115F22BD9CBB0008AFB24 /* SharedEnums.swift in Sources */,
 				286115D92BD8C6DC008AFB24 /* FellowshipDetailsViewModel.swift in Sources */,
 				286115EF2BD9B120008AFB24 /* PrivateDataViewModel.swift in Sources */,
-				2856FD4F2BD04B6200D4799B /* hmCapstoneApp.swift in Sources */,
+				2856FD4F2BD04B6200D4799B /* HmCapstoneApp.swift in Sources */,
 				286115DF2BD8CF18008AFB24 /* BoardCertificationDetailView.swift in Sources */,
 				286115E32BD8D357008AFB24 /* HospitalAffiliationsDetailView.swift in Sources */,
 				2899461F2BD2499A0017E03C /* PrivateDataView.swift in Sources */,
@@ -414,7 +436,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2856FD602BD04B6500D4799B /* hmCapstoneTests.swift in Sources */,
+				2856FD602BD04B6500D4799B /* HmCapstoneTests.swift in Sources */,
 				2892A1262BDA3A4E00F1F3BE /* NPPESAPIModelTests.swift in Sources */,
 				2892A1242BDA2EC700F1F3BE /* ProviderViewModelTests.swift in Sources */,
 			);
@@ -424,8 +446,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2856FD6C2BD04B6500D4799B /* hmCapstoneUITestsLaunchTests.swift in Sources */,
-				2856FD6A2BD04B6500D4799B /* hmCapstoneUITests.swift in Sources */,
+				2856FD6C2BD04B6500D4799B /* HmCapstoneUITestsLaunchTests.swift in Sources */,
+				2856FD6A2BD04B6500D4799B /* HmCapstoneUITests.swift in Sources */,
 				2892A1282BDA3C8700F1F3BE /* PrivateDataViewUITests.swift in Sources */,
 				2892A12A2BDAD12700F1F3BE /* MainTabViewUITests.swift in Sources */,
 			);
@@ -575,6 +597,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hmCapstone/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -603,6 +626,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"hmCapstone/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -629,6 +653,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -648,6 +673,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MARKETING_VERSION = 1.0;
@@ -666,6 +692,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.mediblock.hmCapstoneUITests;
@@ -683,6 +710,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.mediblock.hmCapstoneUITests;

@@ -66,4 +66,3 @@ struct EmployersDetailView_Previews: PreviewProvider {
     EmployersDetailView()
   }
 }
-
