@@ -105,6 +105,3 @@ struct Taxonomy: Codable {
     case desc, state, primary
   }
 }
-
-
-

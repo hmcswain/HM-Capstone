@@ -12,9 +12,8 @@ class ResidencyDetailsViewModel: ObservableObject {
   @Published var acgmeInstitutionName: String = UserDefaults.standard.string(forKey: "residencyAcgmeInstitutionName") ?? ""
   @Published var city: String = UserDefaults.standard.string(forKey: "residencyCity") ?? ""
   @Published var state: String = UserDefaults.standard.string(forKey: "residencyState") ?? ""
-  @Published var showAlert: Bool = false
-  @Published var showClearAlert: Bool = false
-
+  @Published var showAlert = false
+  @Published var showClearAlert = false
   func saveData() async {
     UserDefaults.standard.set(residencyProgramName, forKey: "residencyProgramName")
     UserDefaults.standard.set(programDirectorName, forKey: "residencyProgramDirectorName")
@@ -38,4 +37,3 @@ class ResidencyDetailsViewModel: ObservableObject {
     showClearAlert = true
   }
 }
-

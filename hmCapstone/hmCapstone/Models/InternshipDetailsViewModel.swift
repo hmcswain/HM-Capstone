@@ -13,8 +13,8 @@ class InternshipDetailsViewModel: ObservableObject {
   @Published var acgmeInstitutionName: String = UserDefaults.standard.string(forKey: "internshipAcgmeInstitutionName") ?? ""
   @Published var city: String = UserDefaults.standard.string(forKey: "internshipCity") ?? ""
   @Published var state: String = UserDefaults.standard.string(forKey: "internshipState") ?? ""
-  @Published var showAlert: Bool = false
-  @Published var showClearAlert: Bool = false
+  @Published var showAlert = false
+  @Published var showClearAlert = false
 
   func saveData() async {
     UserDefaults.standard.set(internshipProgramName, forKey: "internshipProgramName")

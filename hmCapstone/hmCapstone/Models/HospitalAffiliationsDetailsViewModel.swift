@@ -13,8 +13,8 @@ class HospitalAffiliationsDetailsViewModel: ObservableObject {
   @Published var state: String = UserDefaults.standard.string(forKey: "hospitalState") ?? ""
   @Published var zipCode: String = UserDefaults.standard.string(forKey: "hospitalZipCode") ?? ""
   @Published var hospitalType: String = UserDefaults.standard.string(forKey: "hospitalType") ?? ""
-  @Published var showAlert: Bool = false
-  @Published var showClearAlert: Bool = false
+  @Published var showAlert = false
+  @Published var showClearAlert = false
 
   func saveData() async {
     UserDefaults.standard.set(hospitalName, forKey: "hospitalName")

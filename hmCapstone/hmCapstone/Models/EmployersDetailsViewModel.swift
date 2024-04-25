@@ -15,8 +15,8 @@ class EmployersDetailsViewModel: ObservableObject {
   @Published var state: String = UserDefaults.standard.string(forKey: "employerState") ?? ""
   @Published var zipCode: String = UserDefaults.standard.string(forKey: "employerZipCode") ?? ""
   @Published var employerType: String = UserDefaults.standard.string(forKey: "employerType") ?? ""
-  @Published var showAlert: Bool = false
-  @Published var showClearAlert: Bool = false
+  @Published var showAlert = false
+  @Published var showClearAlert = false
 
   func saveData() async {
     UserDefaults.standard.set(employerName, forKey: "employerName")

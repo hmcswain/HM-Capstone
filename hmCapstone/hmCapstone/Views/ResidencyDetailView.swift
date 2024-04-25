@@ -60,4 +60,3 @@ struct ResidencyDetailView_Previews: PreviewProvider {
     ResidencyDetailView()
   }
 }
-

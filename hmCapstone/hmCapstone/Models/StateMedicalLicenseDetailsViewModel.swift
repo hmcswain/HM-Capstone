@@ -38,4 +38,3 @@ class StateMedicalLicenseDetailsViewModel: ObservableObject {
     activeAlert = .clearAlert
   }
 }
-

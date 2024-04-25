@@ -7,9 +7,7 @@
 import SwiftUI
 
 struct ProviderDetailView: View {
-
   var provider: Provider
-
   var body: some View {
     NavigationView {
       List {
@@ -68,5 +66,3 @@ struct ProviderDetailView_Previews: PreviewProvider {
     }
   }
 }
-
-

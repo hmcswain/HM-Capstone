@@ -6,7 +6,7 @@
 //
 
 /*
- final class ProviderViewModelTests: XCTestCase {
+final class ProviderViewModelTests: XCTestCase {
 
  override func setUpWithError() throws {
  // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -34,9 +34,9 @@
  }
  */
 /*
- @testable import hmCapstone
+@testable import hmCapstone
 
- import XCTest
+import XCTest
 
  // Testing ProviderViewModel for API interactions
  @MainActor
@@ -127,4 +127,3 @@ final class ProviderViewModelTests: XCTestCase {
     XCTAssertNil(viewModel.errorMessage, "Error message should be cleared after calling clearErrorMessage")
   }
 }
-

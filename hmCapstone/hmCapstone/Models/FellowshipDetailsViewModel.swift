@@ -12,8 +12,8 @@ class FellowshipDetailsViewModel: ObservableObject {
   @Published var acgmeInstitutionName: String = UserDefaults.standard.string(forKey: "fellowshipAcgmeInstitutionName") ?? ""
   @Published var city: String = UserDefaults.standard.string(forKey: "fellowshipCity") ?? ""
   @Published var state: String = UserDefaults.standard.string(forKey: "fellowshipState") ?? ""
-  @Published var showAlert: Bool = false
-  @Published var showClearAlert: Bool = false
+  @Published var showAlert = false
+  @Published var showClearAlert = false
 
   func saveData() async {
     UserDefaults.standard.set(fellowshipProgramName, forKey: "fellowshipProgramName")

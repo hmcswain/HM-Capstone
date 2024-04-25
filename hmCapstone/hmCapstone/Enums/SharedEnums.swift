@@ -1,9 +1,4 @@
-//
 //  SharedEnums.swift
-//  hmCapstone
-//
-
-
 
 import Foundation
 

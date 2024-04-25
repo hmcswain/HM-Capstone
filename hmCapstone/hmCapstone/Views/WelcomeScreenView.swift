@@ -1,10 +1,8 @@
-//  hmCapstone
 //  WelcomeScreenView.swift
 
 import SwiftUI
 
 struct WelcomeScreenView: View {
-
   @State private var isActive = false
   @State private var opacity = 1.0
 
@@ -13,7 +11,6 @@ struct WelcomeScreenView: View {
     Group {
       if isActive {
         ContentView()
-
       } else {
         VStack {
           Image("MediBlockLogoStacked")
@@ -42,8 +39,7 @@ struct WelcomeScreenView: View {
         .opacity(opacity)
         .onAppear {
           fadeOutEffect()
-          UserDefaults.standard.welcomeScreenShown  = true
-
+          UserDefaults.standard.welcomeScreenShown = true
         }
       }
     }
@@ -55,9 +51,8 @@ struct WelcomeScreenView: View {
       withAnimation(.easeInOut(duration: 2)) {
         self.opacity = 0
       }
-      try await Task.sleep(nanoseconds: 1_500_000_000) 
+      try await Task.sleep(nanoseconds: 1_500_000_000)
       isActive = true
-
     }
   }
 }

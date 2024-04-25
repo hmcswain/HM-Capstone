@@ -64,4 +64,3 @@ struct StateMedicalLicenseDetailView_Previews: PreviewProvider {
     StateMedicalLicenseDetailView()
   }
 }
-

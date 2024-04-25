@@ -1,4 +1,3 @@
-
 //  PrivateDataView.swift
 
 import SwiftUI

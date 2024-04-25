@@ -1,6 +1,4 @@
-
 //  PublicDataView.swift
-//  hmCapstone
 
 
 import SwiftUI
@@ -234,7 +232,6 @@ struct PublicDataView: View {
         }
       }
       .navigationTitle("Public Data")
-
     }
   }
 }
@@ -245,4 +242,3 @@ struct PublicDataView_Previews: PreviewProvider {
     PublicDataView(providerViewModel: ProviderViewModel.mock())
   }
 }
-

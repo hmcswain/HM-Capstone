@@ -25,11 +25,10 @@ class PrivateDataViewModel: ObservableObject {
   @Published var personalPhone = UserDefaults.standard.string(forKey: "personalPhone") ?? ""
   @Published var emailError = ""
   @Published var phoneError = ""
-  @Published var showSaveAlert: Bool = false
-  @Published var showClearAlert: Bool = false
+  @Published var showSaveAlert = false
+  @Published var showClearAlert = false
 
-  init() {
-    
+  init() {    
     self.dateOfBirth = UserDefaults.standard.object(forKey: "dateOfBirth") as? Date ?? Date()
   }
 
@@ -78,7 +77,7 @@ class PrivateDataViewModel: ObservableObject {
 
   private func isValidEmail(_ email: String) -> Bool {
     let emailPattern = "[A-Z0-9a-z._%+-]+@[A-Z0-9a-z.-]+\\.[A-Za-z]{2,}"
-    let emailPred = NSPredicate(format:"SELF MATCHES %@", emailPattern)
+    let emailPred = NSPredicate(format: "SELF MATCHES %@", emailPattern)
     return emailPred.evaluate(with: email)
   }
 
@@ -88,4 +87,3 @@ class PrivateDataViewModel: ObservableObject {
     return phonePred.evaluate(with: phone)
   }
 }
-
