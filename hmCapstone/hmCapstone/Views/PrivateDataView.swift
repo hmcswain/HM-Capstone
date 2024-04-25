@@ -2,6 +2,119 @@
 //  PrivateDataView.swift
 //  hmCapstone
 
+/*
+ import SwiftUI
+
+ struct PrivateDataView: View {
+ @StateObject private var viewModel = PrivateDataViewModel()
+
+ var body: some View {
+ NavigationView {
+ Form {
+ Section(header: Text("Date of Birth")) {
+ DatePicker("Select your date of birth", selection: $viewModel.dateOfBirth, displayedComponents: .date)
+ .accessibilityIdentifier("dateOfBirthPicker")
+ }
+ Section(header: Text("Country of Citizenship")) {
+ TextField("Enter country of citizenship", text: $viewModel.countryOfCitizenship)
+ .accessibilityIdentifier("countryOfCitizenshipField")
+ }
+ Section(header: Text("Home Address")) {
+ TextField("Street Address 1", text: $viewModel.streetAddress1)
+ .accessibilityIdentifier("streetAddress1Field")
+ TextField("Street Address 2", text: $viewModel.streetAddress2)
+ .accessibilityIdentifier("streetAddress2Field")
+ TextField("City", text: $viewModel.city)
+ .accessibilityIdentifier("cityField")
+ TextField("State", text: $viewModel.state)
+ .accessibilityIdentifier("stateField")
+ TextField("Zip Code", text: $viewModel.zipCode)
+ .accessibilityIdentifier("zipCodeField")
+ }
+ Section(header: Text("Social Security Number")) {
+ HStack {
+ if viewModel.isSSNVisible {
+ TextField("Enter SSN-9 digits only, no dashes", text: $viewModel.socialSecurityNumber)
+ } else {
+ SecureField("Enter SSN-9 digits only, no dashes", text: $viewModel.socialSecurityNumber)
+ }
+ //      .accessibilityIdentifier("ssnField")
+
+ Button(action: {
+ viewModel.isSSNVisible.toggle()
+ }) {
+ Image(systemName: viewModel.isSSNVisible ? "eye" : "eye.slash")
+ }
+ .accessibilityIdentifier("ssnVisibilityToggle")
+ }
+ }
+ Section(header: Text("Personal Email")) {
+ TextField("Enter your email", text: $viewModel.personalEmail)
+ .onChange(of: viewModel.personalEmail) { oldValue, newValue in
+ viewModel.validateEmail()
+ }
+ .accessibilityIdentifier("personalEmailField")
+ if !viewModel.emailError.isEmpty {
+ Text(viewModel.emailError)
+ .font(.caption)
+ .foregroundColor(.red)
+ }
+
+ }
+ Section(header: Text("Personal Cell Phone")) {
+ TextField("Enter your cell number-no dashes or ()", text: $viewModel.personalPhone)
+ .onChange(of: viewModel.personalPhone) { oldValue, newValue in
+ viewModel.validatePhone()
+ }
+ if !viewModel.phoneError.isEmpty {
+ Text(viewModel.phoneError)
+ .font(.caption)
+ .foregroundColor(.red)
+ }
+ .accessibilityIdentifier("personalPhoneField")
+ }
+ Section {
+ Button("Save Details") {
+ Task {
+ await viewModel.saveData()
+ }
+ }
+ .buttonStyle(.borderedProminent)
+ .alert("Data has been successfully saved to your device.", isPresented: $viewModel.showSaveAlert) {
+ Button("OK", role: .cancel) { }
+ }
+ .accessibilityIdentifier("saveDetailsButton")
+
+ Button("Clear Details") {
+ Task {
+ await viewModel.clearData()
+ }
+ }
+ .buttonStyle(.bordered)
+ .foregroundColor(.red)
+
+ .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
+ Button("OK", role: .cancel) { }
+ }
+ .accessibilityIdentifier("clearDetailsButton")  // Adding identifier to allow xcode to test UI functions
+ }
+ }
+ .navigationTitle("Private Data")
+ }
+ }
+ }
+
+ struct PrivateDataView_Previews: PreviewProvider {
+ static var previews: some View {
+ PrivateDataView()
+ }
+ }
+ */
+
+
+
+//mygithubcode from working version below
+
 
 import SwiftUI
 
@@ -94,4 +207,3 @@ struct PrivateDataView_Previews: PreviewProvider {
     PrivateDataView()
   }
 }
-
