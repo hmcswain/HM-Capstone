@@ -53,9 +53,6 @@ struct MedicalSchoolDetailView: View {
         }
       }
       .navigationTitle("Medical School Details")
-      //    .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
-      //       Button("OK", role: .cancel) { }
-      //     }
     }
   }
 }

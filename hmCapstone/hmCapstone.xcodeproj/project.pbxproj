@@ -19,18 +19,9 @@
 		2856FD7F2BD05FB600D4799B /* HomeNPILookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856FD7E2BD05FB600D4799B /* HomeNPILookupView.swift */; };
 		2861158D2BD3033D008AFB24 /* NPIDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2861158C2BD3033D008AFB24 /* NPIDetailView.swift */; };
 		286115B52BD62FD3008AFB24 /* MedicalSchoolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115B42BD62FD3008AFB24 /* MedicalSchoolDetailView.swift */; };
-		286115B72BD6304D008AFB24 /* ProviderBasicInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115B62BD6304D008AFB24 /* ProviderBasicInfoView.swift */; };
-		286115B92BD63D5B008AFB24 /* MedicalSchoolJSON.json in Resources */ = {isa = PBXBuildFile; fileRef = 286115B82BD63D5B008AFB24 /* MedicalSchoolJSON.json */; };
-		286115BB2BD63E22008AFB24 /* MedicalSchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115BA2BD63E22008AFB24 /* MedicalSchoolModel.swift */; };
-		286115BD2BD63EDF008AFB24 /* MedicalSchoolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115BC2BD63EDF008AFB24 /* MedicalSchoolsViewModel.swift */; };
-		286115BF2BD644B1008AFB24 /* MedicalSchoolsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115BE2BD644B1008AFB24 /* MedicalSchoolsListView.swift */; };
-		286115C12BD6694D008AFB24 /* MedicalSchoolInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115C02BD6694D008AFB24 /* MedicalSchoolInfoView.swift */; };
-		286115C32BD66DF9008AFB24 /* MedicalSchoolSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115C22BD66DF9008AFB24 /* MedicalSchoolSearchView.swift */; };
 		286115C52BD6BFCF008AFB24 /* InternshipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115C42BD6BFCF008AFB24 /* InternshipDetailView.swift */; };
 		286115C72BD6C33E008AFB24 /* ResidencyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115C62BD6C33E008AFB24 /* ResidencyDetailView.swift */; };
 		286115C92BD6C3C9008AFB24 /* FellowshipDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115C82BD6C3C9008AFB24 /* FellowshipDetailView.swift */; };
-		286115CB2BD6C422008AFB24 /* StateMedicalLicensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115CA2BD6C422008AFB24 /* StateMedicalLicensesView.swift */; };
-		286115CD2BD6C466008AFB24 /* HospitalAffiliationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115CC2BD6C466008AFB24 /* HospitalAffiliationsView.swift */; };
 		286115CF2BD6C4A3008AFB24 /* EmployersDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115CE2BD6C4A3008AFB24 /* EmployersDetailView.swift */; };
 		286115D32BD8BE09008AFB24 /* InternshipDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115D22BD8BE09008AFB24 /* InternshipDetailsViewModel.swift */; };
 		286115D72BD8C60C008AFB24 /* ResidencyDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286115D62BD8C60C008AFB24 /* ResidencyDetailsViewModel.swift */; };
@@ -49,11 +40,8 @@
 		289946152BD2471E0017E03C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946142BD2471E0017E03C /* MainTabView.swift */; };
 		289946172BD248320017E03C /* ProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946162BD248320017E03C /* ProviderViewModel.swift */; };
 		289946192BD248890017E03C /* NppesApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946182BD248890017E03C /* NppesApiModel.swift */; };
-		2899461B2BD248DE0017E03C /* AddHospitalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899461A2BD248DE0017E03C /* AddHospitalView.swift */; };
 		2899461D2BD249420017E03C /* PublicDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899461C2BD249420017E03C /* PublicDataView.swift */; };
 		2899461F2BD2499A0017E03C /* PrivateDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899461E2BD2499A0017E03C /* PrivateDataView.swift */; };
-		289946212BD249D80017E03C /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946202BD249D80017E03C /* HospitalModel.swift */; };
-		289946232BD24A270017E03C /* HospitalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946222BD24A270017E03C /* HospitalViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,18 +77,9 @@
 		2856FD7E2BD05FB600D4799B /* HomeNPILookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNPILookupView.swift; sourceTree = "<group>"; };
 		2861158C2BD3033D008AFB24 /* NPIDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPIDetailView.swift; sourceTree = "<group>"; };
 		286115B42BD62FD3008AFB24 /* MedicalSchoolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolDetailView.swift; sourceTree = "<group>"; };
-		286115B62BD6304D008AFB24 /* ProviderBasicInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderBasicInfoView.swift; sourceTree = "<group>"; };
-		286115B82BD63D5B008AFB24 /* MedicalSchoolJSON.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MedicalSchoolJSON.json; sourceTree = "<group>"; };
-		286115BA2BD63E22008AFB24 /* MedicalSchoolModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolModel.swift; sourceTree = "<group>"; };
-		286115BC2BD63EDF008AFB24 /* MedicalSchoolsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolsViewModel.swift; sourceTree = "<group>"; };
-		286115BE2BD644B1008AFB24 /* MedicalSchoolsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolsListView.swift; sourceTree = "<group>"; };
-		286115C02BD6694D008AFB24 /* MedicalSchoolInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolInfoView.swift; sourceTree = "<group>"; };
-		286115C22BD66DF9008AFB24 /* MedicalSchoolSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolSearchView.swift; sourceTree = "<group>"; };
 		286115C42BD6BFCF008AFB24 /* InternshipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternshipDetailView.swift; sourceTree = "<group>"; };
 		286115C62BD6C33E008AFB24 /* ResidencyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidencyDetailView.swift; sourceTree = "<group>"; };
 		286115C82BD6C3C9008AFB24 /* FellowshipDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FellowshipDetailView.swift; sourceTree = "<group>"; };
-		286115CA2BD6C422008AFB24 /* StateMedicalLicensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMedicalLicensesView.swift; sourceTree = "<group>"; };
-		286115CC2BD6C466008AFB24 /* HospitalAffiliationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalAffiliationsView.swift; sourceTree = "<group>"; };
 		286115CE2BD6C4A3008AFB24 /* EmployersDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployersDetailView.swift; sourceTree = "<group>"; };
 		286115D22BD8BE09008AFB24 /* InternshipDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternshipDetailsViewModel.swift; sourceTree = "<group>"; };
 		286115D62BD8C60C008AFB24 /* ResidencyDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidencyDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -119,11 +98,8 @@
 		289946142BD2471E0017E03C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		289946162BD248320017E03C /* ProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewModel.swift; sourceTree = "<group>"; };
 		289946182BD248890017E03C /* NppesApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NppesApiModel.swift; sourceTree = "<group>"; };
-		2899461A2BD248DE0017E03C /* AddHospitalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHospitalView.swift; sourceTree = "<group>"; };
 		2899461C2BD249420017E03C /* PublicDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicDataView.swift; sourceTree = "<group>"; };
 		2899461E2BD2499A0017E03C /* PrivateDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDataView.swift; sourceTree = "<group>"; };
-		289946202BD249D80017E03C /* HospitalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalModel.swift; sourceTree = "<group>"; };
-		289946222BD24A270017E03C /* HospitalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,20 +193,13 @@
 				2856FD7C2BD05F6E00D4799B /* OnBoardingView.swift */,
 				2856FD7E2BD05FB600D4799B /* HomeNPILookupView.swift */,
 				289946142BD2471E0017E03C /* MainTabView.swift */,
-				2899461A2BD248DE0017E03C /* AddHospitalView.swift */,
 				2899461C2BD249420017E03C /* PublicDataView.swift */,
 				2899461E2BD2499A0017E03C /* PrivateDataView.swift */,
 				2861158C2BD3033D008AFB24 /* NPIDetailView.swift */,
 				286115B42BD62FD3008AFB24 /* MedicalSchoolDetailView.swift */,
-				286115B62BD6304D008AFB24 /* ProviderBasicInfoView.swift */,
-				286115BE2BD644B1008AFB24 /* MedicalSchoolsListView.swift */,
-				286115C02BD6694D008AFB24 /* MedicalSchoolInfoView.swift */,
-				286115C22BD66DF9008AFB24 /* MedicalSchoolSearchView.swift */,
 				286115C42BD6BFCF008AFB24 /* InternshipDetailView.swift */,
 				286115C62BD6C33E008AFB24 /* ResidencyDetailView.swift */,
 				286115C82BD6C3C9008AFB24 /* FellowshipDetailView.swift */,
-				286115CA2BD6C422008AFB24 /* StateMedicalLicensesView.swift */,
-				286115CC2BD6C466008AFB24 /* HospitalAffiliationsView.swift */,
 				286115CE2BD6C4A3008AFB24 /* EmployersDetailView.swift */,
 				286115DE2BD8CF18008AFB24 /* BoardCertificationDetailView.swift */,
 				286115E22BD8D357008AFB24 /* HospitalAffiliationsDetailView.swift */,
@@ -245,11 +214,6 @@
 			children = (
 				289946162BD248320017E03C /* ProviderViewModel.swift */,
 				289946182BD248890017E03C /* NppesApiModel.swift */,
-				289946202BD249D80017E03C /* HospitalModel.swift */,
-				289946222BD24A270017E03C /* HospitalViewModel.swift */,
-				286115B82BD63D5B008AFB24 /* MedicalSchoolJSON.json */,
-				286115BA2BD63E22008AFB24 /* MedicalSchoolModel.swift */,
-				286115BC2BD63EDF008AFB24 /* MedicalSchoolsViewModel.swift */,
 				286115D22BD8BE09008AFB24 /* InternshipDetailsViewModel.swift */,
 				286115D62BD8C60C008AFB24 /* ResidencyDetailsViewModel.swift */,
 				286115D82BD8C6DC008AFB24 /* FellowshipDetailsViewModel.swift */,
@@ -375,7 +339,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				286115B92BD63D5B008AFB24 /* MedicalSchoolJSON.json in Resources */,
 				2856FD562BD04B6500D4799B /* Preview Assets.xcassets in Resources */,
 				2856FD532BD04B6500D4799B /* Assets.xcassets in Resources */,
 			);
@@ -409,40 +372,29 @@
 				286115C72BD6C33E008AFB24 /* ResidencyDetailView.swift in Sources */,
 				2856FD7D2BD05F6E00D4799B /* OnBoardingView.swift in Sources */,
 				2856FD512BD04B6200D4799B /* ContentView.swift in Sources */,
-				286115C32BD66DF9008AFB24 /* MedicalSchoolSearchView.swift in Sources */,
 				289946172BD248320017E03C /* ProviderViewModel.swift in Sources */,
 				286115E52BD8D7D6008AFB24 /* MedicalSchoolDetailsViewModel.swift in Sources */,
-				286115BD2BD63EDF008AFB24 /* MedicalSchoolsViewModel.swift in Sources */,
 				2856FD7F2BD05FB600D4799B /* HomeNPILookupView.swift in Sources */,
 				286115C52BD6BFCF008AFB24 /* InternshipDetailView.swift in Sources */,
 				2861158D2BD3033D008AFB24 /* NPIDetailView.swift in Sources */,
-				289946232BD24A270017E03C /* HospitalViewModel.swift in Sources */,
 				286115ED2BD9A858008AFB24 /* ProviderDetailView.swift in Sources */,
 				2899461D2BD249420017E03C /* PublicDataView.swift in Sources */,
 				286115E72BD968B4008AFB24 /* StateMedicalLicenseDetailView.swift in Sources */,
 				286115B52BD62FD3008AFB24 /* MedicalSchoolDetailView.swift in Sources */,
 				286115F22BD9CBB0008AFB24 /* SharedEnums.swift in Sources */,
 				286115D92BD8C6DC008AFB24 /* FellowshipDetailsViewModel.swift in Sources */,
-				286115BB2BD63E22008AFB24 /* MedicalSchoolModel.swift in Sources */,
-				286115CD2BD6C466008AFB24 /* HospitalAffiliationsView.swift in Sources */,
 				286115EF2BD9B120008AFB24 /* PrivateDataViewModel.swift in Sources */,
 				2856FD4F2BD04B6200D4799B /* hmCapstoneApp.swift in Sources */,
 				286115DF2BD8CF18008AFB24 /* BoardCertificationDetailView.swift in Sources */,
-				286115C12BD6694D008AFB24 /* MedicalSchoolInfoView.swift in Sources */,
-				286115B72BD6304D008AFB24 /* ProviderBasicInfoView.swift in Sources */,
 				286115E32BD8D357008AFB24 /* HospitalAffiliationsDetailView.swift in Sources */,
 				2899461F2BD2499A0017E03C /* PrivateDataView.swift in Sources */,
 				289946152BD2471E0017E03C /* MainTabView.swift in Sources */,
-				286115BF2BD644B1008AFB24 /* MedicalSchoolsListView.swift in Sources */,
-				286115CB2BD6C422008AFB24 /* StateMedicalLicensesView.swift in Sources */,
 				286115EB2BD97537008AFB24 /* EmployersDetailsViewModel.swift in Sources */,
 				289946192BD248890017E03C /* NppesApiModel.swift in Sources */,
 				286115D32BD8BE09008AFB24 /* InternshipDetailsViewModel.swift in Sources */,
 				286115CF2BD6C4A3008AFB24 /* EmployersDetailView.swift in Sources */,
 				286115E12BD8D322008AFB24 /* HospitalAffiliationsDetailsViewModel.swift in Sources */,
-				2899461B2BD248DE0017E03C /* AddHospitalView.swift in Sources */,
 				286115D72BD8C60C008AFB24 /* ResidencyDetailsViewModel.swift in Sources */,
-				289946212BD249D80017E03C /* HospitalModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

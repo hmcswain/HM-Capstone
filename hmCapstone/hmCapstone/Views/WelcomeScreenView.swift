@@ -38,31 +38,31 @@ struct WelcomeScreenView: View {
               .padding()
           }
         }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .opacity(opacity)
-            .onAppear {
-              fadeOutEffect()
-              UserDefaults.standard.welcomeScreenShown  = true
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .opacity(opacity)
+        .onAppear {
+          fadeOutEffect()
+          UserDefaults.standard.welcomeScreenShown  = true
 
-            }
         }
-      }
-    }
-
-    func fadeOutEffect() {
-      Task {
-        try await Task.sleep(nanoseconds: 2_000_000_000) // Wait for 2 seconds
-        withAnimation(.easeInOut(duration: 2)) {
-          self.opacity = 0
-        }
-        try await Task.sleep(nanoseconds: 1_500_000_000) // Wait for an additional 1.5 seconds
-        isActive = true
-
       }
     }
   }
 
+  func fadeOutEffect() {
+    Task {
+      try await Task.sleep(nanoseconds: 2_000_000_000)
+      withAnimation(.easeInOut(duration: 2)) {
+        self.opacity = 0
+      }
+      try await Task.sleep(nanoseconds: 1_500_000_000) 
+      isActive = true
 
-  #Preview {
-    WelcomeScreenView()
+    }
   }
+}
+
+
+#Preview {
+  WelcomeScreenView()
+}

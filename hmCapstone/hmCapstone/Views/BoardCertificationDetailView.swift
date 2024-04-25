@@ -9,7 +9,7 @@ import SwiftUI
 struct BoardCertificationDetailView: View {
   @StateObject private var viewModel = BoardCertificationDetailsViewModel()
   @State private var showAlertForDateChange = false
-  
+
   var body: some View {
     NavigationView {
       Form {
@@ -35,7 +35,7 @@ struct BoardCertificationDetailView: View {
             }
           }
           .buttonStyle(.borderedProminent)
-          
+
           Button("Clear Details") {
             Task {
               await viewModel.clearData()

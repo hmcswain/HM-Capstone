@@ -7,7 +7,7 @@ import SwiftUI
 
 struct HospitalAffiliationsDetailView: View {
   @StateObject private var viewModel = HospitalAffiliationsDetailsViewModel()
-
+  
   var body: some View {
     NavigationView {
       Form {
@@ -42,7 +42,7 @@ struct HospitalAffiliationsDetailView: View {
             Button("OK", role: .cancel) { }
           }
           .buttonStyle(.borderedProminent)
-
+          
           Button("Clear Details") {
             Task {
               await viewModel.clearData()
@@ -56,9 +56,6 @@ struct HospitalAffiliationsDetailView: View {
         }
       }
       .navigationTitle("Hospital Affiliation")
- //     .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
- //       Button("OK", role: .cancel) { }
-  //    }
     }
   }
 }

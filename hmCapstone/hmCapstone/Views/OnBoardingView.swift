@@ -11,7 +11,7 @@ struct OnBoardingView: View {
   let description: String
   
   var body: some View {
-
+    
     VStack {
       Image(systemName: image)
         .resizable()
@@ -20,12 +20,12 @@ struct OnBoardingView: View {
         .foregroundColor(.red)
         .font(.largeTitle)
         .padding()
-
+      
       Text(title)
         .multilineTextAlignment(.center)
         .font(.largeTitle)
         .padding()
-
+      
       Text(description)
         .multilineTextAlignment(.center)
         .font(.headline)

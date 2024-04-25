@@ -3,14 +3,12 @@
 //  hmCapstone
 
 
-
 import SwiftUI
 import Combine
 
 @MainActor
 class ProviderViewModel: ObservableObject {
   @Published var providers: [Provider] = []
- // @Published var hospitals: [Hospital] = []
   @Published var isLoading = false
   @Published var errorMessage: String?
 
@@ -36,8 +34,6 @@ class ProviderViewModel: ObservableObject {
   func clearErrorMessage() {
     errorMessage = nil
   }
-  //  func addHospital(hospital: Hospital) {hospitals.append(hospital)
-  // }
 }
 
 extension ProviderViewModel {

@@ -15,7 +15,7 @@ class InternshipDetailsViewModel: ObservableObject {
   @Published var state: String = UserDefaults.standard.string(forKey: "internshipState") ?? ""
   @Published var showAlert: Bool = false
   @Published var showClearAlert: Bool = false
-  
+
   func saveData() async {
     UserDefaults.standard.set(internshipProgramName, forKey: "internshipProgramName")
     UserDefaults.standard.set(programDirectorName, forKey: "internshipProgramDirectorName")
@@ -24,7 +24,7 @@ class InternshipDetailsViewModel: ObservableObject {
     UserDefaults.standard.set(state, forKey: "internshipState")
     showAlert = true
   }
-  
+
   func clearData() async {
     UserDefaults.standard.removeObject(forKey: "internshipProgramName")
     UserDefaults.standard.removeObject(forKey: "internshipProgramDirectorName")

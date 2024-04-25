@@ -7,9 +7,9 @@
 import SwiftUI
 
 struct ProviderDetailView: View {
-  
+
   var provider: Provider
-  
+
   var body: some View {
     NavigationView {
       List {
@@ -17,19 +17,19 @@ struct ProviderDetailView: View {
           Text("First Name: \(provider.basic.firstName)")
           Text("Last Name: \(provider.basic.lastName)")
         }
-        
+
         if let credential = provider.basic.credential {
           Section(header: Text("Degree")) {
             Text(credential)
           }
         }
-        
+
         if let gender = provider.basic.gender {
           Section(header: Text("Legal Gender")) {
             Text(gender)
           }
         }
-        
+
         if !provider.addresses.isEmpty {
           ForEach(provider.addresses.indices, id: \.self) { index in
             let address = provider.addresses[index]
@@ -39,7 +39,7 @@ struct ProviderDetailView: View {
             }
           }
         }
-        
+
         if !provider.taxonomies.isEmpty {
           ForEach(provider.taxonomies.indices, id: \.self) { index in
             let taxonomy = provider.taxonomies[index]

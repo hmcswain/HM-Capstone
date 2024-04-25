@@ -29,7 +29,7 @@ class PrivateDataViewModel: ObservableObject {
   @Published var showClearAlert: Bool = false
 
   init() {
-
+    
     self.dateOfBirth = UserDefaults.standard.object(forKey: "dateOfBirth") as? Date ?? Date()
   }
 

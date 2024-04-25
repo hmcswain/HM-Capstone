@@ -2,7 +2,6 @@
 //  HomeNPILookupView.swift
 
 
-
 import SwiftUI
 
 struct HomeNPILookupView: View {
@@ -20,8 +19,8 @@ struct HomeNPILookupView: View {
         Button("Fetch Provider Details") {
           Task {
             await viewModel.fetchProviderDetails(npi: npiNumber)
-             if viewModel.errorMessage == nil {
-             shouldNavigate = true
+            if viewModel.errorMessage == nil {
+              shouldNavigate = true
             }
           }
         }

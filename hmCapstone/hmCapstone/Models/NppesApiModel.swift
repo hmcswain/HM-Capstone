@@ -13,8 +13,6 @@ struct ApiResponse: Codable {
 }
 
 struct Provider: Codable {
-  //  var id = UUID()
-  //  let enumerationType: String
   var enumerationType: String
   var number: String
   var basic: Basic
@@ -31,7 +29,6 @@ struct Provider: Codable {
   }
   static func mock() -> Provider {
     return Provider(
-      //    id: "1",
       enumerationType: "Type 1",
       number: "123456789",
       basic: Basic(

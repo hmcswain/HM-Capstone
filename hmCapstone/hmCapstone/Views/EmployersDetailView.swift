@@ -43,7 +43,7 @@ struct EmployersDetailView: View {
             Button("OK", role: .cancel) { }
           }
           .buttonStyle(.borderedProminent)
-          
+
           Button("Clear Details") {
             Task {
               await viewModel.clearData()
