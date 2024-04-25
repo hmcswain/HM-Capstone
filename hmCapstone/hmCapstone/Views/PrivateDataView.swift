@@ -100,7 +100,9 @@ struct PrivateDataView: View {
         }
         Section {
           Button("Save Details") {
-            viewModel.saveData()
+            Task {
+              await viewModel.saveData()
+            }
           }
           .buttonStyle(.borderedProminent)
           .alert("Data has been successfully saved to your device.", isPresented: $viewModel.showSaveAlert) {
@@ -108,10 +110,13 @@ struct PrivateDataView: View {
           }
 
           Button("Clear Details") {
-            viewModel.clearData()
+            Task {
+              await viewModel.clearData()
+            }
           }
           .buttonStyle(.bordered)
           .foregroundColor(.red)
+
           .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
             Button("OK", role: .cancel) { }
           }

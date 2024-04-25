@@ -2,11 +2,12 @@
 //  HospitalAffiliationsDetailView.swift
 //  hmCapstone
 //
+
 import SwiftUI
 
 struct HospitalAffiliationsDetailView: View {
   @StateObject private var viewModel = HospitalAffiliationsDetailsViewModel()
-  
+
   var body: some View {
     NavigationView {
       Form {
@@ -33,15 +34,19 @@ struct HospitalAffiliationsDetailView: View {
         }
         Section {
           Button("Save Details") {
-            viewModel.saveData()
+            Task {
+              await viewModel.saveData()
+            }
           }
           .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
             Button("OK", role: .cancel) { }
           }
           .buttonStyle(.borderedProminent)
-          
+
           Button("Clear Details") {
-            viewModel.clearData()
+            Task {
+              await viewModel.clearData()
+            }
           }
           .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
             Button("OK", role: .cancel) { }

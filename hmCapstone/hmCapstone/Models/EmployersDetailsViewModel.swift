@@ -30,6 +30,7 @@ class EmployersDetailsViewModel: ObservableObject {
 
 import Foundation
 
+@MainActor
 class EmployersDetailsViewModel: ObservableObject {
     @Published var employerName: String = UserDefaults.standard.string(forKey: "employerName") ?? ""
     @Published var streetAddress1: String = UserDefaults.standard.string(forKey: "employerStreetAddress1") ?? ""
@@ -41,7 +42,7 @@ class EmployersDetailsViewModel: ObservableObject {
     @Published var showAlert: Bool = false
     @Published var showClearAlert: Bool = false
 
-    func saveData() {
+    func saveData() async {
         UserDefaults.standard.set(employerName, forKey: "employerName")
         UserDefaults.standard.set(streetAddress1, forKey: "employerStreetAddress1")
         UserDefaults.standard.set(streetAddress2, forKey: "employerStreetAddress2")
@@ -52,7 +53,7 @@ class EmployersDetailsViewModel: ObservableObject {
         showAlert = true
     }
 
-    func clearData() {
+    func clearData() async {
         UserDefaults.standard.removeObject(forKey: "employerName")
         UserDefaults.standard.removeObject(forKey: "employerStreetAddress1")
         UserDefaults.standard.removeObject(forKey: "employerStreetAddress2")

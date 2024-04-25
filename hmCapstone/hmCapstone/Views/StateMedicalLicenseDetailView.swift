@@ -318,16 +318,35 @@ struct StateMedicalLicenseDetailView: View {
         }
         Section {
           Button("Save Details") {
-            viewModel.saveData()
+            Task {
+              await viewModel.saveData()
+            }
           }
           .buttonStyle(.borderedProminent)
           
           Button("Clear Details") {
-            viewModel.clearData()
+            Task {
+              await viewModel.clearData()
+            }
           }
           .buttonStyle(.bordered)
           .foregroundColor(.red)
         }
+        
+        /*
+         Section {
+         Button("Save Details") {
+         viewModel.saveData()
+         }
+         .buttonStyle(.borderedProminent)
+         
+         Button("Clear Details") {
+         viewModel.clearData()
+         }
+         .buttonStyle(.bordered)
+         .foregroundColor(.red)
+         }
+         */
       }
       .navigationTitle("State Medical License")
       .alert(item: $viewModel.activeAlert) { activeAlert in

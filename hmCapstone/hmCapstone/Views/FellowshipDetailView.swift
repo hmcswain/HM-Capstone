@@ -71,22 +71,41 @@ struct FellowshipDetailView: View {
         }
         Section {
           Button("Save Details") {
-            viewModel.saveData()
-          }
-          .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
-            Button("OK", role: .cancel) { }
+            Task {
+              await viewModel.saveData()
+            }
           }
           .buttonStyle(.borderedProminent)
           
           Button("Clear Details") {
-            viewModel.clearData()
-          }
-          .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
-            Button("OK", role: .cancel) { }
+            Task {
+              await viewModel.clearData()
+            }
           }
           .buttonStyle(.bordered)
           .foregroundColor(.red)
         }
+        
+        /*
+         Section {
+         Button("Save Details") {
+         viewModel.saveData()
+         }
+         .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
+         Button("OK", role: .cancel) { }
+         }
+         .buttonStyle(.borderedProminent)
+         
+         Button("Clear Details") {
+         viewModel.clearData()
+         }
+         .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
+         Button("OK", role: .cancel) { }
+         }
+         .buttonStyle(.bordered)
+         .foregroundColor(.red)
+         }
+         */
       }
       .navigationTitle("Fellowship Details")
       .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {

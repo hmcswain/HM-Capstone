@@ -69,6 +69,7 @@ import SwiftUI
 
 import Foundation
 
+@MainActor
 class InternshipDetailsViewModel: ObservableObject {
   @Published var internshipProgramName: String = UserDefaults.standard.string(forKey: "internshipProgramName") ?? ""
   @Published var programDirectorName: String = UserDefaults.standard.string(forKey: "internshipProgramDirectorName") ?? ""
@@ -78,7 +79,7 @@ class InternshipDetailsViewModel: ObservableObject {
   @Published var showAlert: Bool = false
   @Published var showClearAlert: Bool = false
 
-  func saveData() {
+  func saveData() async {
     UserDefaults.standard.set(internshipProgramName, forKey: "internshipProgramName")
     UserDefaults.standard.set(programDirectorName, forKey: "internshipProgramDirectorName")
     UserDefaults.standard.set(acgmeInstitutionName, forKey: "internshipAcgmeInstitutionName")
@@ -87,7 +88,7 @@ class InternshipDetailsViewModel: ObservableObject {
     showAlert = true
   }
   
-  func clearData() {
+  func clearData() async {
     UserDefaults.standard.removeObject(forKey: "internshipProgramName")
     UserDefaults.standard.removeObject(forKey: "internshipProgramDirectorName")
     UserDefaults.standard.removeObject(forKey: "internshipAcgmeInstitutionName")

@@ -5,6 +5,7 @@
 
 import Foundation
 
+@MainActor
 class MedicalSchoolDetailsViewModel: ObservableObject {
     @Published var medicalSchoolName: String = UserDefaults.standard.string(forKey: "medicalSchoolName") ?? ""
     @Published var shortName: String = UserDefaults.standard.string(forKey: "medicalSchoolShortName") ?? ""
@@ -16,7 +17,7 @@ class MedicalSchoolDetailsViewModel: ObservableObject {
     @Published var showAlert: Bool = false
     @Published var showClearAlert: Bool = false
 
-    func saveData() {
+    func saveData() async {
         UserDefaults.standard.set(medicalSchoolName, forKey: "medicalSchoolName")
         UserDefaults.standard.set(shortName, forKey: "medicalSchoolShortName")
         UserDefaults.standard.set(streetAddress1, forKey: "medicalSchoolStreetAddress1")
@@ -27,7 +28,7 @@ class MedicalSchoolDetailsViewModel: ObservableObject {
         showAlert = true
     }
 
-    func clearData() {
+    func clearData() async {
         UserDefaults.standard.removeObject(forKey: "medicalSchoolName")
         UserDefaults.standard.removeObject(forKey: "medicalSchoolShortName")
         UserDefaults.standard.removeObject(forKey: "medicalSchoolStreetAddress1")

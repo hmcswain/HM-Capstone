@@ -86,6 +86,7 @@ import Foundation
 
 import Foundation
 
+@MainActor
 class StateMedicalLicenseDetailsViewModel: ObservableObject {
   @Published var medicalBoardName: String = UserDefaults.standard.string(forKey: "medicalBoardName") ?? ""
   @Published var issuingState: String = UserDefaults.standard.string(forKey: "issuingState") ?? ""
@@ -97,7 +98,7 @@ class StateMedicalLicenseDetailsViewModel: ObservableObject {
     Calendar.current.dateComponents([.day], from: Date(), to: licenseExpirationDate).day ?? 0
   }
 
-  func saveData() {
+  func saveData() async {
     UserDefaults.standard.set(medicalBoardName, forKey: "medicalBoardName")
     UserDefaults.standard.set(issuingState, forKey: "issuingState")
     UserDefaults.standard.set(licenseNumber, forKey: "licenseNumber")
@@ -105,7 +106,7 @@ class StateMedicalLicenseDetailsViewModel: ObservableObject {
     activeAlert = .saveAlert
   }
 
-  func clearData() {
+  func clearData() async {
     UserDefaults.standard.removeObject(forKey: "medicalBoardName")
     UserDefaults.standard.removeObject(forKey: "issuingState")
     UserDefaults.standard.removeObject(forKey: "licenseNumber")

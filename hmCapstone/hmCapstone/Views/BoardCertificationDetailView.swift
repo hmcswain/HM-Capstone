@@ -5,11 +5,11 @@
 
 /*
  import SwiftUI
-
+ 
  struct BoardCertificationDetailView: View {
  @StateObject private var viewModel = BoardCertificationDetailsViewModel()
  @State private var showAlertForDateChange = false
-
+ 
  var body: some View {
  NavigationView {
  Form {
@@ -30,7 +30,7 @@
  Button("OK", role: .cancel) { }
  }
  .buttonStyle(.borderedProminent)
-
+ 
  Button("Clear Details") {
  viewModel.clearData()
  }
@@ -48,7 +48,7 @@
  }
  }
  }
-
+ 
  struct BoardCertificationDetailView_Previews: PreviewProvider {
  static var previews: some View {
  BoardCertificationDetailView()
@@ -60,11 +60,11 @@
 
 /*
  import SwiftUI
-
+ 
  struct BoardCertificationDetailView: View {
  @StateObject private var viewModel = BoardCertificationDetailsViewModel()
  @State private var showAlertForDateChange = false
-
+ 
  var body: some View {
  NavigationView {
  Form {
@@ -92,7 +92,7 @@
  viewModel.saveData()
  }
  .buttonStyle(.borderedProminent)
-
+ 
  Button("Clear Details") {
  viewModel.clearData()
  }
@@ -115,26 +115,26 @@
  }
  }
  }
-
+ 
  struct BoardCertificationDetailView_Previews: PreviewProvider {
  static var previews: some View {
  BoardCertificationDetailView()
  }
  }
-
-
-
+ 
+ 
+ 
  */
 
 
 /*
-
+ 
  import SwiftUI
-
+ 
  struct BoardCertificationDetailView: View {
  @StateObject private var viewModel = BoardCertificationDetailsViewModel()
  @State private var showAlertForDateChange = false
-
+ 
  var body: some View {
  NavigationView {
  Form {
@@ -162,7 +162,7 @@
  .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
  Button("OK", role: .cancel) { }
  }
-
+ 
  Button("Clear Details") {
  viewModel.clearData()
  showAlertForDateChange = false // Reset the alert state here
@@ -183,13 +183,13 @@
  }
  }
  }
-
+ 
  struct BoardCertificationDetailView_Previews: PreviewProvider {
  static var previews: some View {
  BoardCertificationDetailView()
  }
  }
-
+ 
  */
 
 
@@ -199,7 +199,7 @@ import SwiftUI
 struct BoardCertificationDetailView: View {
   @StateObject private var viewModel = BoardCertificationDetailsViewModel()
   @State private var showAlertForDateChange = false
-
+  
   var body: some View {
     NavigationView {
       Form {
@@ -220,15 +220,34 @@ struct BoardCertificationDetailView: View {
         }
         Section {
           Button("Save Details") {
-            viewModel.saveData()
+            Task {
+              await viewModel.saveData()
+            }
           }
           .buttonStyle(.borderedProminent)
+          
           Button("Clear Details") {
-            viewModel.clearData()
+            Task {
+              await viewModel.clearData()
+            }
           }
           .buttonStyle(.bordered)
           .foregroundColor(.red)
         }
+        
+        /*
+         Section {
+         Button("Save Details") {
+         viewModel.saveData()
+         }
+         .buttonStyle(.borderedProminent)
+         Button("Clear Details") {
+         viewModel.clearData()
+         }
+         .buttonStyle(.bordered)
+         .foregroundColor(.red)
+         }
+         */
       }
       .navigationTitle("Board Certification")
       .alert(item: $viewModel.activeAlert) { activeAlert in
@@ -241,11 +260,11 @@ struct BoardCertificationDetailView: View {
           return Alert(title: Text("Unknown alert"))
         }
       }
- //     .alert("Please press Save Details button below to calculate new # of days remaining until expiration date", isPresented: $showAlertForDateChange) {
-  //      Button("OK", role: .cancel) {
-  //        showAlertForDateChange = false
-    //    }
-  //    }
+      //     .alert("Please press Save Details button below to calculate new # of days remaining until expiration date", isPresented: $showAlertForDateChange) {
+      //      Button("OK", role: .cancel) {
+      //        showAlertForDateChange = false
+      //    }
+      //    }
     }
   }
 }

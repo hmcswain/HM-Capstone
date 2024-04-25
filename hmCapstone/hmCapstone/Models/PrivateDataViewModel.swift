@@ -80,6 +80,7 @@ class PrivateDataViewModel: ObservableObject {
 
 import Foundation
 
+@MainActor
 class PrivateDataViewModel: ObservableObject {
     @Published var dateOfBirth: Date {
         didSet {
@@ -106,7 +107,7 @@ class PrivateDataViewModel: ObservableObject {
         self.dateOfBirth = UserDefaults.standard.object(forKey: "dateOfBirth") as? Date ?? Date()
     }
 
-    func saveData() {
+    func saveData() async {
         UserDefaults.standard.set(countryOfCitizenship, forKey: "countryOfCitizenship")
         UserDefaults.standard.set(streetAddress1, forKey: "streetAddress1")
         UserDefaults.standard.set(streetAddress2, forKey: "streetAddress2")
@@ -119,7 +120,7 @@ class PrivateDataViewModel: ObservableObject {
         showSaveAlert = true
     }
 
-    func clearData() {
+    func clearData() async {
         dateOfBirth = Date()
         countryOfCitizenship = ""
         streetAddress1 = ""

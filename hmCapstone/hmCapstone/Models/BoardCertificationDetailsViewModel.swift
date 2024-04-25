@@ -73,6 +73,7 @@
 
 import Foundation
 
+@MainActor
 class BoardCertificationDetailsViewModel: ObservableObject {
   @Published var certifyingBoardName: String = UserDefaults.standard.string(forKey: "certifyingBoardName") ?? ""
   @Published var specialtyName: String = UserDefaults.standard.string(forKey: "specialtyName") ?? ""
@@ -83,14 +84,14 @@ class BoardCertificationDetailsViewModel: ObservableObject {
     Calendar.current.dateComponents([.day], from: Date(), to: certificateExpirationDate).day ?? 0
   }
 
-  func saveData() {
+  func saveData() async {
     UserDefaults.standard.set(certifyingBoardName, forKey: "certifyingBoardName")
     UserDefaults.standard.set(specialtyName, forKey: "specialtyName")
     UserDefaults.standard.set(certificateExpirationDate, forKey: "certificateExpirationDate")
     activeAlert = .saveAlert
   }
 
-  func clearData() {
+  func clearData() async {
     certifyingBoardName = ""
     specialtyName = ""
     certificateExpirationDate = Date()

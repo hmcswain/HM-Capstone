@@ -38,6 +38,7 @@
 
 import Foundation
 
+@MainActor
 class ResidencyDetailsViewModel: ObservableObject {
   @Published var residencyProgramName: String = UserDefaults.standard.string(forKey: "residencyProgramName") ?? ""
   @Published var programDirectorName: String = UserDefaults.standard.string(forKey: "residencyProgramDirectorName") ?? ""
@@ -47,7 +48,7 @@ class ResidencyDetailsViewModel: ObservableObject {
   @Published var showAlert: Bool = false
   @Published var showClearAlert: Bool = false
 
-  func saveData() {
+  func saveData() async {
     UserDefaults.standard.set(residencyProgramName, forKey: "residencyProgramName")
     UserDefaults.standard.set(programDirectorName, forKey: "residencyProgramDirectorName")
     UserDefaults.standard.set(acgmeInstitutionName, forKey: "residencyAcgmeInstitutionName")
@@ -56,7 +57,7 @@ class ResidencyDetailsViewModel: ObservableObject {
     showAlert = true
   }
 
-  func clearData() {
+  func clearData() async {
     UserDefaults.standard.removeObject(forKey: "residencyProgramName")
     UserDefaults.standard.removeObject(forKey: "residencyProgramDirectorName")
     UserDefaults.standard.removeObject(forKey: "residencyAcgmeInstitutionName")
