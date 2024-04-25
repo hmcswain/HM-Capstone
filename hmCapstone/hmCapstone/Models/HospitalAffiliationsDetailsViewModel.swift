@@ -27,7 +27,7 @@ class HospitalAffiliationsDetailsViewModel: ObservableObject {
     showAlert = true
   }
 
- func clearData() async {
+  func clearData() async {
     UserDefaults.standard.removeObject(forKey: "hospitalName")
     UserDefaults.standard.removeObject(forKey: "streetAddress1")
     UserDefaults.standard.removeObject(forKey: "streetAddress2")

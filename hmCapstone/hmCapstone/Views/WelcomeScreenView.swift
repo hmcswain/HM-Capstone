@@ -30,8 +30,8 @@ struct WelcomeScreenView: View {
               .fontWeight(.medium)
           }
           .multilineTextAlignment(.center)
-          .opacity(opacity) // Apply the same fading effect to the text
-          if opacity > 0 { // Show the spinner only while the screen is visible
+          .opacity(opacity)
+          if opacity > 0 {
             ProgressView()
               .progressViewStyle(CircularProgressViewStyle(tint: .blue))
               .scaleEffect(1.5)
@@ -39,7 +39,6 @@ struct WelcomeScreenView: View {
           }
         }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-          //     .background(Color.white.edgesIgnoringSafeArea(.all))
             .opacity(opacity)
             .onAppear {
               fadeOutEffect()
@@ -52,11 +51,11 @@ struct WelcomeScreenView: View {
 
     func fadeOutEffect() {
       Task {
-        try await Task.sleep(nanoseconds: 2_000_000_000) // Wait for 1 seconds
+        try await Task.sleep(nanoseconds: 2_000_000_000) // Wait for 2 seconds
         withAnimation(.easeInOut(duration: 2)) {
           self.opacity = 0
         }
-        try await Task.sleep(nanoseconds: 1_500_000_000) // Wait for an additional 1 seconds
+        try await Task.sleep(nanoseconds: 1_500_000_000) // Wait for an additional 1.5 seconds
         isActive = true
 
       }

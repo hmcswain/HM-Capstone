@@ -5,6 +5,7 @@
 //  Created by Jj on 4/22/24.
 //
 
+/*
 import SwiftUI
 
 struct MedicalSchoolSearchView: View {
@@ -60,3 +61,4 @@ struct MedicalSchoolSearchView_Previews: PreviewProvider {
         MedicalSchoolSearchView()
     }
 }
+*/

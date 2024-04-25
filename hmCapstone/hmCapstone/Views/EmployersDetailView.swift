@@ -3,72 +3,12 @@
 //  hmCapstone
 //
 
-/*
- import SwiftUI
- 
- struct EmployersDetailView: View {
- var body: some View {
- Text("Details about the Provider's Employers")
- }
- }
- 
- #Preview {
- EmployersDetailView()
- }
- 
- */
-import SwiftUI
-
-/*
- 
- struct EmployersDetailView: View {
- @StateObject private var viewModel = EmployersDetailsViewModel()
- 
- var body: some View {
- NavigationView {
- Form {
- Section(header: Text("Employer Name")) {
- TextField("Enter employer name", text: $viewModel.employerName)
- }
- Section(header: Text("Employer Type")) {
- TextField("Enter W2 or 1099", text: $viewModel.employerType)
- }
- Section {
- Button("Save Details") {
- viewModel.saveData()
- }
- .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
- Button("OK", role: .cancel) { }
- }
- .buttonStyle(.borderedProminent)
- 
- Button("Clear Details") {
- viewModel.clearData()
- }
- .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
- Button("OK", role: .cancel) { }
- }
- .buttonStyle(.bordered)
- .foregroundColor(.red)
- }
- }
- .navigationTitle("Employer Details")
- }
- }
- }
- 
- struct EmployersDetailView_Previews: PreviewProvider {
- static var previews: some View {
- EmployersDetailView()
- }
- }
- */
 
 import SwiftUI
 
 struct EmployersDetailView: View {
   @StateObject private var viewModel = EmployersDetailsViewModel()
-  
+
   var body: some View {
     NavigationView {
       Form {
@@ -99,6 +39,9 @@ struct EmployersDetailView: View {
               await viewModel.saveData()
             }
           }
+          .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
+            Button("OK", role: .cancel) { }
+          }
           .buttonStyle(.borderedProminent)
           
           Button("Clear Details") {
@@ -106,30 +49,12 @@ struct EmployersDetailView: View {
               await viewModel.clearData()
             }
           }
+          .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
+            Button("OK", role: .cancel) { }
+          }
           .buttonStyle(.bordered)
           .foregroundColor(.red)
         }
-        
-        /*
-         Section {
-         Button("Save Details") {
-         viewModel.saveData()
-         }
-         .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
-         Button("OK", role: .cancel) { }
-         }
-         .buttonStyle(.borderedProminent)
-         
-         Button("Clear Details") {
-         viewModel.clearData()
-         }
-         .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
-         Button("OK", role: .cancel) { }
-         }
-         .buttonStyle(.bordered)
-         .foregroundColor(.red)
-         }
-         */
       }
       .navigationTitle("Employer Details")
     }

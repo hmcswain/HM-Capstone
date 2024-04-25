@@ -4,39 +4,6 @@
 
 
 import SwiftUI
-/*
- struct PrivateDataView: View {
- @AppStorage("dateOfBirth") private var dateOfBirth = ""
- @AppStorage("countryOfCitizenship") private var countryOfCitizenship = ""
- @AppStorage("homeAddress") private var homeAddress = ""
- @AppStorage("socialSecurityNumber") private var socialSecurityNumber = ""
-
- var body: some View {
- Form {
- Section(header: Text("Private Information")) {
- TextField("Date of Birth", text: $dateOfBirth)
- TextField("Country of Citizenship", text: $countryOfCitizenship)
- TextField("Home Address", text: $homeAddress)
- SecureField("Social Security Number", text: $socialSecurityNumber)
- }
- Button("Save Details") {
-
- print("Details saved")
- }
- }
- .navigationTitle("Private Data")
- .padding()
- }
- }
-
-
- #Preview {
- PrivateDataView()
- }
-
- */
-
-import SwiftUI
 
 struct PrivateDataView: View {
   @StateObject private var viewModel = PrivateDataViewModel()
@@ -47,11 +14,6 @@ struct PrivateDataView: View {
         Section(header: Text("Date of Birth")) {
           DatePicker("Select your date of birth", selection: $viewModel.dateOfBirth, displayedComponents: .date)
         }
-
-        //      Section(header: Text("Date of Birth")) {
-        //        DatePicker("Select your date of birth", selection: $viewModel.dateOfBirth, displayedComponents: .date)
-        //          .datePickerStyle(CompactDatePickerStyle())
-        //      }
         Section(header: Text("Country of Citizenship")) {
           TextField("Enter country of citizenship", text: $viewModel.countryOfCitizenship)
         }

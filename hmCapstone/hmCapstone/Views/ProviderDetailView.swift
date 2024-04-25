@@ -2,8 +2,7 @@
 //  ProviderDetailView.swift
 //  hmCapstone
 //
-//  Created by Jj on 4/24/24.
-//
+
 
 import SwiftUI
 
@@ -57,7 +56,7 @@ struct ProviderDetailView: View {
         }
       }
       .navigationTitle("Provider Basic Information")
-      .navigationBarTitleDisplayMode(.inline)  // Inline title display mode
+      .navigationBarTitleDisplayMode(.inline)
     }
   }
 }

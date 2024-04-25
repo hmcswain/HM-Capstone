@@ -1,147 +1,68 @@
-import SwiftUI
+
 /*
-struct ProviderBasicInfoView: View {
-    var provider: Provider
 
-    var body: some View {
-        List {
-            Section(header: Text("Name")) {
-                Text("First Name: \(provider.basic.firstName)")
-                Text("Last Name: \(provider.basic.lastName)")
-            }
-            // Add more sections for other basic information if needed
-        }
-        .navigationTitle("Provider Basic Information")
-    }
-}
+ import SwiftUI
 
-struct ProviderBasicInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProviderBasicInfoView(provider: Provider.mock())
-    }
-}
+ struct ProviderBasicInfoView: View {
+ var provider: Provider
 
-*/
+ var body: some View {
+ NavigationView {
+ List {
+ Section(header: Text("Name")) {
+ Text("First Name: \(provider.basic.firstName)")
+ Text("Last Name: \(provider.basic.lastName)")
+ }
 
-import SwiftUI
-/*
-struct ProviderBasicInfoView: View {
-    var provider: Provider
+ if let credential = provider.basic.credential {
+ Section(header: Text("Degree")) {
+ Text(credential)
+ }
+ }
 
-    var body: some View {
-        List {
-            Section(header: Text("Name")) {
-                Text("First Name: \(provider.basic.firstName)")
-                Text("Last Name: \(provider.basic.lastName)")
-            }
+ if let gender = provider.basic.gender {
+ Section(header: Text("Legal Gender")) {
+ Text(gender)
+ }
+ }
 
-            if let credential = provider.basic.credential {
-                Section(header: Text("Degree")) {
-                    Text(credential)
-                }
-            }
+ if !provider.addresses.isEmpty {
+ ForEach(provider.addresses.indices, id: \.self) { index in
+ let address = provider.addresses[index]
+ Section(header: Text("Location \(index + 1)")) {
+ Text("\(address.city), \(address.state) \(address.postalCode)")
+ Text("Country: \(address.countryName)")
+ }
+ }
+ }
 
-            if let gender = provider.basic.gender {
-                Section(header: Text("Legal Gender")) {
-                    Text(gender)
-                }
-            }
+ if !provider.taxonomies.isEmpty {
+ ForEach(provider.taxonomies.indices, id: \.self) { index in
+ let taxonomy = provider.taxonomies[index]
+ Section(header: Text("Taxonomy/Specialty \(index + 1)")) {
+ if let desc = taxonomy.desc {
+ Text("Description: \(desc)")
+ }
+ if let state = taxonomy.state {
+ Text("State: \(state)")
+ }
+ Text("Primary: \(taxonomy.primary ?? false ? "Yes" : "No")")
+ }
+ }
+ }
+ }
+ .navigationTitle("Provider Basic Information")
+ .navigationBarTitleDisplayMode(.inline)  // Inline title display mode
+ }
+ }
+ }
 
-            Section(header: Text("Location")) {
-                ForEach(provider.addresses, id: \.postalCode) { address in
-                    Text("\(address.city), \(address.state) \(address.postalCode)")
-                    Text("Country: \(address.countryName)")
-                }
-            }
+ struct ProviderBasicInfoView_Previews: PreviewProvider {
+ static var previews: some View {
+ NavigationView {
+ ProviderBasicInfoView(provider: Provider.mock())
+ }
+ }
+ }
 
-            Section(header: Text("Taxonomy/Specialty")) {
-                ForEach(provider.taxonomies, id: \.desc) { taxonomy in
-                    if let desc = taxonomy.desc {
-                        Text("Description: \(desc)")
-                    }
-                    if let state = taxonomy.state {
-                        Text("State: \(state)")
-                    }
-                    Text("Primary: \(taxonomy.primary == true ? "Yes" : "No")")
-                }
-            }
-        }
-        .navigationTitle("Provider Basic Information")
-        .navigationBarTitleDisplayMode(.inline)  // Inline title display mode
-    }
-}
-
-struct ProviderBasicInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            ProviderBasicInfoView(provider: Provider.mock())
-        }
-    }
-}
-
-*/
-
-import SwiftUI
-
-struct ProviderBasicInfoView: View {
-    var provider: Provider
-
-    var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Name")) {
-                    Text("First Name: \(provider.basic.firstName)")
-                    Text("Last Name: \(provider.basic.lastName)")
-                }
-
-                if let credential = provider.basic.credential {
-                    Section(header: Text("Degree")) {
-                        Text(credential)
-                    }
-                }
-
-                if let gender = provider.basic.gender {
-                    Section(header: Text("Legal Gender")) {
-                        Text(gender)
-                    }
-                }
-
-                if !provider.addresses.isEmpty {
-                    ForEach(provider.addresses.indices, id: \.self) { index in
-                        let address = provider.addresses[index]
-                        Section(header: Text("Location \(index + 1)")) {
-                            Text("\(address.city), \(address.state) \(address.postalCode)")
-                            Text("Country: \(address.countryName)")
-                        }
-                    }
-                }
-
-                if !provider.taxonomies.isEmpty {
-                    ForEach(provider.taxonomies.indices, id: \.self) { index in
-                        let taxonomy = provider.taxonomies[index]
-                        Section(header: Text("Taxonomy/Specialty \(index + 1)")) {
-                            if let desc = taxonomy.desc {
-                                Text("Description: \(desc)")
-                            }
-                            if let state = taxonomy.state {
-                                Text("State: \(state)")
-                            }
-                          Text("Primary: \(taxonomy.primary ?? false ? "Yes" : "No")")
-                        }
-                    }
-                }
-            }
-            .navigationTitle("Provider Basic Information")
-            .navigationBarTitleDisplayMode(.inline)  // Inline title display mode
-        }
-    }
-}
-
-struct ProviderBasicInfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        NavigationView {
-            ProviderBasicInfoView(provider: Provider.mock())
-        }
-    }
-}
-
+ */

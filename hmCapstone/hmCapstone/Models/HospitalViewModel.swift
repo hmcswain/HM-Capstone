@@ -7,7 +7,7 @@ import Foundation
 import SwiftUI
 
 import Combine
-
+/*
 class HospitalViewModel: ObservableObject {
   @Published var hospitals: [Hospital] = []
   @Published var searchText = ""
@@ -39,5 +39,5 @@ class HospitalViewModel: ObservableObject {
 
 }
 
-
+*/
 

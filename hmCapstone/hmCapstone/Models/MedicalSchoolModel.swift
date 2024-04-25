@@ -6,7 +6,7 @@
 
 import Foundation
 
-
+/*
 struct MedicalSchoolsList: Codable {
     var medicalSchools: [MedicalSchool]
 
@@ -38,3 +38,4 @@ struct MedicalSchool: Codable, Identifiable {
 }
 
 
+*/

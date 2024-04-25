@@ -1,4 +1,6 @@
 
+
+/*
 import SwiftUI
 
 struct AddHospitalView: View {
@@ -70,3 +72,4 @@ struct AddHospitalView_Previews: PreviewProvider {
     }
 }
 
+*/

@@ -1,3 +1,5 @@
+
+
 import SwiftUI
 
 struct MedicalSchoolDetailView: View {
@@ -33,6 +35,9 @@ struct MedicalSchoolDetailView: View {
               await viewModel.saveData()
             }
           }
+          .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
+            Button("OK", role: .cancel) { }
+          }
           .buttonStyle(.borderedProminent)
           
           Button("Clear Details") {
@@ -40,35 +45,17 @@ struct MedicalSchoolDetailView: View {
               await viewModel.clearData()
             }
           }
+          .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
+            Button("OK", role: .cancel) { }
+          }
           .buttonStyle(.bordered)
           .foregroundColor(.red)
         }
-        
-        /*
-         Section {
-         Button("Save Details") {
-         viewModel.saveData()
-         }
-         .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
-         Button("OK", role: .cancel) { }
-         }
-         .buttonStyle(.borderedProminent)
-         
-         Button("Clear Details") {
-         viewModel.clearData()
-         }
-         .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
-         Button("OK", role: .cancel) { }
-         }
-         .buttonStyle(.bordered)
-         .foregroundColor(.red)
-         }
-         */
       }
       .navigationTitle("Medical School Details")
-      .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
-        Button("OK", role: .cancel) { }
-      }
+      //    .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
+      //       Button("OK", role: .cancel) { }
+      //     }
     }
   }
 }

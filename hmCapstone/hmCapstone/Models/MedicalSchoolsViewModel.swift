@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 
+/*
 class MedicalSchoolsViewModel: ObservableObject {
   @Published var medicalSchools: [MedicalSchool] = []
 
@@ -23,6 +24,8 @@ class MedicalSchoolsViewModel: ObservableObject {
     }
   }
 }
+
+ */
 
   /*
    func loadMedicalSchools() {

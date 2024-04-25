@@ -23,44 +23,44 @@ struct Provider: Codable {
 
 
   enum CodingKeys: String, CodingKey {
-      case enumerationType = "enumeration_type"
-      case number
-      case basic
-      case addresses
-      case taxonomies
+    case enumerationType = "enumeration_type"
+    case number
+    case basic
+    case addresses
+    case taxonomies
   }
   static func mock() -> Provider {
-       return Provider(
-       //    id: "1",
-           enumerationType: "Type 1",
-           number: "123456789",
-           basic: Basic(
-               firstName: "John",
-               lastName: "Doe",
-               credential: "MD",
-               soleProprietor: "No",
-               gender: "Male",
-               enumerationDate: "2006-06-15",
-               lastUpdated: "2023-03-07",
-               status: "Active"
-           ),
-           addresses: [
-               Address(
-                   countryName: "USA",
-                   city: "New York",
-                   state: "NY",
-                   postalCode: "10001"
-               )
-           ],
-           taxonomies: [
-               Taxonomy(
-                   desc: "General Medicine",
-                   state: "NY",
-                   primary: true
-               )
-           ]
-       )
-   }
+    return Provider(
+      //    id: "1",
+      enumerationType: "Type 1",
+      number: "123456789",
+      basic: Basic(
+        firstName: "John",
+        lastName: "Doe",
+        credential: "MD",
+        soleProprietor: "No",
+        gender: "Male",
+        enumerationDate: "2006-06-15",
+        lastUpdated: "2023-03-07",
+        status: "Active"
+      ),
+      addresses: [
+        Address(
+          countryName: "USA",
+          city: "New York",
+          state: "NY",
+          postalCode: "10001"
+        )
+      ],
+      taxonomies: [
+        Taxonomy(
+          desc: "General Medicine",
+          state: "NY",
+          primary: true
+        )
+      ]
+    )
+  }
 }
 
 struct Basic: Codable {
@@ -72,8 +72,7 @@ struct Basic: Codable {
   var enumerationDate: String
   var lastUpdated: String?
   var status: String?
-//  let namePrefix: String?
-//  let nameSuffix: String?
+
 
   enum CodingKeys: String, CodingKey {
     case firstName = "first_name"
@@ -84,8 +83,6 @@ struct Basic: Codable {
     case enumerationDate = "enumeration_date"
     case lastUpdated = "last_updated"
     case status
-  //  case namePrefix = "name_prefix"
-  //  case nameSuffix = "name_suffix"
   }
 }
 

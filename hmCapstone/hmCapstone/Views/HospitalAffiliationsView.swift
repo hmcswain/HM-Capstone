@@ -5,6 +5,8 @@
 //  Created by Jj on 4/22/24.
 //
 
+
+/*
 import SwiftUI
 
 struct HospitalAffiliationsView: View {
@@ -16,3 +18,4 @@ struct HospitalAffiliationsView: View {
 #Preview {
     HospitalAffiliationsView()
 }
+*/
