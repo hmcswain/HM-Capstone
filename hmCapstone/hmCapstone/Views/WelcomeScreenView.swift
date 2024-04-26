@@ -24,9 +24,11 @@ struct WelcomeScreenView: View {
             Text("Digitizing medical identity....")
               .font(.headline)
               .fontWeight(.medium)
+              .accessibilityIdentifier("DigitizingIdentityText") // Accessibility identifier adde
             Text("to save time and paper")
               .font(.headline)
               .fontWeight(.medium)
+              .accessibilityIdentifier("SaveTimeText") // Accessibility identifier added
           }
           .multilineTextAlignment(.center)
           .opacity(opacity)
@@ -35,6 +37,7 @@ struct WelcomeScreenView: View {
               .progressViewStyle(CircularProgressViewStyle(tint: .blue))
               .scaleEffect(1.5)
               .padding()
+              .accessibilityIdentifier("ProgressView") // Accessibility identifier added
           }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
