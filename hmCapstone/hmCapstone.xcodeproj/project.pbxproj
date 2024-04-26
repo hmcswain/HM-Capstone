@@ -41,6 +41,19 @@
 		2892A1262BDA3A4E00F1F3BE /* NPPESAPIModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1252BDA3A4E00F1F3BE /* NPPESAPIModelTests.swift */; };
 		2892A1282BDA3C8700F1F3BE /* PrivateDataViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1272BDA3C8700F1F3BE /* PrivateDataViewUITests.swift */; };
 		2892A12A2BDAD12700F1F3BE /* MainTabViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1292BDAD12700F1F3BE /* MainTabViewUITests.swift */; };
+		2892A12D2BDB05A600F1F3BE /* WelcomeScreenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A12C2BDB05A600F1F3BE /* WelcomeScreenUITests.swift */; };
+		2892A12F2BDB109200F1F3BE /* ActiveAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A12E2BDB109200F1F3BE /* ActiveAlertTests.swift */; };
+		2892A1312BDB126200F1F3BE /* InternshipDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1302BDB126200F1F3BE /* InternshipDetailsViewModelTests.swift */; };
+		2892A1332BDB473200F1F3BE /* ResidencyDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1322BDB473200F1F3BE /* ResidencyDetailsViewModelTests.swift */; };
+		2892A1352BDB536C00F1F3BE /* FellowshipDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1342BDB536C00F1F3BE /* FellowshipDetailsViewModelTests.swift */; };
+		2892A1372BDB59CF00F1F3BE /* EmployersDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1362BDB59CF00F1F3BE /* EmployersDetailsViewModelTests.swift */; };
+		2892A1392BDB5E8000F1F3BE /* HospitalAffiliationsDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1382BDB5E8000F1F3BE /* HospitalAffiliationsDetailsViewModelTests.swift */; };
+		2892A13B2BDB67E300F1F3BE /* BoardCertificationDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A13A2BDB67E300F1F3BE /* BoardCertificationDetailsViewModelTests.swift */; };
+		2892A13D2BDB79A100F1F3BE /* StateMedicalLicenseDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A13C2BDB79A100F1F3BE /* StateMedicalLicenseDetailsViewModelTests.swift */; };
+		2892A13F2BDB800F00F1F3BE /* MedicalSchoolDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A13E2BDB800F00F1F3BE /* MedicalSchoolDetailsViewModelTests.swift */; };
+		2892A1412BDB879E00F1F3BE /* NPIDetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1402BDB879E00F1F3BE /* NPIDetailViewTests.swift */; };
+		2892A1432BDB89C600F1F3BE /* NPIDetailViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1422BDB89C600F1F3BE /* NPIDetailViewUITests.swift */; };
+		2892A14A2BDB9C4E00F1F3BE /* XCUIElement+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2892A1492BDB9C4E00F1F3BE /* XCUIElement+Extensions.swift */; };
 		289946152BD2471E0017E03C /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946142BD2471E0017E03C /* MainTabView.swift */; };
 		289946172BD248320017E03C /* ProviderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946162BD248320017E03C /* ProviderViewModel.swift */; };
 		289946192BD248890017E03C /* NppesApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946182BD248890017E03C /* NppesApiModel.swift */; };
@@ -103,6 +116,19 @@
 		2892A1252BDA3A4E00F1F3BE /* NPPESAPIModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPPESAPIModelTests.swift; sourceTree = "<group>"; };
 		2892A1272BDA3C8700F1F3BE /* PrivateDataViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDataViewUITests.swift; sourceTree = "<group>"; };
 		2892A1292BDAD12700F1F3BE /* MainTabViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewUITests.swift; sourceTree = "<group>"; };
+		2892A12C2BDB05A600F1F3BE /* WelcomeScreenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenUITests.swift; sourceTree = "<group>"; };
+		2892A12E2BDB109200F1F3BE /* ActiveAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveAlertTests.swift; sourceTree = "<group>"; };
+		2892A1302BDB126200F1F3BE /* InternshipDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternshipDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		2892A1322BDB473200F1F3BE /* ResidencyDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidencyDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		2892A1342BDB536C00F1F3BE /* FellowshipDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FellowshipDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		2892A1362BDB59CF00F1F3BE /* EmployersDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployersDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		2892A1382BDB5E8000F1F3BE /* HospitalAffiliationsDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalAffiliationsDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		2892A13A2BDB67E300F1F3BE /* BoardCertificationDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCertificationDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		2892A13C2BDB79A100F1F3BE /* StateMedicalLicenseDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateMedicalLicenseDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		2892A13E2BDB800F00F1F3BE /* MedicalSchoolDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalSchoolDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		2892A1402BDB879E00F1F3BE /* NPIDetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPIDetailViewTests.swift; sourceTree = "<group>"; };
+		2892A1422BDB89C600F1F3BE /* NPIDetailViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPIDetailViewUITests.swift; sourceTree = "<group>"; };
+		2892A1492BDB9C4E00F1F3BE /* XCUIElement+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCUIElement+Extensions.swift"; sourceTree = "<group>"; };
 		289946142BD2471E0017E03C /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		289946162BD248320017E03C /* ProviderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderViewModel.swift; sourceTree = "<group>"; };
 		289946182BD248890017E03C /* NppesApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NppesApiModel.swift; sourceTree = "<group>"; };
@@ -158,6 +184,7 @@
 		2856FD4D2BD04B6200D4799B /* hmCapstone */ = {
 			isa = PBXGroup;
 			children = (
+				2892A1442BDB9ADF00F1F3BE /* Extensions */,
 				286115F02BD9CB8C008AFB24 /* Enums */,
 				2856FD792BD05C6700D4799B /* Models */,
 				2856FD4E2BD04B6200D4799B /* HmCapstoneApp.swift */,
@@ -182,6 +209,16 @@
 				2856FD5F2BD04B6500D4799B /* HmCapstoneTests.swift */,
 				2892A1232BDA2EC700F1F3BE /* ProviderViewModelTests.swift */,
 				2892A1252BDA3A4E00F1F3BE /* NPPESAPIModelTests.swift */,
+				2892A12E2BDB109200F1F3BE /* ActiveAlertTests.swift */,
+				2892A1302BDB126200F1F3BE /* InternshipDetailsViewModelTests.swift */,
+				2892A1322BDB473200F1F3BE /* ResidencyDetailsViewModelTests.swift */,
+				2892A1342BDB536C00F1F3BE /* FellowshipDetailsViewModelTests.swift */,
+				2892A1362BDB59CF00F1F3BE /* EmployersDetailsViewModelTests.swift */,
+				2892A1382BDB5E8000F1F3BE /* HospitalAffiliationsDetailsViewModelTests.swift */,
+				2892A13A2BDB67E300F1F3BE /* BoardCertificationDetailsViewModelTests.swift */,
+				2892A13C2BDB79A100F1F3BE /* StateMedicalLicenseDetailsViewModelTests.swift */,
+				2892A13E2BDB800F00F1F3BE /* MedicalSchoolDetailsViewModelTests.swift */,
+				2892A1402BDB879E00F1F3BE /* NPIDetailViewTests.swift */,
 			);
 			path = hmCapstoneTests;
 			sourceTree = "<group>";
@@ -193,6 +230,9 @@
 				2856FD6B2BD04B6500D4799B /* HmCapstoneUITestsLaunchTests.swift */,
 				2892A1272BDA3C8700F1F3BE /* PrivateDataViewUITests.swift */,
 				2892A1292BDAD12700F1F3BE /* MainTabViewUITests.swift */,
+				2892A12C2BDB05A600F1F3BE /* WelcomeScreenUITests.swift */,
+				2892A1422BDB89C600F1F3BE /* NPIDetailViewUITests.swift */,
+				2892A1492BDB9C4E00F1F3BE /* XCUIElement+Extensions.swift */,
 			);
 			path = hmCapstoneUITests;
 			sourceTree = "<group>";
@@ -245,6 +285,13 @@
 				286115F12BD9CBB0008AFB24 /* SharedEnums.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		2892A1442BDB9ADF00F1F3BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,9 +483,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2892A12F2BDB109200F1F3BE /* ActiveAlertTests.swift in Sources */,
+				2892A13B2BDB67E300F1F3BE /* BoardCertificationDetailsViewModelTests.swift in Sources */,
+				2892A1352BDB536C00F1F3BE /* FellowshipDetailsViewModelTests.swift in Sources */,
+				2892A1392BDB5E8000F1F3BE /* HospitalAffiliationsDetailsViewModelTests.swift in Sources */,
 				2856FD602BD04B6500D4799B /* HmCapstoneTests.swift in Sources */,
 				2892A1262BDA3A4E00F1F3BE /* NPPESAPIModelTests.swift in Sources */,
+				2892A13D2BDB79A100F1F3BE /* StateMedicalLicenseDetailsViewModelTests.swift in Sources */,
+				2892A1412BDB879E00F1F3BE /* NPIDetailViewTests.swift in Sources */,
+				2892A13F2BDB800F00F1F3BE /* MedicalSchoolDetailsViewModelTests.swift in Sources */,
+				2892A1372BDB59CF00F1F3BE /* EmployersDetailsViewModelTests.swift in Sources */,
 				2892A1242BDA2EC700F1F3BE /* ProviderViewModelTests.swift in Sources */,
+				2892A1332BDB473200F1F3BE /* ResidencyDetailsViewModelTests.swift in Sources */,
+				2892A1312BDB126200F1F3BE /* InternshipDetailsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,8 +505,11 @@
 			files = (
 				2856FD6C2BD04B6500D4799B /* HmCapstoneUITestsLaunchTests.swift in Sources */,
 				2856FD6A2BD04B6500D4799B /* HmCapstoneUITests.swift in Sources */,
+				2892A14A2BDB9C4E00F1F3BE /* XCUIElement+Extensions.swift in Sources */,
 				2892A1282BDA3C8700F1F3BE /* PrivateDataViewUITests.swift in Sources */,
+				2892A1432BDB89C600F1F3BE /* NPIDetailViewUITests.swift in Sources */,
 				2892A12A2BDAD12700F1F3BE /* MainTabViewUITests.swift in Sources */,
+				2892A12D2BDB05A600F1F3BE /* WelcomeScreenUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

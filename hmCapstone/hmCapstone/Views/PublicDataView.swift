@@ -5,14 +5,16 @@ import SwiftUI
 
 struct PublicDataView: View {
   @ObservedObject var providerViewModel: ProviderViewModel
-  @ObservedObject var medicalSchoolDetailsViewModel = MedicalSchoolDetailsViewModel()
-  @ObservedObject var hospitalAffiliationsDetailsViewModel = HospitalAffiliationsDetailsViewModel()
-  @ObservedObject var boardCertificationDetailsViewModel = BoardCertificationDetailsViewModel()
-  @ObservedObject var fellowshipDetailsViewModel = FellowshipDetailsViewModel()
-  @ObservedObject var residencyDetailsViewModel = ResidencyDetailsViewModel()
-  @ObservedObject var internshipDetailsViewModel = InternshipDetailsViewModel()
-  @ObservedObject var stateMedicalLicenseDetailsViewModel = StateMedicalLicenseDetailsViewModel()
-  @ObservedObject var employersDetailsViewModel = EmployersDetailsViewModel()
+  @ObservedObject var medicalSchoolDetailsViewModel = MedicalSchoolDetailsViewModel(userDefaults: .standard)
+  @ObservedObject var hospitalAffiliationsDetailsViewModel = HospitalAffiliationsDetailsViewModel(userDefaults: .standard)
+  @ObservedObject var boardCertificationDetailsViewModel = BoardCertificationDetailsViewModel(userDefaults: .standard)
+  @ObservedObject var fellowshipDetailsViewModel = FellowshipDetailsViewModel(userDefaults: .standard)
+  @ObservedObject var residencyDetailsViewModel = ResidencyDetailsViewModel(userDefaults: .standard)
+  @ObservedObject var internshipDetailsViewModel = InternshipDetailsViewModel(userDefaults: .standard)
+
+//  @ObservedObject var internshipDetailsViewModel = InternshipDetailsViewModel()
+  @ObservedObject var stateMedicalLicenseDetailsViewModel = StateMedicalLicenseDetailsViewModel(userDefaults: .standard)
+  @ObservedObject var employersDetailsViewModel = EmployersDetailsViewModel(userDefaults: .standard)
 
   var body: some View {
     NavigationStack {
@@ -32,6 +34,7 @@ struct PublicDataView: View {
                   .font(.subheadline)
               }
             }
+            .accessibilityIdentifier("NavigateToNPI-\(provider.number)")
           }
         }
 

@@ -1,8 +1,5 @@
 //
 //  NPPESAPIModelTests.swift
-//  HmCapstoneTests
-//
-
 
 import XCTest
 @testable import hmCapstone

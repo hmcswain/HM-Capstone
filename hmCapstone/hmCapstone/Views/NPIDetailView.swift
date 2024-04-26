@@ -15,12 +15,14 @@ struct NPIDetailView: View {
       if let provider = viewModel.providers.first(where: { $0.number == npi }) {
         Section(header: Text("NPI Number")) {
           Text(provider.number)
+            .accessibilityIdentifier("NPI Number Label")
         }
         Section(header: Text("NPI Type")) {
           Text(provider.enumerationType)
         }
         Section(header: Text("Provider Full Name")) {
           Text("\(provider.basic.firstName) \(provider.basic.lastName)")
+            .accessibilityIdentifier("Provider Full Name Label")
         }
         Section(header: Text("Credential")) {
           Text(provider.basic.credential ?? "None")

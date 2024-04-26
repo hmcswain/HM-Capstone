@@ -7,7 +7,12 @@
 import SwiftUI
 
 struct InternshipDetailView: View {
-  @StateObject private var viewModel = InternshipDetailsViewModel()
+  @StateObject private var viewModel: InternshipDetailsViewModel
+
+  // Initialize the ViewModel with default UserDefaults
+  init() {
+    _viewModel = StateObject(wrappedValue: InternshipDetailsViewModel(userDefaults: .standard))
+  }
 
   var body: some View {
     NavigationView {

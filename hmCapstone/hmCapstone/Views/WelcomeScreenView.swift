@@ -17,6 +17,8 @@ struct WelcomeScreenView: View {
             .resizable()
             .scaledToFit()
             .frame(width: 150, height: 150)
+            .accessibilityIdentifier("MediBlockLogoStacked") //added for ui test
+            .opacity(opacity) //added for ui test
 
           VStack {
             Text("Digitizing medical identity....")
