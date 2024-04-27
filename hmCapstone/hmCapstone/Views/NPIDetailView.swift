@@ -1,15 +1,10 @@
-//
 //  NPIDetailView.swift
-//  hmCapstone
-//
-
 
 import SwiftUI
 
 struct NPIDetailView: View {
   @ObservedObject var viewModel: ProviderViewModel
   var npi: String
-
   var body: some View {
     Form {
       if let provider = viewModel.providers.first(where: { $0.number == npi }) {
@@ -46,7 +41,6 @@ struct NPIDetailView: View {
     .navigationTitle("NPI Details")
   }
 }
-
 struct NPIDetailView_Previews: PreviewProvider {
   static var previews: some View {
     NavigationView {

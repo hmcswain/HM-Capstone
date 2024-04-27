@@ -4,7 +4,6 @@ import SwiftUI
 
 struct PrivateDataView: View {
   @StateObject private var viewModel = PrivateDataViewModel()
-
   var body: some View {
     NavigationView {
       Form {
@@ -67,7 +66,6 @@ struct PrivateDataView: View {
           .alert("Data has been successfully saved to your device.", isPresented: $viewModel.showSaveAlert) {
             Button("OK", role: .cancel) { }
           }
-
           Button("Clear Details") {
             Task {
               await viewModel.clearData()
@@ -75,7 +73,6 @@ struct PrivateDataView: View {
           }
           .buttonStyle(.bordered)
           .foregroundColor(.red)
-
           .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
             Button("OK", role: .cancel) { }
           }
@@ -85,7 +82,6 @@ struct PrivateDataView: View {
     }
   }
 }
-
 struct PrivateDataView_Previews: PreviewProvider {
   static var previews: some View {
     PrivateDataView()

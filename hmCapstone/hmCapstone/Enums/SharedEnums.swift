@@ -4,7 +4,6 @@ import Foundation
 
 enum ActiveAlert: Identifiable {
   case saveAlert, clearAlert, none
-
   var id: Int {
     switch self {
     case .saveAlert:

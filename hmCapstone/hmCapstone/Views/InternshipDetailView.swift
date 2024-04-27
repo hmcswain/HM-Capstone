@@ -1,19 +1,12 @@
-//
 //  InternshipDetailView.swift
-//  hmCapstone
-//
-
 
 import SwiftUI
 
 struct InternshipDetailView: View {
   @StateObject private var viewModel: InternshipDetailsViewModel
-
-  // Initialize the ViewModel with default UserDefaults
   init() {
     _viewModel = StateObject(wrappedValue: InternshipDetailsViewModel(userDefaults: .standard))
   }
-
   var body: some View {
     NavigationView {
       Form {
@@ -42,7 +35,6 @@ struct InternshipDetailView: View {
             Button("OK", role: .cancel) { }
           }
           .buttonStyle(.borderedProminent)
-
           Button("Clear Details") {
             Task {
               await viewModel.clearData()
@@ -59,7 +51,6 @@ struct InternshipDetailView: View {
     }
   }
 }
-
 struct InternshipDetailView_Previews: PreviewProvider {
   static var previews: some View {
     InternshipDetailView()

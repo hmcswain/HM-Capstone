@@ -1,7 +1,4 @@
-//
 //  ProviderViewModel.swift
-//  hmCapstone
-
 
 import SwiftUI
 import Combine
@@ -11,7 +8,6 @@ class ProviderViewModel: ObservableObject {
   @Published var providers: [Provider] = []
   @Published var isLoading = false
   @Published var errorMessage: String?
-
   func fetchProviderDetails(npi: String) async {
     isLoading = true
     defer { isLoading = false }
@@ -30,16 +26,13 @@ class ProviderViewModel: ObservableObject {
       errorMessage = "Failed to fetch data: \(error.localizedDescription)"
     }
   }
-
   func clearErrorMessage() {
     errorMessage = nil
   }
 }
-
 extension ProviderViewModel {
   static func mock() -> ProviderViewModel {
     let model = ProviderViewModel()
-
     model.providers = [
       Provider(
         enumerationType: "Type 1",

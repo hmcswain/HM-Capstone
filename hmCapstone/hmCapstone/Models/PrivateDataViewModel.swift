@@ -1,8 +1,4 @@
-//
 //  PrivateDataViewModel.swift
-//  hmCapstone
-//
-
 
 import Foundation
 
@@ -27,11 +23,9 @@ class PrivateDataViewModel: ObservableObject {
   @Published var phoneError = ""
   @Published var showSaveAlert = false
   @Published var showClearAlert = false
-
-  init() {    
+  init() {
     self.dateOfBirth = UserDefaults.standard.object(forKey: "dateOfBirth") as? Date ?? Date()
   }
-
   func saveData() async {
     UserDefaults.standard.set(countryOfCitizenship, forKey: "countryOfCitizenship")
     UserDefaults.standard.set(streetAddress1, forKey: "streetAddress1")
@@ -44,7 +38,6 @@ class PrivateDataViewModel: ObservableObject {
     UserDefaults.standard.set(personalPhone, forKey: "personalPhone")
     showSaveAlert = true
   }
-
   func clearData() async {
     dateOfBirth = Date()
     countryOfCitizenship = ""
@@ -58,7 +51,6 @@ class PrivateDataViewModel: ObservableObject {
     personalPhone = ""
     showClearAlert = true
   }
-
   func validateEmail() {
     if !personalEmail.isEmpty && !isValidEmail(personalEmail) {
       emailError = "Invalid email format"
@@ -66,7 +58,6 @@ class PrivateDataViewModel: ObservableObject {
       emailError = ""
     }
   }
-
   func validatePhone() {
     if !personalPhone.isEmpty && !isValidPhone(personalPhone) {
       phoneError = "Invalid phone format"
@@ -74,13 +65,11 @@ class PrivateDataViewModel: ObservableObject {
       phoneError = ""
     }
   }
-
   private func isValidEmail(_ email: String) -> Bool {
     let emailPattern = "[A-Z0-9a-z._%+-]+@[A-Z0-9a-z.-]+\\.[A-Za-z]{2,}"
     let emailPred = NSPredicate(format: "SELF MATCHES %@", emailPattern)
     return emailPred.evaluate(with: email)
   }
-
   private func isValidPhone(_ phone: String) -> Bool {
     let phonePattern = "^[0-9+]{10,13}$"
     let phonePred = NSPredicate(format: "SELF MATCHES %@", phonePattern)

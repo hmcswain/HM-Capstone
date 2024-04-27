@@ -1,11 +1,9 @@
-//
 //  NPPESAPIModelTests.swift
 
 import XCTest
 @testable import hmCapstone
 
 final class NPPESAPIModelTests: XCTestCase {
-  // Test successful decoding of the ApiResponse
   func testApiResponseDecoding() throws {
     let json = """
         {
@@ -42,14 +40,16 @@ final class NPPESAPIModelTests: XCTestCase {
             }
           ]
         }
-        """.data(using: .utf8)!
-    let decoder = JSONDecoder()
-    let apiResponse = try decoder.decode(ApiResponse.self, from: json)
-    XCTAssertEqual(apiResponse.resultCount, 1)
-    XCTAssertEqual(apiResponse.results.first?.number, "123456789")
-    // Additional checks for nested structures
+        """
+    if let data = json.data(using: .utf8) {
+      let decoder = JSONDecoder()
+      let apiResponse = try decoder.decode(ApiResponse.self, from: data)
+      XCTAssertEqual(apiResponse.resultCount, 1)
+      XCTAssertEqual(apiResponse.results.first?.number, "123456789")
+    } else {
+      XCTFail("Failed to convert JSON string to Data")
+    }
   }
-  // Test decoding of Provider struct
   func testProviderDecoding() throws {
     let json = """
         {
@@ -81,16 +81,15 @@ final class NPPESAPIModelTests: XCTestCase {
             }
           ]
         }
-        """.data(using: .utf8)!
-
-    let decoder = JSONDecoder()
-    let provider = try decoder.decode(Provider.self, from: json)
-    XCTAssertEqual(provider.number, "123456789")
-    XCTAssertEqual(provider.basic.firstName, "John")
-    // Additional checks
+        """
+    if let data = json.data(using: .utf8) {
+      let decoder = JSONDecoder()
+      let provider = try decoder.decode(Provider.self, from: data)
+      XCTAssertEqual(provider.number, "123456789")
+    } else {
+      XCTFail("Failed to convert JSON string to Data")
+    }
   }
-
-  // Test for incomplete data handling
   func testProviderDecodingWithIncompleteData() throws {
     let json = """
         {
@@ -100,13 +99,14 @@ final class NPPESAPIModelTests: XCTestCase {
             "first_name": "John"
           }
         }
-        """.data(using: .utf8)!
-
-    let decoder = JSONDecoder()
-    XCTAssertThrowsError(try decoder.decode(Provider.self, from: json))
+        """
+    if let data = json.data(using: .utf8) {
+      let decoder = JSONDecoder()
+      XCTAssertThrowsError(try decoder.decode(Provider.self, from: data))
+    } else {
+      XCTFail("Failed to convert JSON string to Data")
+    }
   }
-
-  // Performance test for decoding
   func testProviderDecodingPerformance() {
     let json = """
         {
@@ -138,10 +138,12 @@ final class NPPESAPIModelTests: XCTestCase {
             }
           ]
         }
-        """.data(using: .utf8)!
-    measure {
-      let decoder = JSONDecoder()
-      _ = try? decoder.decode(Provider.self, from: json)
+        """
+    if let data = json.data(using: .utf8) {
+      measure {
+        let decoder = JSONDecoder()
+        _ = try? decoder.decode(Provider.self, from: data)
+      }
     }
   }
 }

@@ -1,7 +1,4 @@
-//
 //  HmCapstoneApp.swift
-//  HmCapstone
-
 
 import SwiftUI
 

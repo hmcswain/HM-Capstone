@@ -1,6 +1,5 @@
 //  ContentView.swift
 
-
 import SwiftUI
 
 extension UserDefaults {
@@ -13,10 +12,8 @@ extension UserDefaults {
     }
   }
 }
-
 struct ContentView: View {
   @State private var showNPILookup = false
-
   var body: some View {
     if UserDefaults.standard.welcomeScreenShown && showNPILookup {
       HomeNPILookupView()
@@ -32,9 +29,7 @@ struct ContentView: View {
         .tabViewStyle(.page(indexDisplayMode: .always))
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
         .edgesIgnoringSafeArea(.all)
-
         Spacer()
-
         Button("Get Started") {
           showNPILookup.toggle()
         }
@@ -49,8 +44,6 @@ struct ContentView: View {
     }
   }
 }
-
-
 #Preview {
   ContentView()
 }

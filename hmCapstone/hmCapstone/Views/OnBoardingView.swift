@@ -28,8 +28,6 @@ struct OnBoardingView: View {
     }
   }
 }
-
-
 #Preview {
-  OnBoardingView(title: "Fun Fact", image: "paperplane.fill", description: "App Development ain't for the faint hearted, but if you want to see what this does on multiple lines , here we go")
+  OnBoardingView(title: "Fact", image: "paperplane.fill", description: "App Development ain't for the faint hearted")
 }

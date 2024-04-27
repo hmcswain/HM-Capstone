@@ -1,6 +1,5 @@
 //  PublicDataView.swift
 
-
 import SwiftUI
 
 struct PublicDataView: View {
@@ -11,11 +10,8 @@ struct PublicDataView: View {
   @ObservedObject var fellowshipDetailsViewModel = FellowshipDetailsViewModel(userDefaults: .standard)
   @ObservedObject var residencyDetailsViewModel = ResidencyDetailsViewModel(userDefaults: .standard)
   @ObservedObject var internshipDetailsViewModel = InternshipDetailsViewModel(userDefaults: .standard)
-
-//  @ObservedObject var internshipDetailsViewModel = InternshipDetailsViewModel()
   @ObservedObject var stateMedicalLicenseDetailsViewModel = StateMedicalLicenseDetailsViewModel(userDefaults: .standard)
   @ObservedObject var employersDetailsViewModel = EmployersDetailsViewModel(userDefaults: .standard)
-
   var body: some View {
     NavigationStack {
       List {
@@ -29,7 +25,6 @@ struct PublicDataView: View {
                   Text("NPI Details")
                     .fontWeight(.semibold)
                 }
-
                 Text("NPI: \(provider.number)")
                   .font(.subheadline)
               }
@@ -37,7 +32,6 @@ struct PublicDataView: View {
             .accessibilityIdentifier("NavigateToNPI-\(provider.number)")
           }
         }
-
         Section(header: Text("Provider Basic Information")) {
           ForEach(providerViewModel.providers, id: \.number) { provider in
             NavigationLink(destination: ProviderDetailView(provider: provider)) {
@@ -48,14 +42,12 @@ struct PublicDataView: View {
                   Text("Provider Details")
                     .fontWeight(.semibold)
                 }
-
                 Text("\(provider.basic.firstName) \(provider.basic.lastName), \(provider.basic.credential ?? "")")
                   .font(.subheadline)
               }
             }
           }
         }
-
         Section(header: Text("Medical School")) {
           NavigationLink(destination: MedicalSchoolDetailView()) {
             VStack(alignment: .leading, spacing: 4) {
@@ -65,7 +57,6 @@ struct PublicDataView: View {
                 Text("Medical School Details")
                   .fontWeight(.semibold)
               }
-
               if medicalSchoolDetailsViewModel.medicalSchoolName.isEmpty {
                 Text("No medical school entered. Please enter.")
                   .foregroundColor(.secondary)
@@ -86,7 +77,6 @@ struct PublicDataView: View {
                 Text("Internship Details")
                   .fontWeight(.semibold)
               }
-
               if internshipDetailsViewModel.internshipProgramName.isEmpty {
                 Text("No internship program entered. Please enter.")
                   .foregroundColor(.secondary)
@@ -108,7 +98,6 @@ struct PublicDataView: View {
                 Text("Residency Details")
                   .fontWeight(.semibold)
               }
-
               if residencyDetailsViewModel.residencyProgramName.isEmpty {
                 Text("No residency program entered. Please enter.")
                   .foregroundColor(.secondary)
@@ -130,7 +119,6 @@ struct PublicDataView: View {
                 Text("Fellowship Details")
                   .fontWeight(.semibold)
               }
-
               if fellowshipDetailsViewModel.fellowshipProgramName.isEmpty {
                 Text("No fellowship program entered. Please enter.")
                   .foregroundColor(.secondary)
@@ -152,7 +140,6 @@ struct PublicDataView: View {
                 Text("Board Certification Details")
                   .fontWeight(.semibold)
               }
-
               if boardCertificationDetailsViewModel.specialtyName.isEmpty {
                 Text("No board certification details entered. Please enter.")
                   .foregroundColor(.secondary)
@@ -174,7 +161,6 @@ struct PublicDataView: View {
                 Text("Medical License Details")
                   .fontWeight(.semibold)
               }
-
               if stateMedicalLicenseDetailsViewModel.medicalBoardName.isEmpty {
                 Text("No medical board details entered. Please enter.")
                   .foregroundColor(.secondary)
@@ -187,7 +173,6 @@ struct PublicDataView: View {
             }
           }
         }
-
         Section(header: Text("Hospital Affiliation")) {
           NavigationLink(destination: HospitalAffiliationsDetailView()) {
             VStack(alignment: .leading, spacing: 4) {
@@ -197,7 +182,6 @@ struct PublicDataView: View {
                 Text("Hospital Affiliations Details")
                   .fontWeight(.semibold)
               }
-
               if hospitalAffiliationsDetailsViewModel.hospitalName.isEmpty {
                 Text("No hospital entered. Please enter.")
                   .foregroundColor(.secondary)
@@ -210,7 +194,6 @@ struct PublicDataView: View {
             }
           }
         }
-
         Section(header: Text("Employers")) {
           NavigationLink(destination: EmployersDetailView()) {
             VStack(alignment: .leading, spacing: 4) {
@@ -220,7 +203,6 @@ struct PublicDataView: View {
                 Text("Employer Details")
                   .fontWeight(.semibold)
               }
-
               if employersDetailsViewModel.employerName.isEmpty {
                 Text("No employer entered. Please enter.")
                   .foregroundColor(.secondary)
@@ -238,8 +220,6 @@ struct PublicDataView: View {
     }
   }
 }
-
-
 struct PublicDataView_Previews: PreviewProvider {
   static var previews: some View {
     PublicDataView(providerViewModel: ProviderViewModel.mock())

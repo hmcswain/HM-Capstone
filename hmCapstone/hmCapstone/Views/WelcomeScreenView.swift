@@ -5,8 +5,6 @@ import SwiftUI
 struct WelcomeScreenView: View {
   @State private var isActive = false
   @State private var opacity = 1.0
-
-
   var body: some View {
     Group {
       if isActive {
@@ -17,9 +15,8 @@ struct WelcomeScreenView: View {
             .resizable()
             .scaledToFit()
             .frame(width: 150, height: 150)
-            .accessibilityIdentifier("MediBlockLogoStacked") //added for ui test
-            .opacity(opacity) //added for ui test
-
+            .accessibilityIdentifier("MediBlockLogoStacked")
+            .opacity(opacity)
           VStack {
             Text("Digitizing medical identity....")
               .font(.headline)
@@ -49,7 +46,6 @@ struct WelcomeScreenView: View {
       }
     }
   }
-
   func fadeOutEffect() {
     Task {
       try await Task.sleep(nanoseconds: 2_000_000_000)
@@ -61,8 +57,6 @@ struct WelcomeScreenView: View {
     }
   }
 }
-
-
 #Preview {
   WelcomeScreenView()
 }

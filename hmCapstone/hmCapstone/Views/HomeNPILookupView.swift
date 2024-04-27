@@ -1,6 +1,4 @@
 //  hmCapstone
-//  HomeNPILookupView.swift
-
 
 import SwiftUI
 
@@ -8,7 +6,6 @@ struct HomeNPILookupView: View {
   @State private var npiNumber = ""
   @State private var shouldNavigate = false
   @StateObject private var viewModel = ProviderViewModel()
-
   var body: some View {
     NavigationStack {
       VStack {
@@ -25,16 +22,13 @@ struct HomeNPILookupView: View {
             }
           }
         }
-
         .buttonStyle(.borderedProminent)
         .disabled(npiNumber.isEmpty)
         .padding()
         .accessibilityIdentifier("Fetch Provider Details")
         Text("\nPlease enter your 10-digit NPI number.\nIf you don't know it, you can find it\nby searching your name at\n\n https://npiregistry.cms.hhs.gov/search\n\nPlease copy and paste the URL\ninto your browser.")
           .multilineTextAlignment(.center)
-
         Spacer()
-
           .navigationDestination(isPresented: $shouldNavigate) {
             MainTabView(npi: npiNumber)
             Text("")

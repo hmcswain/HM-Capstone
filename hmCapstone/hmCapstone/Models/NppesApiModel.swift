@@ -2,25 +2,20 @@
 
 import Foundation
 
-
 struct ApiResponse: Codable {
   var resultCount: Int
   var results: [Provider]
-
   enum CodingKeys: String, CodingKey {
     case resultCount = "result_count"
     case results
   }
 }
-
 struct Provider: Codable {
   var enumerationType: String
   var number: String
   var basic: Basic
   var addresses: [Address]
   var taxonomies: [Taxonomy]
-
-
   enum CodingKeys: String, CodingKey {
     case enumerationType = "enumeration_type"
     case number
@@ -60,7 +55,6 @@ struct Provider: Codable {
     )
   }
 }
-
 struct Basic: Codable {
   let firstName: String
   var lastName: String
@@ -70,8 +64,6 @@ struct Basic: Codable {
   var enumerationDate: String
   var lastUpdated: String?
   var status: String?
-
-
   enum CodingKeys: String, CodingKey {
     case firstName = "first_name"
     case lastName = "last_name"
@@ -83,24 +75,20 @@ struct Basic: Codable {
     case status
   }
 }
-
 struct Address: Codable {
   var countryName: String
   var city: String
   var state: String
   var postalCode: String
-
   enum CodingKeys: String, CodingKey {
     case countryName = "country_name"
     case city, state, postalCode = "postal_code"
   }
 }
-
 struct Taxonomy: Codable {
   var desc: String?
   var state: String?
   var primary: Bool?
-
   enum CodingKeys: String, CodingKey {
     case desc, state, primary
   }
