@@ -45,9 +45,12 @@ struct HomeNPILookupView: View {
         get: { viewModel.errorMessage != nil },
         set: { _ in viewModel.errorMessage = nil }
       )) {
-        Alert(title: Text("Error"),
+        Alert(
+          title: Text("Error"),
           message: Text(viewModel.errorMessage ?? "An unexpected error occurred"),
-          dismissButton: .default(Text("OK")))
+          dismissButton: .default(Text("OK")
+          )
+        )
       }
     }
   }

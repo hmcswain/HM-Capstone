@@ -29,14 +29,12 @@ struct BoardCertificationDetailView: View {
           Button("Save Details") {
             Task {
               viewModel.saveData()
-              // removed await to get rid of swift lint warning
             }
           }
           .buttonStyle(.borderedProminent)
           Button("Clear Details") {
             Task {
               viewModel.clearData()
-              // removed await to get rid of swift lint warning
             }
           }
           .buttonStyle(.bordered)

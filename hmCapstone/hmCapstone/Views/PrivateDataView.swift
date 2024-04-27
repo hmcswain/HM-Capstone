@@ -27,16 +27,16 @@ struct PrivateDataView: View {
             } else {
               SecureField("Enter SSN-9 digits only, no dashes", text: $viewModel.socialSecurityNumber)
             }
-            Button(action: {
+            Button {
               viewModel.isSSNVisible.toggle()
-            }) {
+            } label: {
               Image(systemName: viewModel.isSSNVisible ? "eye" : "eye.slash")
             }
           }
         }
         Section(header: Text("Personal Email")) {
           TextField("Enter your email", text: $viewModel.personalEmail)
-            .onChange(of: viewModel.personalEmail) { oldValue, newValue in
+            .onChange(of: viewModel.personalEmail) { _, _ in
               viewModel.validateEmail()
             }
           if !viewModel.emailError.isEmpty {
@@ -47,7 +47,7 @@ struct PrivateDataView: View {
         }
         Section(header: Text("Personal Cell Phone")) {
           TextField("Enter your cell number-no dashes or ()", text: $viewModel.personalPhone)
-            .onChange(of: viewModel.personalPhone) { oldValue, newValue in
+            .onChange(of: viewModel.personalPhone) { _, _ in
               viewModel.validatePhone()
             }
           if !viewModel.phoneError.isEmpty {

@@ -34,7 +34,7 @@ struct HospitalAffiliationsDetailView: View {
         Section {
           Button("Save Details") {
             Task {
-              await viewModel.saveData()
+              viewModel.saveData()
             }
           }
           .alert("Data has been successfully saved to your phone", isPresented: $viewModel.showAlert) {
@@ -43,7 +43,7 @@ struct HospitalAffiliationsDetailView: View {
           .buttonStyle(.borderedProminent)
           Button("Clear Details") {
             Task {
-              await viewModel.clearData()
+              viewModel.clearData()
             }
           }
           .alert("All data fields in this section have been cleared.", isPresented: $viewModel.showClearAlert) {
