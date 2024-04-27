@@ -51,7 +51,7 @@ struct ContentView: View {
         .foregroundColor(.white)
         .cornerRadius(10)
         .padding(.bottom)
-        .accessibilityIdentifier("Get Started") // Adding accessibility identifier here
+        .accessibilityIdentifier("Get Started")
       }
     }
   }

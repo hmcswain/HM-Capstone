@@ -20,7 +20,11 @@ struct StateMedicalLicenseDetailView: View {
           TextField("Enter license number", text: $viewModel.licenseNumber)
         }
         Section(header: Text("License Expiration Date")) {
-          DatePicker("Choose date of expiration", selection: $viewModel.licenseExpirationDate, displayedComponents: .date)
+          DatePicker(
+            "Choose date of expiration",
+            selection: $viewModel.licenseExpirationDate,
+            displayedComponents: .date
+          )
         }
         Section(header: Text("# of days remaining until expiration date")) {
           Text("\(viewModel.daysUntilExpiration) days")

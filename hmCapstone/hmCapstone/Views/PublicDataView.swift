@@ -5,7 +5,9 @@ import SwiftUI
 struct PublicDataView: View {
   @ObservedObject var providerViewModel: ProviderViewModel
   @ObservedObject var medicalSchoolDetailsViewModel = MedicalSchoolDetailsViewModel(userDefaults: .standard)
-  @ObservedObject var hospitalAffiliationsDetailsViewModel = HospitalAffiliationsDetailsViewModel(userDefaults: .standard)
+  @ObservedObject var hospitalAffiliationsDetailsViewModel = HospitalAffiliationsDetailsViewModel(
+    userDefaults: .standard
+  )
   @ObservedObject var boardCertificationDetailsViewModel = BoardCertificationDetailsViewModel(userDefaults: .standard)
   @ObservedObject var fellowshipDetailsViewModel = FellowshipDetailsViewModel(userDefaults: .standard)
   @ObservedObject var residencyDetailsViewModel = ResidencyDetailsViewModel(userDefaults: .standard)

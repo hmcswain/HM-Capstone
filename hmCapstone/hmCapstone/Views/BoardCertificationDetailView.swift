@@ -17,7 +17,10 @@ struct BoardCertificationDetailView: View {
           TextField("Enter specialty name", text: $viewModel.specialtyName)
         }
         Section(header: Text("Certificate Expiration Date")) {
-          DatePicker("Choose date of expiration", selection: $viewModel.certificateExpirationDate, displayedComponents: .date)
+          DatePicker(
+            "Choose date of expiration",
+            selection: $viewModel.certificateExpirationDate,
+            displayedComponents: .date)
         }
         Section(header: Text("# of days remaining until expiration date")) {
           Text("\(viewModel.daysUntilExpiration) days")
@@ -25,13 +28,15 @@ struct BoardCertificationDetailView: View {
         Section {
           Button("Save Details") {
             Task {
-              await viewModel.saveData()
+              viewModel.saveData()
+              // removed await to get rid of swift lint warning
             }
           }
           .buttonStyle(.borderedProminent)
           Button("Clear Details") {
             Task {
-              await viewModel.clearData()
+              viewModel.clearData()
+              // removed await to get rid of swift lint warning
             }
           }
           .buttonStyle(.bordered)

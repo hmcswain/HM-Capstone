@@ -26,7 +26,12 @@ struct HomeNPILookupView: View {
         .disabled(npiNumber.isEmpty)
         .padding()
         .accessibilityIdentifier("Fetch Provider Details")
-        Text("\nPlease enter your 10-digit NPI number.\nIf you don't know it, you can find it\nby searching your name at\n\n https://npiregistry.cms.hhs.gov/search\n\nPlease copy and paste the URL\ninto your browser.")
+        Text(
+          "\nPlease enter your 10-digit NPI number.\n" +
+          "If you don't know it, you can find it by searching your name at\n" +
+          "\nhttps://npiregistry.cms.hhs.gov/search\n" +
+          "\nPlease copy and paste the URL into your browser."
+        )
           .multilineTextAlignment(.center)
         Spacer()
           .navigationDestination(isPresented: $shouldNavigate) {
