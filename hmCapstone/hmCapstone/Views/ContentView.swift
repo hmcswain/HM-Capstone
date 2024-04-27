@@ -22,9 +22,21 @@ struct ContentView: View {
     } else {
       VStack {
         TabView {
-          OnBoardingView(title: "Welcome to MediBlock App", image: "doc.on.doc", description: "Are you tired of dealing with paperwork?\n \n Swipe left or press Get Started")
-          OnBoardingView(title: "MediBlock is digitizing your medical identity to save you hours of time every week", image: "scanner", description: "Swipe left or press Get Started")
-          OnBoardingView(title: "What are you waiting for?", image: "macbook.and.iphone", description: "Press Get Started button below")
+          OnBoardingView(
+            title: "Welcome to MediBlock App",
+            image: "doc.on.doc",
+            description: "Are you tired of dealing with paperwork?\n \n Swipe left or press Get Started"
+          )
+          OnBoardingView(
+            title: "MediBlock is digitizing your medical identity to save you hours of time every week",
+            image: "scanner",
+            description: "Swipe left or press Get Started"
+          )
+          OnBoardingView(
+            title: "What are you waiting for?",
+            image: "macbook.and.iphone",
+            description: "Press Get Started button below"
+          )
         }
         .tabViewStyle(.page(indexDisplayMode: .always))
         .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))

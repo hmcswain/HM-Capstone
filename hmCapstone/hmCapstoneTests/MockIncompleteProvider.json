@@ -1,0 +1,9 @@
+{
+  "enumeration_type": "NPI-1",
+  "number": "123456789",
+  "basic": {
+    "first_name": "John"
+    // Incomplete data
+  }
+}
+

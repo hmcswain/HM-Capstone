@@ -57,6 +57,9 @@
 		289946192BD248890017E03C /* NppesApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289946182BD248890017E03C /* NppesApiModel.swift */; };
 		2899461D2BD249420017E03C /* PublicDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899461C2BD249420017E03C /* PublicDataView.swift */; };
 		2899461F2BD2499A0017E03C /* PrivateDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2899461E2BD2499A0017E03C /* PrivateDataView.swift */; };
+		28E52DF52BDC877200B1CB79 /* MockApiResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 28E52DF42BDC877200B1CB79 /* MockApiResponse.json */; };
+		28E52DF72BDC87B100B1CB79 /* MockProvider.json in Resources */ = {isa = PBXBuildFile; fileRef = 28E52DF62BDC87B100B1CB79 /* MockProvider.json */; };
+		28E52DF92BDC87EC00B1CB79 /* MockIncompleteProvider.json in Resources */ = {isa = PBXBuildFile; fileRef = 28E52DF82BDC87EC00B1CB79 /* MockIncompleteProvider.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +133,9 @@
 		289946182BD248890017E03C /* NppesApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NppesApiModel.swift; sourceTree = "<group>"; };
 		2899461C2BD249420017E03C /* PublicDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicDataView.swift; sourceTree = "<group>"; };
 		2899461E2BD2499A0017E03C /* PrivateDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateDataView.swift; sourceTree = "<group>"; };
+		28E52DF42BDC877200B1CB79 /* MockApiResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockApiResponse.json; sourceTree = "<group>"; };
+		28E52DF62BDC87B100B1CB79 /* MockProvider.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockProvider.json; sourceTree = "<group>"; };
+		28E52DF82BDC87EC00B1CB79 /* MockIncompleteProvider.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockIncompleteProvider.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +219,9 @@
 				2892A13C2BDB79A100F1F3BE /* StateMedicalLicenseDetailsViewModelTests.swift */,
 				2892A13E2BDB800F00F1F3BE /* MedicalSchoolDetailsViewModelTests.swift */,
 				2892A1402BDB879E00F1F3BE /* NPIDetailViewTests.swift */,
+				28E52DF42BDC877200B1CB79 /* MockApiResponse.json */,
+				28E52DF62BDC87B100B1CB79 /* MockProvider.json */,
+				28E52DF82BDC87EC00B1CB79 /* MockIncompleteProvider.json */,
 			);
 			path = hmCapstoneTests;
 			sourceTree = "<group>";
@@ -394,6 +403,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E52DF72BDC87B100B1CB79 /* MockProvider.json in Resources */,
+				28E52DF92BDC87EC00B1CB79 /* MockIncompleteProvider.json in Resources */,
+				28E52DF52BDC877200B1CB79 /* MockApiResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
